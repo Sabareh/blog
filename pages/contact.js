@@ -12,13 +12,9 @@ const Contact = () => {
         </h1>
         <div className="pt-10 pb-8">
           <ul className="font-semi-bold flex flex-col space-y-4">
-            <ContactLink
-              href="mailto:desaiparth2000@gmail.com"
-              title="gmail"
-              icon="desaiparth2000"
-            />
-            <ContactLink href="https://github.com/sabareh" title="github" icon="pycoder2000" />
-            <ContactLink href="https://twitter.com/sabare12" title="twitter" icon="lone_Musk" />
+            <ContactLink href="mailto:sabarevictor@gmail.com" title="gmail" icon="sabarevictor" />
+            <ContactLink href="https://github.com/sabareh" title="github" icon="sabareh" />
+            <ContactLink href="https://twitter.com/sabare12" title="twitter" icon="sabare12" />
             <ContactLink
               href="https://www.linkedin.com/in/victor-oketch-sabare-7070021ba/"
               title="linkedin"

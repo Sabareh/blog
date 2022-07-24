@@ -13,7 +13,7 @@ export default function Journey() {
             Journey
           </h1>
           <p className="text-md leading-7 text-gray-500 dark:text-gray-400">
-            Trying not to compare myself to others. Taking baby steps everyday.
+            The time that leads to mastery is dependent on the intensity of focus and effort.
           </p>
         </div>
         <motion.div

@@ -7,6 +7,9 @@ import formatDate from '@/lib/utils/formatDate'
 import { RoughNotation } from 'react-rough-notation'
 import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
+import Image from '@/components/Image'
+
+
 
 const MAX_DISPLAY = 3
 
@@ -25,7 +28,9 @@ export default function Home({ posts }) {
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I am{' '}
-              <span className="text-primary-color-500 dark:text-primary-color-dark-500">Victor Sabare</span>
+              <span className="text-primary-color-500 dark:text-primary-color-dark-500">
+                Victor Sabare
+              </span>
             </h1>
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
               {`Welcome to ${siteMetadata.description}. I am a Data apprentice who is passionate about Data Science, Machine Learning and Artificial Intelligence. In my free time, I like developing `}
@@ -57,7 +62,7 @@ export default function Home({ posts }) {
                 animationDuration={2500}
                 className="text-slate-200"
               >
-                thoughts, reflections & everything &nbsp;
+                thoughts, reflections & everything&nbsp;
               </RoughNotation>
               in between. Have a good read!{' '}
               <div className="mt-8 text-slate-600 dark:text-slate-400">
@@ -204,7 +209,8 @@ export default function Home({ posts }) {
         <ul>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug, date, title, summary, tags, images } = frontMatter
+            const firstTwoTags = tags.slice(0, 2)
             return (
               <Link
                 href={`/blog/${slug}`}
