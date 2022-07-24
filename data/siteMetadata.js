@@ -9,12 +9,12 @@ const siteMetadata = {
   siteUrl: 'https://victorsabare.vercel.app',
   siteRepo: 'https://github.com/sabareh/blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'desaiparth2000@gmail.com',
-  github: 'https://github.com/pycoder2000',
-  twitter: 'https://twitter.com/lone_Musk',
-  linkedin: 'https://www.linkedin.com/in/parth-desai-2bb1b0160/',
+  email: 'sabarevictor@gmail.com',
+  github: 'https://github.com/sabareh',
+  twitter: 'https://twitter.com/sabare12',
+  linkedin: 'https://www.linkedin.com/in/victor-oketch-sabare-7070021ba//',
   website: 'https://parthdesai.vercel.app',
   locale: 'en-US',
   analytics: {
@@ -46,7 +46,7 @@ const siteMetadata = {
     },
   },
   socialAccount: {
-    twitter: 'lone_Musk',
+    twitter: 'sabare12',
   },
 }
 

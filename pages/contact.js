@@ -17,12 +17,12 @@ const Contact = () => {
               title="gmail"
               icon="desaiparth2000"
             />
-            <ContactLink href="https://github.com/pycoder2000" title="github" icon="pycoder2000" />
-            <ContactLink href="https://twitter.com/lone_Musk" title="twitter" icon="lone_Musk" />
+            <ContactLink href="https://github.com/sabareh" title="github" icon="pycoder2000" />
+            <ContactLink href="https://twitter.com/sabare12" title="twitter" icon="lone_Musk" />
             <ContactLink
-              href="https://www.linkedin.com/in/parth-desai-2bb1b0160/"
+              href="https://www.linkedin.com/in/victor-oketch-sabare-7070021ba/"
               title="linkedin"
-              icon="parthdesai"
+              icon="victorsabare"
             />
           </ul>
         </div>
