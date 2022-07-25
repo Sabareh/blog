@@ -9,8 +9,6 @@ import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
 
-
-
 const MAX_DISPLAY = 3
 
 export async function getStaticProps() {
@@ -203,7 +201,7 @@ export default function Home({ posts }) {
           </div>
         </div>
         <h2 className="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
-          Latest
+          Recent Posts
         </h2>
         <hr className="border-gray-200 dark:border-gray-700" />
         <ul>
@@ -219,7 +217,7 @@ export default function Home({ posts }) {
               >
                 <li className="py-6">
                   <article>
-                    <div className="space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-200 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                    <div className=" animate-tilt space-y-2 bg-transparent bg-opacity-20 p-2 transition duration-200 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                       <dl>
                         <dt className="sr-only">Published on</dt>
                         <dd className="text-sm font-normal leading-6 text-gray-500 dark:text-gray-400">

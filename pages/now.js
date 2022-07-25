@@ -213,28 +213,29 @@ export default function Now(currentlyReading) {
         {/* Work */}
         <div className="pb-4">
           <p>
-            I work as a Data Engineer at{' '}
+            I work as a Freelance Datga Scientist at{' '}
             <Link
-              href={'https://www.accenture.com/'}
+              href={'https://www.upwork.com/'}
               className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-100"
             >
-              Accenture
+              Upwork
             </Link>
             .
           </p>
           <br />
           <p>
-            I work on building pipelines and automating the entire process using Scala and Gcloud.
+            I work on building pipelines and automating the entire process using Azure,Scala and
+            Google Cloud.
           </p>
           <br />
           <p>
-            I have been trying to shift my field from Data Engineering to Data Science. I have been
-            constantly applying for the same as well.
+            I have been trying to master my slills in Data Science. I have been constantly for the
+            same as well.
           </p>
           <br />
           <p>
-            My location preference is Bangalore but I am open to shift to another place for a better
-            opportunity.
+            My location preference is Nairobi, Kenya but I am open to shift to another place for a
+            better opportunity.
           </p>
           <br />
           <p>

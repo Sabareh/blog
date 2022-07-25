@@ -81,12 +81,12 @@ const usesData = [
   },
   {
     title: 'Figma',
-    description: `Designs and graphics`,
+    description: `Getting Started in Designs and graphics`,
     href: 'https://figma.com',
   },
   {
     title: 'Notion',
-    description: `Permanent docs, organizing my life.`,
+    description: `Permanent docs, organizing my career and life.`,
     href: 'https://www.notion.so/',
   },
 ]

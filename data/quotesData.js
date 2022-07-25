@@ -43,4 +43,8 @@ export const quotes = [
     author: 'Michael Jordan',
     quote: `limits, like fears, are often just illusions`,
   },
+  {
+    author: 'Robert Greene',
+    quote: `The ultimate form of power is mastery`,
+  },
 ]
