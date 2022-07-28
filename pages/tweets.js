@@ -5,6 +5,7 @@ import { getTweets } from '@/lib/twitter'
 
 export async function getStaticProps() {
   const tweets = await getTweets([
+    '1552270252301492230',
     '1189444653059174401',
     '935857414435495937',
     '1334528781139259400',
@@ -29,6 +30,7 @@ export async function getStaticProps() {
     '1471558914579722245',
     '1331380003716681728',
     '1002104154737684480',
+    '1551292506268221440',
   ])
 
   return { props: { tweets } }
