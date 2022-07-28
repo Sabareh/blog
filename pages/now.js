@@ -270,7 +270,7 @@ export default function Now(currentlyReading) {
           </p>
           <br />
           <p>
-            I am also going to start applying for Masters in Data Science in August 2022 for intake
+            I am also going to start applying for Masters in Data Science in August 2025 for intake
             of Fall 2023. I hope to get a good university near the West Coast. I'll update this page
             after I get my admits.
           </p>
