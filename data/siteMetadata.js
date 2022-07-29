@@ -15,7 +15,7 @@ const siteMetadata = {
   github: 'https://github.com/sabareh',
   twitter: 'https://twitter.com/sabare12',
   linkedin: 'https://www.linkedin.com/in/victor-oketch-sabare-7070021ba//',
-  website: 'https://parthdesai.vercel.app',
+  website: 'https://victorsabare.vercel.app',
   locale: 'en-US',
   analytics: {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
