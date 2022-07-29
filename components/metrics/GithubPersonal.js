@@ -7,7 +7,7 @@ export default function GithubPersonalCard() {
 
   const repos = new Number(data?.repos)
   const gists = new Number(data?.gists)
-  const link1 = 'https://github.com/pycoder2000?tab=repositories'
+  const link1 = 'https://github.com/sabareh?tab=repositories'
   const link2 = 'https://gist.github.com/sabareh'
 
   return (
