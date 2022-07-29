@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   const title = song.item.name
   const artist = song.item.artists.map((_artist) => _artist.name).join(', ')
   const album = song.item.album.name
-  const albumImageUrl = song.item.album.images[0].url
+  const albumImageUrl = song.item.album.images[1].url
   const songUrl = song.item.external_urls.spotify
 
   res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=30')
