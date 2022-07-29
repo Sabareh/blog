@@ -53,7 +53,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 rel="noreferrer noopener"
               >
                 <AiOutlineTwitter className="mr-2 mb-0.5 inline h-5 w-5" />
-                Say Hi!
+                Say Hello!
               </a>
             </div>
           </div>
