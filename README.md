@@ -20,7 +20,7 @@
 
 </div>
 
-![demo](https://github.com/sabareh/blog/raw/master/public/static/images/demo.png)
+![demo](public/static/images/demo.png)
 
 <div align="center">
 
