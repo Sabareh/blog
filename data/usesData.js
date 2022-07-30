@@ -1,8 +1,8 @@
 const usesData = [
   {
-    title: 'HP Elitebook X360 G2',
-    description: `Intel 7th Gen - 7600U CPU, 8 core GPU, 16 GB RAM`,
-    href: 'https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5VSQNG',
+    title: 'HP Elitebook X360 1030 G2',
+    description: `Intel Core i7-7600U CPU@ 2.80Hz, 2904 MHz,2 Core(s), 16 GB RAM`,
+    href: 'https://www.hp.com/us-en/shop/tech-takes/hp-elitebook-x360-1030-g2-laptop-complete-review',
   },
   {
     title: 'Superhuman',
