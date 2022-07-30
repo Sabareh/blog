@@ -1,13 +1,8 @@
 const usesData = [
   {
-    title: 'Macbook Pro 13"',
-    description: `M1 - 8 core CPU, 8 core GPU, 16 GB RAM`,
+    title: 'HP Elitebook X360 G2',
+    description: `Intel 7th Gen - 7600U CPU, 8 core GPU, 16 GB RAM`,
     href: 'https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5VSQNG',
-  },
-  {
-    title: 'Alfred',
-    description: `Productivity on Mac`,
-    href: 'https://www.alfredapp.com/',
   },
   {
     title: 'Superhuman',
