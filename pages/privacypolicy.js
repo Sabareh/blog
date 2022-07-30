@@ -108,7 +108,7 @@ export default function PrivacyPolicy() {
                   rel="external nofollow noopener noreferrer"
                   target="_blank"
                 >
-                  https://musing.vercel.app/
+                  https://sabare.me/
                 </a>
               </p>
             </li>
@@ -471,11 +471,11 @@ export default function PrivacyPolicy() {
             <li>
               By email:{' '}
               <a
-                href="mailto:desaiparth2000@gmail.com"
+                href="mailto:sabarevictor@gmail.com"
                 rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
-                desaiparth2000@gmail.com
+                sabarevictor@gmail.com
               </a>
             </li>
           </ul>
