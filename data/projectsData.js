@@ -1,25 +1,5 @@
 const projectsData = [
   {
-    title: 'Stock Portfolio Management',
-    description: `It is a web application for managing your investment portfolio. Users can get real-time stock data and market news via Yahoo Finance, IEX Cloud, and Quandl APIs. They can also compare the performance of the stocks with charts and predict the future behaviour for the same.`,
-    imgSrc: '',
-    href: '',
-    github: 'https://github.com/pycoder2000/Stock-Management',
-    tech1: 'Django',
-    tech2: 'SQLite',
-    tech3: 'HTML/CSS',
-  },
-  {
-    title: 'Sentiment Analysis',
-    description: `This is a web app which can be used to analyze users' sentiments across different platforms using REST Apis. Made with Python, Flask, HTML, Javascript and deployed using Vercel. The model was trained using tweets from Sentiment140 dataset with 1.6 million tweets.`,
-    imgSrc: '',
-    href: '',
-    github: 'https://github.com/pycoder2000/sentiment-analysis',
-    tech1: 'Flask',
-    tech2: 'NLTK',
-    tech3: 'TfidfVectorizer',
-  },
-  {
     title: 'Salary Predictor',
     description: `Salary Prediction App made with StreamLit just to practice the Streamlit framework. A Streamlit demo written in pure Python to predict salary based on your years of experience.`,
     imgSrc: '',
