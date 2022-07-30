@@ -3,14 +3,14 @@ const experienceData = [
     title: 'Freelance Data Professional Engineer',
     company: 'Upwork',
     location: 'Remote',
-    range: 'jan 20212 - June 2021',
-    url: 'https://hops.healthcare/',
+    range: 'Mar 2022 - Present',
+    url: 'https://upwork.com/',
     text1:
       'How to create a pipeline that extracts essential information from informal conversations.',
     text2:
-      'Worked on creating a web app for their healthcare system for doctors to analyze and save reports.',
+      'I work on freelance projects to be able to raise money for my university cost.',
     text3:
-      'Developed functions for automatically extracting important elements from reports using BioBERT and Regex.',
+      'I work with clients to bring value to their projects or businesses.',
   },
 ]
 
