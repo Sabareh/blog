@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
             </li>
             <li>
               <p>
-                <strong className="dark:text-gray-100">Country</strong> refers to: Gujarat, India
+                <strong className="dark:text-gray-100">Country</strong> refers to: Nairobi, Kenya
               </p>
             </li>
             <li>
