@@ -141,12 +141,12 @@ export default function Now(currentlyReading) {
         <div>
           <div className="flex justify-between gap-5">
             <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
-              <span className="ml-2 font-semibold">Location:</span> <span>Ahmedabad, India</span>
+              <span className="ml-2 font-semibold">Location:</span> <span>Nairobi, Kenya</span>
               <br />
               <span className="ml-2 font-semibold">Weather:</span>{' '}
               <span>
                 <a
-                  href="https://weather.com/en-GB/weather/today/l/f42d9f8baa19b4d8d5e034449faa703839993366f64551a56a2b530297075dc2"
+                  href="https://weather.com/en-GB/weather/today/l/e1d0bb735632de2df082e02f88493ef295908714761728c5c7d5d6c76cb2f83e"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline-offset-1 hover:underline"
@@ -213,7 +213,7 @@ export default function Now(currentlyReading) {
         {/* Work */}
         <div className="pb-4">
           <p>
-            I work as a Freelance Datga Scientist at{' '}
+            I work as a Freelance Data Scientist at{' '}
             <Link
               href={'https://www.upwork.com/'}
               className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-100"
@@ -271,8 +271,8 @@ export default function Now(currentlyReading) {
           <br />
           <p>
             I am also going to start applying for Masters in Data Science in August 2025 for intake
-            of Fall 2023. I hope to get a good university near the West Coast. I'll update this page
-            after I get my admits.
+            of Fall 2026. I hope to get a good university in Europe, Canada or the United States.
+            I'll update this page after I get my admits.
           </p>
           <br />
           <p>
