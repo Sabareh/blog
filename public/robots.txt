@@ -1,4 +1,4 @@
-Sitemap: https://musing.vercel.app/sitemap.xml
+Sitemap: https://sabare.me/sitemap.xml
 
 User-agent: *
 Allow: /
