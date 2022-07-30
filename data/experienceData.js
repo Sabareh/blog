@@ -1,6 +1,6 @@
 const experienceData = [
   {
-    title: 'Freelance Data Professional Egnineer',
+    title: 'Freelance Data Professional Engineer',
     company: 'Upwork',
     location: 'Remote',
     range: 'jan 20212 - June 2021',
