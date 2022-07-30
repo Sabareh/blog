@@ -1,15 +1,5 @@
 const projectsData = [
   {
-    title: 'Car Price Predictor'aaa,
-    description: `The Car Price Predictor is a web application which predicts car prices based on given independent features like Car Name, Year, Selling Price, Present Price, Kms Driven, Fuel Type etc. It is made using Flask and deployed on Heroku.`,
-    imgSrc: '',
-    href: 'https://allysoncaragency.herokuapp.com/',
-    github: 'https://github.com/pycoder2000/Car-Price-Prediction',
-    tech1: 'Scipy',
-    tech2: 'Linear Regression',
-    tech3: 'Javascript',
-  },
-  {
     title: 'Stock Portfolio Management',
     description: `It is a web application for managing your investment portfolio. Users can get real-time stock data and market news via Yahoo Finance, IEX Cloud, and Quandl APIs. They can also compare the performance of the stocks with charts and predict the future behaviour for the same.`,
     imgSrc: '',
