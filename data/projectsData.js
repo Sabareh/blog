@@ -9,16 +9,7 @@ const projectsData = [
     tech2: 'Streamlit',
     tech3: 'Javascript',
   },
-  {
-    title: 'Xenith Space Shooter',
-    description: `A Knock-off of a retro space shooter game that I made with Pygame. Xenith is a knock-off of a popular game called Space Shooters that I made for my Girlfriend on our 1st Anniversary using Pygame.`,
-    imgSrc: '',
-    href: '',
-    github: 'https://github.com/pycoder2000/Xenith-Space_Shooter',
-    tech1: 'Pygame',
-    tech2: 'Python',
-    tech3: 'Tkinter',
-  },
+  
   {
     title: 'Python Flask AI translation service',
     description: `This is a web app made using Python-Flask framework that integrates the AI cognitive service of Azure.`,
