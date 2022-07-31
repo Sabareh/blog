@@ -69,7 +69,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               >
                 {text1} Currently, I am focused on building data pipelines and automating them at{' '}
                 <Link
-                  href={'https://www.upwork.com/in-en'}
+                  href={'https://www.upwork.com/'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
                   Upwork
