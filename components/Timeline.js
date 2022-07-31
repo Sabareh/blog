@@ -26,21 +26,7 @@ export default function Timeline() {
             June 13th, 2022
           </time>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            Feel confident that I can work as a junior Data Engineer. Wish me Luck
-          </p>
-        </li>
-        <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white px-4 py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
-          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
-            <FaGraduationCap />
-          </span>
-          <h3 className="text-base font-semibold text-gray-900 dark:text-white">
-            Graduated College
-          </h3>
-          <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            May 21st, 2022
-          </time>
-          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            8.2 CGPA / 3.42 GPA
+            Feel confident that I can work as a junior Data Scientist Intern. Wish me Luck
           </p>
         </li>
         <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
@@ -56,43 +42,46 @@ export default function Timeline() {
           </p>
         </li>
         <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
+          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-purple-200 ring-8 ring-white dark:bg-purple-900 dark:ring-gray-900">
+            <TbDeviceDesktopAnalytics />
+          </span>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-white">
+            Became a Microsoft Learn Student Ambassador
+          </h3>
+          <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            April 17th, 2022
+          </time>
+          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+            Microsoft Learn Student Ambassadors
+          </p>
+        </li>
+        <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
           <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-orange-200 ring-8 ring-white dark:bg-orange-900 dark:ring-gray-900">
             <HiOutlineDatabase />
           </span>
           <h3 className="text-base font-semibold text-gray-900 dark:text-white">
-            6 Month Internship
+            Started My Freelance Journey
           </h3>
           <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             January 12th, 2022
           </time>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            Data Engineer @ Accenture
-          </p>
-        </li>
-        <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
-          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-purple-200 ring-8 ring-white dark:bg-purple-900 dark:ring-gray-900">
-            <TbDeviceDesktopAnalytics />
-          </span>
-          <h3 className="text-base font-semibold text-gray-900 dark:text-white">
-            First Internship
-          </h3>
-          <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            March 17th, 2021
-          </time>
-          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            Analytics Engineer @ HOPS Healthcare
+            Freelance Data Scientist @ Upwork
           </p>
         </li>
         <li className="mb-2 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
           <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-red-200 ring-8 ring-white dark:bg-red-900 dark:ring-gray-900">
             <BsBuilding />
           </span>
-          <h3 className="text-base font-semibold text-gray-900 dark:text-white">Started College</h3>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-white">
+            Started University
+          </h3>
           <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            August 20th, 2018
+            September 9th, 2021
           </time>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            Bachelor of Technology in Computer Science
+            Bachelor of Science in Data Science and Technology from the Jomo Kenyatta University of
+            Agriculture and Technology
           </p>
         </li>
         <Disclosure>
@@ -124,10 +113,10 @@ export default function Timeline() {
                       Finished Senior Year
                     </h3>
                     <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      May 16th, 2018
+                      March 28th, 2021
                     </time>
                     <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-                      With 92% in 10<sup>th</sup> & 86% in 12<sup>th</sup>
+                      With 83.3% in my 12<sup>th</sup>
                     </p>
                   </li>
                   <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
@@ -138,10 +127,10 @@ export default function Timeline() {
                       First Code
                     </h3>
                     <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      July 6th, 2015
+                      July 6th, 2018
                     </time>
                     <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-                      Wrote my first program in C
+                      Wrote my first program in Python
                     </p>
                   </li>
                   <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
@@ -150,7 +139,7 @@ export default function Timeline() {
                     </span>
                     <h3 className="text-base font-semibold text-gray-900 dark:text-white">Born</h3>
                     <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      April 16th, 2000
+                      October 28, 2001
                     </time>
                     <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
                       Connected to the internet
