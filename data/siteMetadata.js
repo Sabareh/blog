@@ -6,7 +6,7 @@ const siteMetadata = {
   snippets: 'Reuseable code snippets collected by me.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://victorsabare.vercel.app',
+  siteUrl: 'https://sabare.me',
   siteRepo: 'https://github.com/sabareh/blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpg',
