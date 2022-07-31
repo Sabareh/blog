@@ -80,7 +80,7 @@ export default function Timeline() {
             September 9th, 2021
           </time>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            Bachelor of Science in Data Science and Technology from the Jomo Kenyatta University of
+            Bachelor of Science in Data Science and Analytics from the Jomo Kenyatta University of
             Agriculture and Technology
           </p>
         </li>
