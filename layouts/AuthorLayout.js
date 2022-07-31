@@ -48,7 +48,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               <a
                 className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
                 href="https://twitter.com/messages/compose?recipient_id=4302974298&text=Hey Parth"
-                data-screen-name="@lone_Musk"
+                data-screen-name="@sabare12"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -69,10 +69,10 @@ export default function AuthorLayout({ children, frontMatter }) {
               >
                 {text1} Currently, I am focused on building data pipelines and automating them at{' '}
                 <Link
-                  href={'https://www.accenture.com/in-en'}
+                  href={'https://www.upwork.com/in-en'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
-                  Accenture
+                  Upwork
                 </Link>
               </RoughNotation>
             </p>
@@ -119,7 +119,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 show={true}
               >
                 <span className="text-black dark:text-white">
-                  Natural Language Processing and Machine Learning.{' '}
+                  Computer Vision, Natural Language Processing and Machine Learning.{' '}
                 </span>
               </RoughNotation>
               At the same time I am{' '}
@@ -141,7 +141,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               projects with new people. Feel free to reach out if you have anything to talk about,
               you can reach me through{' '}
               <Link
-                href={'mailto:desaiparth2000@gmail.com'}
+                href={'mailto:sabarevictor@gmail.com'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
                 Mail
@@ -161,7 +161,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               </Link>{' '}
               or{' '}
               <Link
-                href={'https://api.whatsapp.com/send?phone=916358190818&text=hi'}
+                href={'https://api.whatsapp.com/send?phone=254113193473&text=hi-sabare!'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
                 Whatsapp
