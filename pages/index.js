@@ -8,6 +8,8 @@ import { RoughNotation } from 'react-rough-notation'
 import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
+import Script from 'next/script'
+
 
 const MAX_DISPLAY = 3
 
@@ -20,7 +22,6 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485" crossorigin="anonymous"></script>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
