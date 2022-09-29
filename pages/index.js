@@ -8,23 +8,8 @@ import { RoughNotation } from 'react-rough-notation'
 import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
-import Script from 'next/script'
 
 const MAX_DISPLAY = 3
-
-export default function MyApp({ Component, pageProps }) {
-return (
-<>
-<Script id="Adsense-id" data-ad-client="ca-pub-987************676"
-  async strategy="afterInteractive"
-  onError={ (e) => { console.error('Script failed to load', e) }}
-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-/>
-<Component {...pageProps} />
-</>
-);
-}
-
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
