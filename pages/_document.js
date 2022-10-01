@@ -1,16 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en" className="scroll-smooth">
         <Head>
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-            crossOrigin="anonymous"
-          ></script>
           <link
             rel="apple-touch-icon"
             sizes="76x76"
