@@ -76,30 +76,28 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
     </SessionProvider>
   )
 }
-export function GoogleAdsenseContainer ( { client, slot }) {
-
+export function GoogleAdsenseContainer({ client, slot }) {
+  // eslint-disable-next-line no-undef
   useEffect(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, []);
+    ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+  }, [])
 
+  // eslint-disable-next-line no-undef
   const AdLabel = styled.span`
     font-size: 12px;
   `
 
   return (
-    <div 
-      style={{textAlign: 'left',overflow: 'hidden'}}
-    >
-    <AdLabel>Advertisment</AdLabel>
+    <div style={{ textAlign: 'left', overflow: 'hidden' }}>
+      <AdLabel>Advertisment</AdLabel>
       <ins
         className="adsbygoogle"
-        style={{ display: "block" }}
+        style={{ display: 'block' }}
         data-ad-client={client}
         data-ad-slot={slot}
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-
     </div>
-  );     
+  )
 }
