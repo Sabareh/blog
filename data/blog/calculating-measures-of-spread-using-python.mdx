@@ -59,7 +59,7 @@ print(sum_sq_dists))
 1624.065542
 ```
 
-4.   Divide by the number of data points - 1
+4. Divide by the number of data points - 1
 ```Python
 variance = sum_sq_dists / (83 - 1)
 print(variance)
@@ -67,8 +67,8 @@ print(variance)
 ```
 19.805677
 ```
-Finally, we divide the sum of squared distances by the number of data points minus 1, giving us the variance. The higher the variance, the more spread out the data is. It's important to note that the units of variance are squared, so in this case, it's 19-point-8 hours squared. 
-We can calculate the variance in one step using **np.var**, setting the** ddof** argument to 1. 
+Finally, we divide the sum of squared distances by the number of data points minus 1, giving us the variance. The higher the variance, the more spread out the data is. It's important to note that the units of variance are squared, so in this case, it's 19.8 hours squared. 
+We can calculate the variance in one step using **np.var**, setting the **ddof** argument to 1. 
 ```Python
 np.var(msleep['sleep_total'], ddof=1)
 ```
