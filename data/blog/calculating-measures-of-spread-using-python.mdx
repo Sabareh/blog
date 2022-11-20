@@ -1,9 +1,9 @@
 ---
-title: A.I Techniques for Soccer
-date: '2022-11-16'
-tags: [A.I., ML]
+title: Calculating Measures of Spread Using Python
+date: '2022-11-20'
+tags: [datascience, statistics]
 draft: false
-summary: There are many AI techniques that have been developed to help the sport of soccer, such as techniques for controlling the soccer robot, techniques for analyzing and evaluating soccer games, and techniques for generating and improving tactics..
+summary: In this article, I'll talk about a set of summary statistics; measures of spread.Spread is just what it sounds like - it describes how spread apart or close together the data points are. Just like measures of centre, there are a few different measures of spread.
 --- 
 
 ##  Measures of spread
@@ -182,7 +182,7 @@ msleep[(msleep['bodywt'] < lower_threshold) | (msleep['bodywt'] > upper_threshol
 22     Horse                   herbi         2.9           521.00
 ```
 
-## Using the .describe( ) method
+## Using the .describe() method
 Many of the summary statistics we've covered so far can all be calculated in just one line of code using the **.describe** method, so it's convenient to use when you want to get a general sense of your data.
 ```Python
 msleep['bodywt'].describe()
