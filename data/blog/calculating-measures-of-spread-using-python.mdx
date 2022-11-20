@@ -12,7 +12,7 @@ In this article, I'll talk about a set of summary statistics: measures of spread
 ## What is spread?
 Spread is just what it sounds like - it describes how spread apart or close together the data points are. Just like measures of centre, there are a few different measures of spread.
 
-<img className="inline" src="/static/images/Blog/spread.jpg" alt="spread" />
+<img className="inline" src="/static/images/Blog/spread.jpg" alt="spread"/>
 
 ## Variance
 The first measure, variance, measures the average distance from each data point to the data's mean.
@@ -82,7 +82,7 @@ np.var(msleep['sleep_total'])
 ```
 19.567055
 ```
-<img className="inline" src="/static/images/Blog/variance.jpg" alt="spread" />)
+<img className="inline" src="/static/images/Blog/variance.jpg" alt="variance"/>
 
 ## Standard deviation
 The standard deviation is another measure of spread, calculated by taking the square root of the variance. It can be calculated using **np.std**, just like **np.var**, we need to set ddof to 1. The nice thing about standard deviation is that the units are usually easier to understand since they're not squared. It's easier to wrap your head around 4.5 hours than 19.8 hours squared.
@@ -123,7 +123,7 @@ import matplotlib.pyplot as plt
 plt.boxplot(msleep['sleep_total'])
 plt.show()
 ```
-![Screenshot 2022-11-20 072310.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1668918214300/txfaedATO.png align="left")
+<img className="inline" src="/static/images/Blog/boxplot.jpg" alt="boxplot"/>
 
 ### Quantiles using np.linspace()
 Here, we split the data into five equal pieces, but we can also use **np.linspace** as a shortcut, which takes in the starting number, the stopping number, and the number intervals. We can compute the same quantiles using **np.linspace** starting at zero, stopping at one, splitting into 5 different intervals.
@@ -173,7 +173,8 @@ from scipy.stats import iqr
 iqr = iqr(msleep['bodywt'])
 lower_threshold = np.quantile(msleep['bodywt'], 0.25) - 1.5 * iqr
 upper_threshold = np.quantile(msleep['bodywt'], 0.75) + 1.5 * iqr
-
+```
+```
 msleep[(msleep['bodywt'] < lower_threshold) | (msleep['bodywt'] > upper_threshold)]
 ```
 ```
