@@ -115,7 +115,6 @@ np.quantile(msleep['sleep_total'], 0.5)
 ```
 10.1
 ```
-
 ### Boxplots use quartiles
 The boxes in box plots represent quartiles. The bottom of the box is the first quartile, and the top of the box is the third quartile. The middle line is the second quartile or the median.
 ```Python
@@ -155,7 +154,6 @@ iqr(msleep['sleep_total'])
 ```
 5.9
 ```
-
 ## Outliers
 Outliers are data points that are substantially different from the others.
 But how do we know what a substantial difference is? A rule that's often used is that any data point less than the first quartile - 1.5 times the IQR is an outlier, as well as any point greater than the third quartile + 1.5 times the IQR.
@@ -163,8 +161,6 @@ But how do we know what a substantial difference is? A rule that's often used is
 - data < Q1 - 1.5 x IQR or
 
 - data > Q3 + 1.5 x IQR 
-
-
 
 ### Finding Outliers
 To find outliers, we'll start by calculating the IQR of the mammals' body weights. We can then calculate the lower and upper thresholds following the formulas from the previous slide. We can now subset the DataFrame to find mammals whose body weight is below or above the thresholds. There are eleven body weight outliers in this dataset, including the cow and the Asian elephant.
@@ -183,7 +179,6 @@ msleep[(msleep['bodywt'] < lower_threshold) | (msleep['bodywt'] > upper_threshol
 20     Asian elephant          herbi         3.9           2547.000
 22     Horse                   herbi         2.9           521.00
 ```
-
 ## Using the .describe() method
 Many of the summary statistics we've covered so far can all be calculated in just one line of code using the **.describe** method, so it's convenient to use when you want to get a general sense of your data.
 ```Python
