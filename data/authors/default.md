@@ -1,8 +1,8 @@
 ---
 name: Victor Sabare
 avatar: /static/images/avatar.jpg
-occupation: Data Professional
-company: Upwork (Freelance) 
+occupation: Data Geek
+company: Jomo Kenyatta University of Agriculture and Technology
 email: sabarevictor@gmail.com
 twitter: https://twitter.com/sabare12
 linkedin: https://www.linkedin.com/in/victor-oketch-sabare-7070021ba/
