@@ -67,12 +67,12 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDelay={300}
                 animationDuration={3000}
               >
-                {text1} Currently, I am trying to win freelance contracts at{' '}
+                {text1} Currently, I am a student at Jomo Kenyatta University of Agricluture and Technology{' '}
                 <Link
-                  href={'https://www.upwork.com/'}
+                  href={'https://www.jkuat.ac.ke/'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
-                  Upwork
+                  JKUAT
                 </Link>
               </RoughNotation>
             </p>
@@ -90,10 +90,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things. I am currently working on a few projects
               related to
-              <span className="font-semibold">
-                {' '}
-                Natural Language Processing and Machine Learning.{' '}
-              </span>
+              <span className="font-semibold"> Data Engineering and Machine Learning. </span>
               At the same time I am{' '}
               <RoughNotation
                 type="underline"
@@ -104,7 +101,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 multiline={true}
               >
                 actively on the lookout for remote internships which I can pursue in field of Data
-                Science.
+                Science, Data Engineering and Machine Learning.
               </RoughNotation>
             </p>
             <p className="hidden md:block">
@@ -119,7 +116,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 show={true}
               >
                 <span className="text-black dark:text-white">
-                  Computer Vision, Natural Language Processing and Machine Learning.{' '}
+                  Data Engineering and Machine Learning.{' '}
                 </span>
               </RoughNotation>
               At the same time I am{' '}
