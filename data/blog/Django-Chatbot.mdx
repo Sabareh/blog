@@ -1,0 +1,83 @@
+---
+title: Building a Chatbot for your E-commerce Business using Django
+date: '2023-01-14'
+tags: [Django, Python,Data Engineering, AI]
+draft: false
+summary: This article provides a comprehensive guide on how to build a chatbot for an e-commerce business using the Django framework, including the creation of models, views, templates and integration with the e-commerce platform.
+--- 
+
+Creating a chatbot for an e-commerce business can be a great way to improve customer service and sales. In this post, we will walk you through the process of creating a chatbot for your e-commerce business using the Django framework.
+
+Django is a powerful Python web framework that makes it easy to build web applications. It is also highly customizable, making it a great choice for building a chatbot. In this post, we will show you how to create a chatbot app within your Django project that includes views, models, and templates for the chatbot.
+
+First, we will start by creating the models for the chatbot. We will create a Intent model that will store information about the intents that the chatbot can recognize and respond to. We will also create a Entities model that will store information about the entities that the chatbot can recognize and respond to. Finally, we will create a UserMessage model that will store information about the messages that users send to the chatbot.
+
+```Python
+from django.db import models
+
+class Intent(models.Model):
+    name = models.CharField(max_length=255)
+    keywords = models.TextField()
+
+class Entities(models.Model):
+    name = models.CharField(max_length=255)
+    value = models.TextField()
+    intent = models.ForeignKey(Intent, on_delete=models.CASCADE)
+
+class UserMessage(models.Model):
+    message = models.TextField()
+    intent = models.ForeignKey(Intent, on_delete=models.SET_NULL, null=True)
+    entities = models.ManyToManyField(Entities, blank=True)
+```
+Next, we will create the views for the chatbot. The chatbot_view will handle the incoming messages, use the NLP function to extract the intent and entities, and create an instance of the UserMessage model. The views will also render the templates for the chatbot interface and the response page.
+
+```Python
+from django.shortcuts import render
+from .models import Intent, Entities, UserMessage
+from .nlp import extract_intent_and_entities
+
+def chatbot_view(request):
+    if request.method == 'POST':
+        user_message = request.POST.get('message')
+        intent, entities = extract_intent_and_entities(user_message)
+        UserMessage.objects.create(message=user_message, intent=intent, entities=entities)
+        return render(request, 'chatbot/response.html', {'intent': intent, 'entities': entities})
+    return render(request, 'chatbot/chatbot.html')
+```
+We will create two templates for the chatbot, one for the chatbot interface, and another one for the response page. The chatbot interface template is a simple form that allows the user to send a message to the chatbot. The response page template will display the intent and entities that the chatbot has extracted from the user's message.
+
+```HTML
+<!-- chatbot.html -->
+<form method="post" action="{% url 'chatbot' %}">
+  {% csrf_token %}
+  <input type="text" name="message">
+  <input type="submit" value="Send">
+</form>
+```
+```HTML
+<!-- response.html -->
+
+<h1>Intent: {{ intent }}</h1>
+<h2>Entities:</h2>
+<ul>
+  {% for entity in entities %}
+    <li>{{ entity }}</li>
+  {% endfor %}
+</ul>
+```
+Finally, we will add the chatbot to the project's urls and test it to ensure it is working as expected.
+
+```Python
+from django.urls import path
+from .views import chatbot_view
+
+urlpatterns = [
+    path('', chatbot_view, name='chatbot'),
+]
+```
+
+Once the chatbot is working, you can add it to your e-commerce website or mobile app and make any necessary adjustments to the views, templates, and CSS to ensure it is properly integrated.
+
+In conclusion, building a chatbot for your e-commerce business on the Django framework is a great way to leverage the power of Python and take advantage of the many third-party packages available for Django. With the right approach, you can create a chatbot that can help with customer service and sales, and make your e-commerce business even more successful.
+
+Keep in mind that this is a simplified example and you may need to adjust it to fit the specific requirements of your e-commerce business and chatbot. Also, the NLP function extract_intent_and_entities is not provided here, you can use any NLP library like NLTK, Spacy to extract intents and entities from the message.
