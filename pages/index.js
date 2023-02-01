@@ -286,8 +286,7 @@ export default function Home({ posts }) {
         data-ad-format="auto"
         data-full-width-responsive="true">
         </ins>
-        <Script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
+        <Script>(adsbygoogle = window.adsbygoogle || []).push({});
         </Script>
 
       {siteMetadata.newsletter.provider !== '' && (
