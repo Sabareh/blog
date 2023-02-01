@@ -268,25 +268,6 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      <Script
-        id="adsbygoogle"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-        async
-        onError={(e) => {
-          console.error('Script failed to load', e)
-      }}
-        strategy="afterInteractive"
-        crossorigin="anonymous"
-      </Script>
-        <ins        className="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-4331473606799485"
-        data-ad-slot="9482933302"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-      <Scriptid="adsbygoogle" (adsbygoogle = window.adsbygoogle || []).push({});></Script>
-
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
