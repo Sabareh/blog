@@ -273,11 +273,10 @@ export default function Home({ posts }) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
         async
         onError={(e) => {
-          console.error("Script failed to load", e) 
+          console.error('Script failed to load', e) 
       }}
         strategy="afterInteractive"
-        crossorigin="anonymous"
-      >
+        crossorigin="anonymous">
       </Script>
         <ins
         className="adsbygoogle"
@@ -287,8 +286,7 @@ export default function Home({ posts }) {
         data-ad-format="auto"
         data-full-width-responsive="true"
         >
-      </ins>
-      <Script>(adsbygoogle = window.adsbygoogle || []).push({});
+      </ins><Script>(adsbygoogle = window.adsbygoogle || []).push({});
       </Script>
 
       {siteMetadata.newsletter.provider !== '' && (
