@@ -8,6 +8,7 @@ import { RoughNotation } from 'react-rough-notation'
 import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
+import Script from 'next/script'
 
 const MAX_DISPLAY = 3
 export async function getStaticProps() {
@@ -267,18 +268,20 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-     crossorigin="anonymous">
-     </script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4331473606799485"
-     data-ad-slot="9482933302"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <Script 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485" crossorigin="anonymous">
+        </Script>
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4331473606799485"
+        data-ad-slot="9482933302"
+        data-ad-format="auto"
+        data-full-width-responsive="true">
+        </ins>
+        <Script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </Script>
+        
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
