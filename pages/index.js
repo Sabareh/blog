@@ -268,8 +268,12 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-        <Script 
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485" crossorigin="anonymous">
+        <Script
+        id="adsbygoogle"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485" async
+        onError={(e) => { console.error("Script failed to load", e); }}
+        strategy="afterInteractive"
+        crossorigin="anonymous">
         </Script>
         <ins class="adsbygoogle"
         style="display:block"
@@ -281,7 +285,7 @@ export default function Home({ posts }) {
         <Script>
           (adsbygoogle = window.adsbygoogle || []).push({});
         </Script>
-        
+
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
