@@ -269,10 +269,10 @@ export default function Home({ posts }) {
         </div>
       )}
       <Script
-      id="adsbygoogle"
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-      async
-      onError={(e) => {
+        id="adsbygoogle"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
+        async
+        onError={(e) => {
         console.error("Script failed to load", e) 
       }}
       strategy="afterInteractive"
