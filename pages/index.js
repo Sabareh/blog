@@ -288,7 +288,6 @@ export default function Home({ posts }) {
         >
       </ins><Script>(adsbygoogle = window.adsbygoogle || []).push({});
       </Script>
-
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
