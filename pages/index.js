@@ -267,6 +267,18 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
+     crossorigin="anonymous">
+     </script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4331473606799485"
+     data-ad-slot="9482933302"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}
