@@ -73,8 +73,7 @@
     'Symbol',
     function (a) {
       function b(f) {
-        if (this instanceof b)
-          throw new TypeError('Symbol is not a constructor')
+        if (this instanceof b) throw new TypeError('Symbol is not a constructor')
         return new c(d + (f || '') + '_' + e++, f)
       }
       function c(f, g) {
@@ -131,10 +130,7 @@
     return (a.raw = a)
   }
   function v(a) {
-    var b =
-      'undefined' != typeof q.Symbol &&
-      r(q.Symbol, 'iterator') &&
-      a[r(q.Symbol, 'iterator')]
+    var b = 'undefined' != typeof q.Symbol && r(q.Symbol, 'iterator') && a[r(q.Symbol, 'iterator')]
     return b ? b.call(a) : { next: ba(a) }
   }
   function ka(a) {
@@ -174,8 +170,7 @@
             return new b()
           },
     oa
-  if (fa && 'function' == typeof Object.setPrototypeOf)
-    oa = Object.setPrototypeOf
+  if (fa && 'function' == typeof Object.setPrototypeOf) oa = Object.setPrototypeOf
   else {
     var pa
     a: {
@@ -261,8 +256,7 @@
   function za(a, b, c, d) {
     try {
       var e = b.call(a.h.i, c)
-      if (!(e instanceof Object))
-        throw new TypeError('Iterator result ' + e + ' is not an object')
+      if (!(e instanceof Object)) throw new TypeError('Iterator result ' + e + ' is not an object')
       if (!e.done) return (a.h.l = !1), e
       var f = e.value
     } catch (g) {
@@ -325,8 +319,7 @@
     return Ca(new Ba(new xa(a)))
   }
   function Ea() {
-    for (var a = Number(this), b = [], c = a; c < arguments.length; c++)
-      b[c - a] = arguments[c]
+    for (var a = Number(this), b = [], c = a; c < arguments.length; c++) b[c - a] = arguments[c]
     return b
   }
   u(
@@ -401,8 +394,7 @@
         return { resolve: g(this.N), reject: g(this.m) }
       }
       b.prototype.N = function (g) {
-        if (g === this)
-          this.m(new TypeError('A Promise cannot resolve to itself'))
+        if (g === this) this.m(new TypeError('A Promise cannot resolve to itself'))
         else if (g instanceof b) this.Z(g)
         else {
           a: switch (typeof g) {
@@ -437,12 +429,7 @@
       b.prototype.B = function (g, h) {
         if (0 != this.h)
           throw Error(
-            'Cannot settle(' +
-              g +
-              ', ' +
-              h +
-              '): Promise already settled in state' +
-              this.h
+            'Cannot settle(' + g + ', ' + h + '): Promise already settled in state' + this.h
           )
         this.h = g
         this.j = h
@@ -542,8 +529,7 @@
       }
       b.race = function (g) {
         return new b(function (h, k) {
-          for (var l = v(g), m = l.next(); !m.done; m = l.next())
-            d(m.value).pa(h, k)
+          for (var l = v(g), m = l.next(); !m.done; m = l.next()) d(m.value).pa(h, k)
         })
       }
       b.all = function (g) {
@@ -561,11 +547,7 @@
               }
               var t = [],
                 y = 0
-              do
-                t.push(void 0),
-                  y++,
-                  d(k.value).pa(p(t.length - 1), m),
-                  (k = h.next())
+              do t.push(void 0), y++, d(k.value).pa(p(t.length - 1), m), (k = h.next())
               while (!k.done)
             })
       }
@@ -603,8 +585,7 @@
         this.h = (f += Math.random() + 1).toString()
         if (g) {
           g = v(g)
-          for (var h; !(h = g.next()).done; )
-            (h = h.value), this.set(h[0], h[1])
+          for (var h; !(h = g.next()).done; ) (h = h.value), this.set(h[0], h[1])
         }
       }
       function c() {}
@@ -669,8 +650,7 @@
         return ia(function () {
           if (l) {
             for (; l.head != h.h; ) l = l.V
-            for (; l.next != l.head; )
-              return (l = l.next), { done: !1, value: k(l) }
+            for (; l.next != l.head; ) return (l = l.next), { done: !1, value: k(l) }
             l = null
           }
           return { done: !0, value: void 0 }
@@ -698,8 +678,7 @@
         this.size = 0
         if (h) {
           h = v(h)
-          for (var k; !(k = h.next()).done; )
-            (k = k.value), this.set(k[0], k[1])
+          for (var k; !(k = h.next()).done; ) (k = k.value), this.set(k[0], k[1])
         }
       }
       if (
@@ -726,12 +705,7 @@
               m = l.next()
             if (m.done || m.value[0] != h || 's' != m.value[1]) return !1
             m = l.next()
-            return m.done ||
-              4 != m.value[0].x ||
-              't' != m.value[1] ||
-              !l.next().done
-              ? !1
-              : !0
+            return m.done || 4 != m.value[0].x || 't' != m.value[1] || !l.next().done ? !1 : !0
           } catch (p) {
             return !1
           }
@@ -927,10 +901,7 @@
               f = e.next()
             if (f.done || f.value[0] != c || f.value[1] != c) return !1
             f = e.next()
-            return f.done ||
-              f.value[0] == c ||
-              4 != f.value[0].x ||
-              f.value[1] != f.value[0]
+            return f.done || f.value[0] == c || 4 != f.value[0].x || f.value[1] != f.value[0]
               ? !1
               : e.next().done
           } catch (g) {
@@ -978,15 +949,11 @@
   function Ha(a, b, c) {
     if (null == a)
       throw new TypeError(
-        "The 'this' value for String.prototype." +
-          c +
-          ' must not be null or undefined'
+        "The 'this' value for String.prototype." + c + ' must not be null or undefined'
       )
     if (b instanceof RegExp)
       throw new TypeError(
-        'First argument to String.prototype.' +
-          c +
-          ' must not be a regular expression'
+        'First argument to String.prototype.' + c + ' must not be a regular expression'
       )
     return a + ''
   }
@@ -1013,8 +980,7 @@
         ? a
         : function (b) {
             var c = Ha(this, null, 'repeat')
-            if (0 > b || 1342177279 < b)
-              throw new RangeError('Invalid count value')
+            if (0 > b || 1342177279 < b) throw new RangeError('Invalid count value')
             b |= 0
             for (var d = ''; b; ) if ((b & 1 && (d += c), (b >>>= 1))) c += c
             return d
@@ -1115,8 +1081,7 @@
   var x = this || self
   function Ia(a) {
     a = a.split('.')
-    for (var b = x, c = 0; c < a.length; c++)
-      if (((b = b[a[c]]), null == b)) return null
+    for (var b = x, c = 0; c < a.length; c++) if (((b = b[a[c]]), null == b)) return null
     return b
   }
   function Ja(a) {
@@ -1129,9 +1094,7 @@
     return ('object' == b && null != a) || 'function' == b
   }
   function La(a) {
-    return (
-      (Object.prototype.hasOwnProperty.call(a, Ma) && a[Ma]) || (a[Ma] = ++Na)
-    )
+    return (Object.prototype.hasOwnProperty.call(a, Ma) && a[Ma]) || (a[Ma] = ++Na)
   }
   var Ma = 'closure_uid_' + ((1e9 * Math.random()) >>> 0),
     Na = 0
@@ -1153,8 +1116,7 @@
     }
   }
   function Qa(a, b, c) {
-    Function.prototype.bind &&
-    -1 != Function.prototype.bind.toString().indexOf('native code')
+    Function.prototype.bind && -1 != Function.prototype.bind.toString().indexOf('native code')
       ? (Qa = Oa)
       : (Qa = Pa)
     return Qa.apply(null, arguments)
@@ -1170,9 +1132,7 @@
   function Sa(a, b) {
     a = a.split('.')
     var c = x
-    a[0] in c ||
-      'undefined' == typeof c.execScript ||
-      c.execScript('var ' + a[0])
+    a[0] in c || 'undefined' == typeof c.execScript || c.execScript('var ' + a[0])
     for (var d; a.length && (d = a.shift()); )
       a.length || void 0 === b
         ? c[d] && c[d] !== Object.prototype[d]
@@ -1289,26 +1249,17 @@
       : ((a = b[2]) && a[1]) || ''
   }
   function cb(a, b) {
-    if ('string' === typeof a)
-      return 'string' !== typeof b || 1 != b.length ? -1 : a.indexOf(b, 0)
+    if ('string' === typeof a) return 'string' !== typeof b || 1 != b.length ? -1 : a.indexOf(b, 0)
     for (var c = 0; c < a.length; c++) if (c in a && a[c] === b) return c
     return -1
   }
   function db(a, b) {
-    for (
-      var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0;
-      e < c;
-      e++
-    )
+    for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
       e in d && b.call(void 0, d[e], e, a)
   }
   function eb(a, b) {
     for (
-      var c = a.length,
-        d = [],
-        e = 0,
-        f = 'string' === typeof a ? a.split('') : a,
-        g = 0;
+      var c = a.length, d = [], e = 0, f = 'string' === typeof a ? a.split('') : a, g = 0;
       g < c;
       g++
     )
@@ -1320,10 +1271,7 @@
   }
   function fb(a, b) {
     for (
-      var c = a.length,
-        d = Array(c),
-        e = 'string' === typeof a ? a.split('') : a,
-        f = 0;
+      var c = a.length, d = Array(c), e = 'string' === typeof a ? a.split('') : a, f = 0;
       f < c;
       f++
     )
@@ -1331,21 +1279,13 @@
     return d
   }
   function gb(a, b) {
-    for (
-      var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0;
-      e < c;
-      e++
-    )
+    for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
       if (e in d && b.call(void 0, d[e], e, a)) return !0
     return !1
   }
   function hb(a, b) {
     a: {
-      for (
-        var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0;
-        e < c;
-        e++
-      )
+      for (var c = a.length, d = 'string' === typeof a ? a.split('') : a, e = 0; e < c; e++)
         if (e in d && b.call(void 0, d[e], e, a)) {
           b = e
           break a
@@ -1356,11 +1296,7 @@
   }
   function ib(a, b) {
     a: {
-      for (
-        var c = 'string' === typeof a ? a.split('') : a, d = a.length - 1;
-        0 <= d;
-        d--
-      )
+      for (var c = 'string' === typeof a ? a.split('') : a, d = a.length - 1; 0 <= d; d--)
         if (d in c && b.call(void 0, c[d], d, a)) {
           b = d
           break a
@@ -1404,8 +1340,7 @@
         var l = a.charAt(d++),
           m = ob[l]
         if (null != m) return m
-        if (!/^[\s\xa0]*$/.test(l))
-          throw Error('Unknown base64 encoding at char: ' + l)
+        if (!/^[\s\xa0]*$/.test(l)) throw Error('Unknown base64 encoding at char: ' + l)
       }
       return k
     }
@@ -1417,18 +1352,14 @@
         h = c(64)
       if (64 === h && -1 === e) break
       b((e << 2) | (f >> 4))
-      64 != g &&
-        (b(((f << 4) & 240) | (g >> 2)), 64 != h && b(((g << 6) & 192) | h))
+      64 != g && (b(((f << 4) & 240) | (g >> 2)), 64 != h && b(((g << 6) & 192) | h))
     }
   }
   function rb() {
     if (!ob) {
       ob = {}
       for (
-        var a =
-            'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.split(
-              ''
-            ),
+        var a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.split(''),
           b = ['+/=', '+/', '-_=', '-_.', '-_'],
           c = 0;
         5 > c;
@@ -1485,9 +1416,7 @@
     return null == this.Da
   }
   var xb =
-    'function' === typeof q.Symbol && 'symbol' === typeof (0, q.Symbol)()
-      ? (0, q.Symbol)()
-      : void 0
+    'function' === typeof q.Symbol && 'symbol' === typeof (0, q.Symbol)() ? (0, q.Symbol)() : void 0
   function yb(a, b) {
     if (xb) return (a[xb] |= b)
     if (void 0 !== a.P) return (a.P |= b)
@@ -1498,8 +1427,7 @@
   }
   function zb(a, b) {
     var c = Ab(a)
-    ;(c & b) !== b &&
-      (Object.isFrozen(a) && (a = Array.prototype.slice.call(a)), Bb(a, c | b))
+    ;(c & b) !== b && (Object.isFrozen(a) && (a = Array.prototype.slice.call(a)), Bb(a, c | b))
     return a
   }
   function Cb(a, b) {
@@ -1538,12 +1466,7 @@
   }
   var Ib = {}
   function Jb(a) {
-    return (
-      null !== a &&
-      'object' === typeof a &&
-      !Array.isArray(a) &&
-      a.constructor === Object
-    )
+    return null !== a && 'object' === typeof a && !Array.isArray(a) && a.constructor === Object
   }
   var Kb,
     Lb,
@@ -1555,9 +1478,7 @@
   }
   function Ob(a) {
     var b = a.length
-    ;(b = b ? a[b - 1] : void 0) && Jb(b)
-      ? (b.g = 1)
-      : ((b = {}), a.push(((b.g = 1), b)))
+    ;(b = b ? a[b - 1] : void 0) && Jb(b) ? (b.g = 1) : ((b = {}), a.push(((b.g = 1), b)))
   }
   function Pb(a) {
     var b = a.i + a.aa
@@ -1657,10 +1578,7 @@
     var e = B(a, c, d)
     var f = !1
     var g =
-      null == e ||
-      'object' !== typeof e ||
-      (f = Array.isArray(e)) ||
-      e.za !== Ib
+      null == e || 'object' !== typeof e || (f = Array.isArray(e)) || e.za !== Ib
         ? f
           ? new b(e)
           : void 0
@@ -1711,10 +1629,7 @@
       b = k | 33
       b = m ? b & -9 : b | 8
       k != b &&
-        ((m = h),
-        Object.isFrozen(m) && (m = Array.prototype.slice.call(m)),
-        Bb(m, b),
-        (h = m))
+        ((m = h), Object.isFrozen(m) && (m = Array.prototype.slice.call(m)), Bb(m, b), (h = m))
       l !== h && Qb(a, c, h)
       ;(e || (d && g)) && yb(f, 2)
       d && Object.freeze(f)
@@ -1722,9 +1637,7 @@
     }
     e ||
       ((e = Object.isFrozen(f)),
-      d && !e
-        ? Object.freeze(f)
-        : !d && e && ((f = Array.prototype.slice.call(f)), (a.h[c] = f)))
+      d && !e ? Object.freeze(f) : !d && e && ((f = Array.prototype.slice.call(f)), (a.h[c] = f)))
     return f
   }
   function F(a, b, c) {
@@ -1789,10 +1702,7 @@
     var e =
       null == d
         ? d
-        : 'number' === typeof d ||
-          'NaN' === d ||
-          'Infinity' === d ||
-          '-Infinity' === d
+        : 'number' === typeof d || 'NaN' === d || 'Infinity' === d || '-Infinity' === d
         ? Number(d)
         : void 0
     null != e && e !== d && Qb(a, b, e)
@@ -1818,8 +1728,7 @@
       case 'object':
         if (a)
           if (Array.isArray(a)) {
-            if (0 !== (Ab(a) & 128))
-              return (a = Array.prototype.slice.call(a)), Ob(a), a
+            if (0 !== (Ab(a) & 128)) return (a = Array.prototype.slice.call(a)), Ob(a), a
           } else {
             if (sb && null != a && a instanceof Uint8Array) return tb(a)
             if (a instanceof wb) {
@@ -1836,9 +1745,7 @@
       else if (Jb(a)) {
         var e = {},
           f
-        for (f in a)
-          Object.prototype.hasOwnProperty.call(a, f) &&
-            (e[f] = qc(a[f], b, c, d))
+        for (f in a) Object.prototype.hasOwnProperty.call(a, f) && (e[f] = qc(a[f], b, c, d))
         a = e
       } else a = b(a, d)
       return a
@@ -1878,9 +1785,7 @@
   function wc(a, b, c, d, e, f, g) {
     ;(a = a.h && a.h[c])
       ? ((d = Ab(a)),
-        d & 2
-          ? (d = a)
-          : ((f = fb(a, vc)), Hb(d, f), Object.freeze(f), (d = f)),
+        d & 2 ? (d = a) : ((f = fb(a, vc)), Hb(d, f), Object.freeze(f), (d = f)),
         gc(b, c, d, e))
       : C(b, c, uc(d, f, g), e)
   }
@@ -1907,8 +1812,7 @@
     d = oc(a.constructor, d)
     a.Va && (d.Va = a.Va.slice())
     f = !!(Ab(c) & 16)
-    for (var g = e ? c.length - 1 : c.length, h = 0; h < g; h++)
-      wc(a, d, h - a.aa, c[h], !1, f, b)
+    for (var g = e ? c.length - 1 : c.length, h = 0; h < g; h++) wc(a, d, h - a.aa, c[h], !1, f, b)
     if (e) for (var k in e) wc(a, d, +k, e[k], !0, f, b)
     return d
   }
@@ -1974,9 +1878,7 @@
         : (this.i = Number.MAX_VALUE)
     }
     if (!e && this.K && 'g' in this.K)
-      throw Error(
-        'Unexpected "g" flag in sparse object of message that is not a group type.'
-      )
+      throw Error('Unexpected "g" flag in sparse object of message that is not a group type.')
     if (c) {
       b = k && !g && !0
       e = this.i
@@ -2125,9 +2027,7 @@
     return cd(a[1] + dd('?', a[2] || '', b) + dd('#', c))
   }
   function bd(a) {
-    return a instanceof Yc && a.constructor === Yc
-      ? a.h
-      : 'type_error:TrustedResourceUrl'
+    return a instanceof Yc && a.constructor === Yc ? a.h : 'type_error:TrustedResourceUrl'
   }
   var ad = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,
     Zc = {}
@@ -2230,8 +2130,7 @@
       for (var e = b.length; 0 <= (d = a.indexOf(b, d)) && d < c; ) {
         var f = a.charCodeAt(d - 1)
         if (38 == f || 63 == f)
-          if (((f = a.charCodeAt(d + e)), !f || 61 == f || 38 == f || 35 == f))
-            break a
+          if (((f = a.charCodeAt(d + e)), !f || 61 == f || 38 == f || 35 == f)) break a
         d += e + 1
       }
       d = -1
@@ -2271,8 +2170,8 @@
     var d, e
     ;(d = (b =
       null ==
-      (e = (d = ((c.ownerDocument && c.ownerDocument.defaultView) || window)
-        .document).querySelector)
+      (e = (d = ((c.ownerDocument && c.ownerDocument.defaultView) || window).document)
+        .querySelector)
         ? void 0
         : e.call(d, 'script[nonce]'))
       ? b.nonce || b.getAttribute('nonce') || ''
@@ -2302,9 +2201,7 @@
     }
   }
   function vd(a, b) {
-    if (a)
-      for (var c in a)
-        Object.prototype.hasOwnProperty.call(a, c) && b(a[c], c, a)
+    if (a) for (var c in a) Object.prototype.hasOwnProperty.call(a, c) && b(a[c], c, a)
   }
   function wd(a) {
     var b = a.length
@@ -2316,12 +2213,7 @@
   var td = Lc(function () {
       return (
         gb(
-          [
-            'Google Web Preview',
-            'Mediapartners-Google',
-            'Google-Read-Aloud',
-            'Google-Adwords',
-          ],
+          ['Google Web Preview', 'Mediapartners-Google', 'Google-Read-Aloud', 'Google-Adwords'],
           xd
         ) || 1e-4 > Math.random()
       )
@@ -2464,8 +2356,7 @@
           mode: 'no-cors',
         }),
         d &&
-          ((b.mode = 'cors'),
-          (b.headers = { 'Attribution-Reporting-Eligible': 'event-source' })),
+          ((b.mode = 'cors'), (b.headers = { 'Attribution-Reporting-Eligible': 'event-source' })),
         c.fetch(a, b))
       : Kd(c, a, void 0 === b ? !1 : b, void 0 === d ? !1 : d)
   }
@@ -2491,15 +2382,8 @@
     }
     a &&
       ((d = x.document),
-      (a = new Hc(
-        Ic,
-        'https://pagead2.googlesyndication.com/pagead/js/logging_library.js'
-      )),
-      (a = cd(
-        a instanceof Hc && a.constructor === Hc && a.h === Jc
-          ? a.i
-          : 'type_error:Const'
-      )),
+      (a = new Hc(Ic, 'https://pagead2.googlesyndication.com/pagead/js/logging_library.js')),
+      (a = cd(a instanceof Hc && a.constructor === Hc && a.h === Jc ? a.i : 'type_error:Const')),
       od(d, a))
   }
   function Qd(a) {
@@ -2510,17 +2394,10 @@
         b = a.parent.context || a.parent.AMP_CONTEXT_DATA
       } catch (e) {}
     var c, d
-    return (null == (c = b) ? 0 : c.pageViewId) &&
-      (null == (d = b) ? 0 : d.canonicalUrl)
-      ? b
-      : null
+    return (null == (c = b) ? 0 : c.pageViewId) && (null == (d = b) ? 0 : d.canonicalUrl) ? b : null
   }
   function Rd(a) {
-    return (a = void 0 === a ? Qd() : a)
-      ? md(a.master)
-        ? a.master
-        : null
-      : null
+    return (a = void 0 === a ? Qd() : a) ? (md(a.master) ? a.master : null) : null
   }
   function Sd(a) {
     var b = Ea.apply(1, arguments)
@@ -2601,14 +2478,11 @@
     'string' == typeof c && (c = c.split(''))
     if (a instanceof Array) {
       if (((d = d || 0), d < c.length)) {
-        for (var f = [], g = 0; g < a.length; g++)
-          f.push(ee(a[g], b, c, d + 1, e))
+        for (var f = [], g = 0; g < a.length; g++) f.push(ee(a[g], b, c, d + 1, e))
         return f.join(c[d])
       }
     } else if ('object' == typeof a)
-      return (
-        (e = e || 0), 2 > e ? encodeURIComponent(de(a, b, c, d, e + 1)) : '...'
-      )
+      return (e = e || 0), 2 > e ? encodeURIComponent(de(a, b, c, d, e + 1)) : '...'
     return encodeURIComponent(String(a))
   }
   function fe(a, b) {
@@ -2727,8 +2601,7 @@
   }
   function ve(a) {
     a.h = !1
-    a.i != a.j.google_js_reporting_queue &&
-      (te() && db(a.i, we), (a.i.length = 0))
+    a.i != a.j.google_js_reporting_queue && (te() && db(a.i, we), (a.i.length = 0))
   }
   function we(a) {
     a &&
@@ -2849,8 +2722,7 @@
       )
         for (m = 1; m < b.length; ++m) {
           var p = b[m]
-          p.url ||
-            ((p.url = k.location.ancestorOrigins[m - 1] || ''), (p.Wa = !0))
+          p.url || ((p.url = k.location.ancestorOrigins[m - 1] || ''), (p.Wa = !0))
         }
       var t = new ae(x.location.href, x, !1)
       k = null
@@ -2889,13 +2761,7 @@
       je(this.m, e, f, this.j, c)
     } catch (Vc) {
       try {
-        je(
-          this.m,
-          e,
-          { context: 'ecmserr', rctx: a, msg: ye(Vc), url: G && G.h.url },
-          this.j,
-          c
-        )
+        je(this.m, e, { context: 'ecmserr', rctx: a, msg: ye(Vc), url: G && G.h.url }, this.j, c)
       } catch (hr) {}
     }
     return !0
@@ -2917,11 +2783,7 @@
       try {
         ;-1 == a.indexOf(c) && (a = c + '\n' + a)
         for (var d; a != d; )
-          (d = a),
-            (a = a.replace(
-              RegExp('((https?:/..*/)[^/:]*:\\d+(?:.|\n)*)\\2'),
-              '$1'
-            ))
+          (d = a), (a = a.replace(RegExp('((https?:/..*/)[^/:]*:\\d+(?:.|\n)*)\\2'), '$1'))
         b = a.replace(RegExp('\n *', 'g'), '\n')
       } catch (e) {
         b = c
@@ -3268,8 +3130,7 @@
     a.j ||
       ((a.j = new Ff(b)),
       Jf(a.j, function () {
-        for (var e = v(a.l), f = e.next(); !f.done; f = e.next())
-          (f = f.value), f()
+        for (var e = v(a.l), f = e.next(); !f.done; f = e.next()) (f = f.value), f()
         c()
       }))
     d && 1 !== a.j.state && a.l.push(d)
@@ -3411,10 +3272,7 @@
     var e = (d = void 0 === d ? 0 : d),
       f,
       g
-    N(Zf).j[e] =
-      null != (g = null == (f = N(Zf).j[e]) ? void 0 : f.add(b))
-        ? g
-        : new q.Set().add(b)
+    N(Zf).j[e] = null != (g = null == (f = N(Zf).j[e]) ? void 0 : f.add(b)) ? g : new q.Set().add(b)
     e = Xf()
     if (null != e[b]) return e[b]
     b = $f(d)[b]
@@ -3486,11 +3344,7 @@
           var z =
             null !=
             (D =
-              null == (t = N(Zf).h.get(h))
-                ? void 0
-                : null == (y = t.get(p))
-                ? void 0
-                : y.slice(0))
+              null == (t = N(Zf).h.get(h)) ? void 0 : null == (y = t.get(p)) ? void 0 : y.slice(0))
               ? D
               : []
           a: {
@@ -3602,19 +3456,14 @@
     kg(
       14,
       function (b) {
-        for (
-          var c = N(Tf), d = v([3, 4, 5]), e = d.next();
-          !e.done;
-          e = d.next()
-        )
+        for (var c = N(Tf), d = v([3, 4, 5]), e = d.next(); !e.done; e = d.next())
           (e = e.value), r(Object, 'assign').call(Object, c.H[e], b[e])
       },
       a
     )
   }
   function og(a) {
-    a.hasOwnProperty('init-done') ||
-      Object.defineProperty(a, 'init-done', { value: !0 })
+    a.hasOwnProperty('init-done') || Object.defineProperty(a, 'init-done', { value: !0 })
   }
   function pg() {}
   pg.prototype.j = function () {}
@@ -3777,9 +3626,7 @@
     return a
   }
   Eg.prototype.map = function (a) {
-    return null != this.h
-      ? ((a = a(this.h.value)), a instanceof Eg ? a : Hg(a))
-      : this
+    return null != this.h ? ((a = a(this.h.value)), a instanceof Eg ? a : Hg(a)) : this
   }
   function Ig(a, b) {
     null != a.h || b(a.i)
@@ -3945,13 +3792,10 @@
   }
   function fh(a) {
     a.google_reactive_ads_global_state
-      ? (null ==
-          a.google_reactive_ads_global_state.sideRailProcessedFixedElements &&
-          (a.google_reactive_ads_global_state.sideRailProcessedFixedElements =
-            new q.Set()),
+      ? (null == a.google_reactive_ads_global_state.sideRailProcessedFixedElements &&
+          (a.google_reactive_ads_global_state.sideRailProcessedFixedElements = new q.Set()),
         null == a.google_reactive_ads_global_state.sideRailAvailableSpace &&
-          (a.google_reactive_ads_global_state.sideRailAvailableSpace =
-            new q.Map()))
+          (a.google_reactive_ads_global_state.sideRailAvailableSpace = new q.Map()))
       : (a.google_reactive_ads_global_state = new dh())
     return a.google_reactive_ads_global_state
   }
@@ -4049,9 +3893,7 @@
     a = kb(b)
     a = Ah(this, a)
     'number' === typeof this.i &&
-      ((b = this.i),
-      0 > b && (b += a.length),
-      (a = 0 <= b && b < a.length ? [a[b]] : []))
+      ((b = this.i), 0 > b && (b += a.length), (a = 0 <= b && b < a.length ? [a[b]] : []))
     if ('number' === typeof this.j) {
       b = []
       for (var c = 0; c < a.length; c++) {
@@ -4227,8 +4069,7 @@
       case 3:
         if ((c = b.parentNode)) {
           var d = b.nextSibling
-          if (d && d.parentNode != c)
-            for (; d && 8 == d.nodeType; ) d = d.nextSibling
+          if (d && d.parentNode != c) for (; d && 8 == d.nodeType; ) d = d.nextSibling
           c.insertBefore(a, d)
         }
         break
@@ -4238,9 +4079,7 @@
       case 2:
         b.appendChild(a)
     }
-    Eh(b) &&
-      (b.setAttribute('data-init-display', b.style.display),
-      (b.style.display = 'block'))
+    Eh(b) && (b.setAttribute('data-init-display', b.style.display), (b.style.display = 'block'))
   }
   function Hi(a, b, c) {
     function d(f) {
@@ -4288,9 +4127,7 @@
     throw Error('Un-handled RelativePosition: ' + b)
   }
   function Ii(a) {
-    return a.hasOwnProperty('google-ama-order-assurance')
-      ? a['google-ama-order-assurance']
-      : null
+    return a.hasOwnProperty('google-ama-order-assurance') ? a['google-ama-order-assurance'] : null
   }
   function Ji(a, b) {
     return a && b(a) ? a : null
@@ -4358,12 +4195,7 @@
         a: {
           c = hh(a)
           for (b = b.parentElement; b; b = b.parentElement)
-            if (
-              (d = qd(b, a)) &&
-              (e = K(d.width)) &&
-              !(e >= c) &&
-              'visible' != d.overflow
-            ) {
+            if ((d = qd(b, a)) && (e = K(d.width)) && !(e >= c) && 'visible' != d.overflow) {
               c = !0
               break a
             }
@@ -4398,10 +4230,7 @@
       return (
         !c ||
         ('none' != c.display &&
-          !(
-            'absolute' == c.position &&
-            ('hidden' == c.visibility || 'collapse' == c.visibility)
-          ))
+          !('absolute' == c.position && ('hidden' == c.visibility || 'collapse' == c.visibility)))
       )
     }
     return !1
@@ -4452,11 +4281,7 @@
           }
         : d
     var e
-    return (
-      (a.style && a.style[c] && d(a.style[c])) ||
-      ((e = qd(a, b)) && e[c] && d(e[c])) ||
-      null
-    )
+    return (a.style && a.style[c] && d(a.style[c])) || ((e = qd(a, b)) && e[c] && d(e[c])) || null
   }
   function $i(a) {
     return function (b) {
@@ -4622,8 +4447,7 @@
               },
               e &&
                 g && {
-                  taskId: (f.google_rum_task_id_counter =
-                    f.google_rum_task_id_counter || 1),
+                  taskId: (f.google_rum_task_id_counter = f.google_rum_task_id_counter || 1),
                 }
             ),
             f
@@ -4750,11 +4574,8 @@
           (b = E(a, O, 1)),
             null == b
               ? (b = null)
-              : ((a = B(a, 2)),
-                (b = null == a ? null : new Og({ Qa: [b], bb: a })))
-        return null != b
-          ? Hg(b)
-          : Jg(Error('Missing dimension when creating placement id'))
+              : ((a = B(a, 2)), (b = null == a ? null : new Og({ Qa: [b], bb: a })))
+        return null != b ? Hg(b) : Jg(Error('Missing dimension when creating placement id'))
       case 3:
         return Jg(Error('Missing dimension when creating placement id'))
       default:
@@ -4783,21 +4604,13 @@
         case 4:
           if (c()) return d
       }
-      for (
-        ;
-        e &&
-        !e.anchor.nextSibling &&
-        e.anchor.parentNode != e.anchor.ownerDocument.body;
-
-      ) {
+      for (; e && !e.anchor.nextSibling && e.anchor.parentNode != e.anchor.ownerDocument.body; ) {
         e = { anchor: e.anchor.parentNode, position: 3 }
         if (c()) return d
         e.position = 4
         if (c()) return d
       }
-      e && e.anchor.nextSibling
-        ? (e = { anchor: e.anchor.nextSibling, position: 1 })
-        : (e = null)
+      e && e.anchor.nextSibling ? (e = { anchor: e.anchor.nextSibling, position: 1 }) : (e = null)
     }
     return d
   }
@@ -4811,12 +4624,7 @@
     b.forEach(function (e) {
       if (mc(e, vj, 1, yj)) {
         e = mc(e, vj, 1, yj)
-        if (
-          E(e, vh, 1) &&
-          E(E(e, vh, 1), O, 1) &&
-          E(e, vh, 2) &&
-          E(E(e, vh, 2), O, 1)
-        ) {
+        if (E(e, vh, 1) && E(E(e, vh, 1), O, 1) && E(e, vh, 2) && E(E(e, vh, 2), O, 1)) {
           var f = Sj(a, E(E(e, vh, 1), O, 1)),
             g = Sj(a, E(E(e, vh, 2), O, 1))
           if (f && g)
@@ -4903,17 +4711,10 @@
   }
   function bk(a) {
     var b = Yj(a)
-    return (
-      a &&
-      ('AUTO-ADS-EXCLUSION-AREA' === a.tagName ||
-        b.has('inside') ||
-        b.has('all'))
-    )
+    return a && ('AUTO-ADS-EXCLUSION-AREA' === a.tagName || b.has('inside') || b.has('all'))
   }
   function Yj(a) {
-    return (a = a && a.getAttribute('data-no-auto-ads'))
-      ? new q.Set(a.split('|'))
-      : new q.Set()
+    return (a = a && a.getAttribute('data-no-auto-ads')) ? new q.Set(a.split('|')) : new q.Set()
   }
   function ck(a, b) {
     if (!a) return !1
@@ -5028,12 +4829,7 @@
       e = (null == (l = E(a.i, sh, 6)) ? void 0 : F(l, uh, 1)) || []
       l = a.h
       var m
-      if (
-        1 == I(f, 1) &&
-        null != (m = E(f, nh, 2)) &&
-        H(m, 2) &&
-        0 != e.length
-      ) {
+      if (1 == I(f, 1) && null != (m = E(f, nh, 2)) && H(m, 2) && 0 != e.length) {
         m = []
         e = v(e)
         for (f = e.next(); !f.done; f = e.next())
@@ -5052,9 +4848,7 @@
     m = a.h
     var p
     try {
-      var t = (p = m.localStorage.getItem('google_ama_settings'))
-        ? zc(Nj, p)
-        : null
+      var t = (p = m.localStorage.getItem('google_ama_settings')) ? zc(Nj, p) : null
     } catch (Y) {
       t = null
     }
@@ -5064,14 +4858,9 @@
     b: {
       e = { qb: !1, rb: !1 }
       f = jk(m, '.google-auto-placed')
-      g = jk(
-        m,
-        'ins.adsbygoogle[data-anchor-shown],ins.adsbygoogle[data-anchor-status]'
-      )
+      g = jk(m, 'ins.adsbygoogle[data-anchor-shown],ins.adsbygoogle[data-anchor-status]')
       h = jk(m, 'ins.adsbygoogle[data-ad-format=autorelaxed]')
-      k = (ik(m) || jk(m, 'div[id^=div-gpt-ad]')).concat(
-        jk(m, 'iframe[id^=google_ads_iframe]')
-      )
+      k = (ik(m) || jk(m, 'div[id^=div-gpt-ad]')).concat(jk(m, 'iframe[id^=google_ads_iframe]'))
       var y = jk(
           m,
           'div.trc_related_container,div.OUTBRAIN,div[id^=rcjsload],div[id^=ligatusframe],div[id^=crt-],iframe[id^=cto_iframe],div[id^=yandex_], div[id^=Ya_sync],iframe[src*=adnxs],div.advertisement--appnexus,div[id^=apn-ad],div[id^=amzn-native-ad],iframe[src*=amazon-adsystem],iframe[id^=ox_],iframe[src*=openx],img[src*=openx],div[class*=adtech],div[id^=adtech],iframe[src*=adtech],div[data-content-ad-placement=true],div.wpcnt div[id^=atatags-]'
@@ -5122,12 +4911,7 @@
       e = c[p]
       l = p
       f = b
-      if (
-        E(e, Sg, 4) &&
-        t.contains(B(E(e, Sg, 4), 1)) &&
-        1 === B(e, 8) &&
-        ok(e, d)
-      ) {
+      if (E(e, Sg, 4) && t.contains(B(E(e, Sg, 4), 1)) && 1 === B(e, 8) && ok(e, d)) {
         m.j++
         if ((f = pk(m, e, f, d)))
           (g = sj(m.h)),
@@ -5178,8 +4962,7 @@
         f = !1
       }
       if ((c = !f && !(!c && 2 == e && !ek(d))))
-        (c = 1 == e || 2 == e ? d : d.parentNode),
-          (c = !(c && !Eh(c) && 0 >= c.offsetWidth))
+        (c = 1 == e || 2 == e ? d : d.parentNode), (c = !(c && !Eh(c) && 0 >= c.offsetWidth))
       f = !c
     }
     if (!(c = f)) {
@@ -5307,8 +5090,7 @@
           z.parentNode &&
           ((G = z.parentNode),
           G.removeChild(z),
-          Eh(G) &&
-            (G.style.display = G.getAttribute('data-init-display') || 'none'))
+          Eh(G) && (G.style.display = G.getAttribute('data-init-display') || 'none'))
         z = !1
         break a
       }
@@ -5345,9 +5127,7 @@
     'stack' in b && (this.stack = b.stack)
     this.name = 'TagError'
     this.message = a ? 'adsbygoogle.push() error: ' + a : ''
-    Error.captureStackTrace
-      ? Error.captureStackTrace(this, T)
-      : (this.stack = Error().stack || '')
+    Error.captureStackTrace ? Error.captureStackTrace(this, T) : (this.stack = Error().stack || '')
   }
   w(T, Error)
   var sk,
@@ -5413,10 +5193,7 @@
     if (Ek) return Ek
     var a = Rd() || window,
       b = a.google_persistent_state_async
-    return null != b &&
-      'object' == typeof b &&
-      null != b.S &&
-      'object' == typeof b.S
+    return null != b && 'object' == typeof b && null != b.S && 'object' == typeof b.S
       ? (Ek = b)
       : (a.google_persistent_state_async = Ek = new Ck())
   }
@@ -5473,11 +5250,7 @@
       (null != e ? ';samesite=' + e : '')
   }
   Lk.prototype.get = function (a, b) {
-    for (
-      var c = a + '=', d = (this.h.cookie || '').split(';'), e = 0, f;
-      e < d.length;
-      e++
-    ) {
+    for (var c = a + '=', d = (this.h.cookie || '').split(';'), e = 0, f; e < d.length; e++) {
       f = Va(d[e])
       if (0 == f.lastIndexOf(c, 0)) return f.slice(c.length)
       if (f == a) return ''
@@ -5488,20 +5261,12 @@
     return !this.h.cookie
   }
   Lk.prototype.clear = function () {
-    for (
-      var a = (this.h.cookie || '').split(';'), b = [], c = [], d, e, f = 0;
-      f < a.length;
-      f++
-    )
+    for (var a = (this.h.cookie || '').split(';'), b = [], c = [], d, e, f = 0; f < a.length; f++)
       (e = Va(a[f])),
         (d = e.indexOf('=')),
-        -1 == d
-          ? (b.push(''), c.push(e))
-          : (b.push(e.substring(0, d)), c.push(e.substring(d + 1)))
+        -1 == d ? (b.push(''), c.push(e)) : (b.push(e.substring(0, d)), c.push(e.substring(d + 1)))
     for (a = b.length - 1; 0 <= a; a--)
-      (c = b[a]),
-        this.get(c),
-        this.set(c, '', { yb: 0, path: void 0, domain: void 0 })
+      (c = b[a]), this.get(c), this.set(c, '', { yb: 0, path: void 0, domain: void 0 })
   }
   function Mk(a) {
     J.call(this, a)
@@ -5512,12 +5277,8 @@
     return C(b, 5, a)
   }
   function Ok(a) {
-    void 0 !== a.addtlConsent &&
-      'string' !== typeof a.addtlConsent &&
-      (a.addtlConsent = void 0)
-    void 0 !== a.gdprApplies &&
-      'boolean' !== typeof a.gdprApplies &&
-      (a.gdprApplies = void 0)
+    void 0 !== a.addtlConsent && 'string' !== typeof a.addtlConsent && (a.addtlConsent = void 0)
+    void 0 !== a.gdprApplies && 'boolean' !== typeof a.gdprApplies && (a.gdprApplies = void 0)
     return (void 0 !== a.tcString && 'string' !== typeof a.tcString) ||
       (void 0 !== a.listenerId && 'number' !== typeof a.listenerId)
       ? 2
@@ -5616,8 +5377,7 @@
     a.m ||
       ((a.m = function (b) {
         try {
-          var c = ('string' === typeof b.data ? JSON.parse(b.data) : b.data)
-            .__tcfapiReturn
+          var c = ('string' === typeof b.data ? JSON.parse(b.data) : b.data).__tcfapiReturn
           a.u[c.callId](c.returnValue, c.success)
         } catch (d) {}
       }),
@@ -5665,8 +5425,7 @@
     if ((a = (void 0 === a.sa ? 0 : a.sa) || !Qk(new Pk(b)))) {
       if (!d) {
         if (!(c = !c))
-          if (((c = Bk(b)), null == c.h))
-            tk.L(806, c.i, void 0, void 0), (c = !1)
+          if (((c = Bk(b)), null == c.h)) tk.L(806, c.i, void 0, void 0), (c = !1)
           else if ((c = c.h.value) && null != B(c, 1))
             b: switch (((c = B(c, 1)), c)) {
               case 1:
@@ -5736,8 +5495,7 @@
             a.purposeOneTreatment &&
             'CH' === a.publisherCC
               ? (a = !0)
-              : (c && ((a = a.purpose.consents), (c = !(!a || !a['1']))),
-                (a = c)))
+              : (c && ((a = a.purpose.consents), (c = !(!a || !a['1']))), (a = c)))
           : (a = !0)
       }
     else a = !1
@@ -5836,15 +5594,13 @@
     for (var d = [], e = 0; e < b; e++)
       if (nl(a, 1)) {
         var f = e + 1
-        if (c && -1 === c.indexOf(f))
-          throw Error('ID: ' + f + ' is outside of allowed values!')
+        if (c && -1 === c.indexOf(f)) throw Error('ID: ' + f + ' is outside of allowed values!')
         d.push(f)
       }
     return d
   }
   function nl(a, b) {
-    if (a.h + b > a.i.length)
-      throw Error('Requested length ' + b + ' is past end of string.')
+    if (a.h + b > a.i.length) throw Error('Requested length ' + b + ' is past end of string.')
     var c = a.i.substring(a.h, a.h + b)
     a.h += b
     return parseInt(c, 2)
@@ -5873,8 +5629,7 @@
         legitimateInterests: rl(pl(d, 24, jl), jl),
       }
       c.purposeOneTreatment = !!nl(d, 1)
-      c.publisherCC =
-        String.fromCharCode(il + nl(d, 6)) + String.fromCharCode(il + nl(d, 6))
+      c.publisherCC = String.fromCharCode(il + nl(d, 6)) + String.fromCharCode(il + nl(d, 6))
       c.vendor = { consents: rl(ml(d), b), legitimateInterests: rl(ml(d), b) }
       return c
     } catch (e) {
@@ -5885,8 +5640,7 @@
     var c = {}
     if (Array.isArray(b) && 0 !== b.length) {
       b = v(b)
-      for (var d = b.next(); !d.done; d = b.next())
-        (d = d.value), (c[d] = -1 !== a.indexOf(d))
+      for (var d = b.next(); !d.done; d = b.next()) (d = d.value), (c[d] = -1 !== a.indexOf(d))
     } else for (a = v(a), d = a.next(); !d.done; d = a.next()) c[d.value] = !0
     delete c[0]
     return c
@@ -5935,9 +5689,7 @@
       for (var c = 0; c < b.length; c++)
         a += String.fromCharCode(
           b.charCodeAt(c) ^
-            '\u0003\u0007\u0003\u0007\b\u0004\u0004\u0006\u0005\u0003'.charCodeAt(
-              c % 10
-            )
+            '\u0003\u0007\u0003\u0007\b\u0004\u0004\u0006\u0005\u0003'.charCodeAt(c % 10)
         )
       this.h = JSON.parse(a)
     } catch (d) {}
@@ -6048,18 +5800,14 @@
   function Ml(a) {
     this.h = a
     this.i = a.document
-    this.m = (a = (a = Gl(this.i)) ? E(a, Bl, 5) || null : null)
-      ? B(a, 2)
-      : null
+    this.m = (a = (a = Gl(this.i)) ? E(a, Bl, 5) || null : null) ? B(a, 2) : null
     this.j = (a = Fl(this.i)) && null != B(a, 1) ? B(a, 1) : null
     this.l = (a = Fl(this.i)) && null != B(a, 2) ? B(a, 2) : null
   }
   function Nl() {
     var a = window,
       b = Q(Ph)
-    a.__uspapi ||
-      a.frames.__uspapiLocator ||
-      ((a = new Ml(a)), Ol(a), b && Pl(a))
+    a.__uspapi || a.frames.__uspapiLocator || ((a = new Ml(a)), Ol(a), b && Pl(a))
   }
   function Ol(a) {
     !a.m ||
@@ -6072,9 +5820,7 @@
       }))
   }
   Ml.prototype.u = function (a, b, c) {
-    'function' === typeof c &&
-      'getUSPData' === a &&
-      c({ version: 1, uspString: this.m }, !0)
+    'function' === typeof c && 'getUSPData' === a && c({ version: 1, uspString: this.m }, !0)
   }
   function Pl(a) {
     !a.j ||
@@ -6188,9 +5934,7 @@
   var Wl = {},
     Xl = ((Wl.google_ad_channel = !0), (Wl.google_ad_host = !0), Wl)
   function Yl(a, b) {
-    a.location.href &&
-      a.location.href.substring &&
-      (b.url = a.location.href.substring(0, 200))
+    a.location.href && a.location.href.substring && (b.url = a.location.href.substring(0, 200))
     yk('ama', b, 0.01)
   }
   function Zl(a) {
@@ -6288,10 +6032,7 @@
       ? !1
       : Rb(b, bm, 13)
       ? H(mc(b, bm, 13, Ub), 1)
-      : Rb(b, cm, 14) &&
-        '' !== a &&
-        1 === Yb(pm(b), 1).length &&
-        Yb(pm(b), 1)[0] === a
+      : Rb(b, cm, 14) && '' !== a && 1 === Yb(pm(b), 1).length && Yb(pm(b), 1)[0] === a
       ? H(E(pm(b), bm, 2), 1)
       : !1
   }
@@ -6312,9 +6053,8 @@
   }
   function ym(a, b) {
     a =
-      (a =
-        (a = a.location && a.location.hash) &&
-        a.match(/forced_clientside_labs=([\d,]+)/)) && a[1]
+      (a = (a = a.location && a.location.hash) && a.match(/forced_clientside_labs=([\d,]+)/)) &&
+      a[1]
     return !!a && jb(a.split(','), b.toString())
   }
   function vm(a, b, c) {
@@ -6322,9 +6062,7 @@
     var d = zm(a)
     b && (b = Wd(String(b)))
     return Qc(d, function (e, f) {
-      return (
-        Object.prototype.hasOwnProperty.call(d, f) && (!b || b === f) && c(e)
-      )
+      return Object.prototype.hasOwnProperty.call(d, f) && (!b || b === f) && c(e)
     })
   }
   function zm(a) {
@@ -6374,9 +6112,7 @@
   function Em(a) {
     a = U(a)
     var b = a.space_collapsing || 'none'
-    return a.remove_ads_by_default
-      ? { Pa: !0, Hb: b, wa: a.ablation_viewport_offset }
-      : null
+    return a.remove_ads_by_default ? { Pa: !0, Hb: b, wa: a.ablation_viewport_offset } : null
   }
   function Fm(a, b) {
     a = U(a)
@@ -6397,10 +6133,7 @@
     var b, c
     return null !=
       (c =
-        null ==
-        (b = a.document.querySelector(
-          'meta[name="google-adsense-platform-account"]'
-        ))
+        null == (b = a.document.querySelector('meta[name="google-adsense-platform-account"]'))
           ? void 0
           : b.getAttribute('content'))
       ? c
@@ -6463,9 +6196,7 @@
     })
   }
   function Om(a) {
-    return (a = (a = am(a)) ? ($l(a) ? a : null) : null)
-      ? Hg(a)
-      : Jg(Error('invlocst'))
+    return (a = (a = am(a)) ? ($l(a) ? a : null) : null) ? Hg(a) : Jg(Error('invlocst'))
   }
   function Qm(a) {
     var b = a.s,
@@ -6511,13 +6242,7 @@
             : null == (m = E(l, cl, 2))
             ? void 0
             : E(m, dl, 2)
-        if (
-          f &&
-          1 === f.length &&
-          f[0] === c &&
-          Dm(g) &&
-          kc(a, 17) === b.location.host
-        ) {
+        if (f && 1 === f.length && f[0] === c && Dm(g) && kc(a, 17) === b.location.host) {
           Cm(!0)
           h = g
           break a
@@ -6550,11 +6275,7 @@
     )
   }
   function Pm(a) {
-    yk(
-      'abg::amalserr',
-      { status: a, guarding: 'true', timeout: 50, rate: 0.01 },
-      0.01
-    )
+    yk('abg::amalserr', { status: a, guarding: 'true', timeout: 50, rate: 0.01 }, 0.01)
   }
   function Tm(a, b, c, d) {
     try {
@@ -6662,10 +6383,7 @@
     return b
   }
   function cn(a) {
-    return (
-      Ka(a.enable_page_level_ads) &&
-      7 === a.enable_page_level_ads.google_pgb_reactive
-    )
+    return Ka(a.enable_page_level_ads) && 7 === a.enable_page_level_ads.google_pgb_reactive
   }
   function dn(a, b) {
     U(L).ama_ran_on_page ||
@@ -6704,20 +6422,13 @@
     if (cn(b) && ((e = Ul(a, F(c, Hj, 7))), !e || !Xb(e, 8))) return
     U(L).ama_ran_on_page = !0
     var g
-    if (null == (g = E(c, Mj, 15)) ? 0 : Xb(g, 23))
-      U(a).enable_overlap_observer = !0
+    if (null == (g = E(c, Mj, 15)) ? 0 : Xb(g, 23)) U(a).enable_overlap_observer = !0
     if ((g = E(c, Kj, 13)) && 1 === B(g, 1)) {
       var h = 0,
         k = E(g, Lj, 6)
       k && B(k, 3) && (h = B(k, 3) || 0)
       Fm(a, h)
-    } else if (
-      null == (h = E(c, zj, 24))
-        ? 0
-        : null == (k = E(h, Bj, 3))
-        ? 0
-        : mc(k, Cj, 2, Dj)
-    )
+    } else if (null == (h = E(c, zj, 24)) ? 0 : null == (k = E(h, Bj, 3)) ? 0 : mc(k, Cj, 2, Dj))
       (tj(a).ablatingThisPageview = !0), Fm(a, 1)
     Pd(3, [c.toJSON()])
     var l = b.google_ad_client || ''
@@ -6784,12 +6495,9 @@
     if (
       null !=
       (e =
-        null !=
-        (d =
-          null == (b = U(a).head_tag_slot_vars) ? void 0 : b.google_ad_client)
+        null != (d = null == (b = U(a).head_tag_slot_vars) ? void 0 : b.google_ad_client)
           ? d
-          : null ==
-            (c = a.document.querySelector('.adsbygoogle[data-ad-client]'))
+          : null == (c = a.document.querySelector('.adsbygoogle[data-ad-client]'))
           ? void 0
           : c.getAttribute('data-ad-client'))
     )
@@ -6838,9 +6546,7 @@
         : d.return(
             new q.Promise(function (e, f) {
               var g = a.setInterval(function () {
-                --c
-                  ? b() && (a.clearInterval(g), e())
-                  : (a.clearInterval(g), f())
+                --c ? b() && (a.clearInterval(g), e()) : (a.clearInterval(g), f())
               }, 200)
             })
           )
@@ -6902,17 +6608,13 @@
       d
     return Da(function (e) {
       if (1 == e.h) {
-        if (!a.i || r(a.state.le, 'includes').call(a.state.le, 1))
-          return e.return()
+        if (!a.i || r(a.state.le, 'includes').call(a.state.le, 1)) return e.return()
         a.state.le.push(1)
         b = a.s.performance.now()
         return wa(e, tn(a), 2)
       }
       c = Ye(
-        Ze(
-          new Xe(),
-          We(Ve(new Ue(), gh(a.s).scrollWidth), gh(a.s).scrollHeight)
-        ),
+        Ze(new Xe(), We(Ve(new Ue(), gh(a.s).scrollWidth), gh(a.s).scrollHeight)),
         We(Ve(new Ue(), hh(a.s)), gh(a.s).clientHeight)
       )
       d = Li(a.s)
@@ -6932,11 +6634,7 @@
     var d
     return Da(function (e) {
       if (1 == e.h) {
-        if (
-          !a.i ||
-          !c.length ||
-          r(a.state.lgdp, 'includes').call(a.state.lgdp, Number(b))
-        )
+        if (!a.i || !c.length || r(a.state.lgdp, 'includes').call(a.state.lgdp, Number(b)))
           return e.return()
         a.state.lgdp.push(Number(b))
         d = a.s.performance.now()
@@ -6968,8 +6666,7 @@
     var b = L.document
     if (b.currentScript) return wn(b.currentScript, a)
     b = v(b.scripts)
-    for (var c = b.next(); !c.done; c = b.next())
-      if (0 === wn(c.value, a)) return 0
+    for (var c = b.next(); !c.done; c = b.next()) if (0 === wn(c.value, a)) return 0
     return 1
   }
   function yn(a, b) {
@@ -7102,8 +6799,7 @@
           b = void 0 === b ? document : b
           var c
           return !(
-            null == (c = b.featurePolicy) ||
-            !((aa = c.features()), r(aa, 'includes')).call(aa, a)
+            null == (c = b.featurePolicy) || !((aa = c.features()), r(aa, 'includes')).call(aa, a)
           )
         }),
         (Cn[70] = function (a) {
@@ -7143,12 +6839,7 @@
         (En[10] = function () {
           try {
             var a = x.document
-            return (
-              a.visibilityState ||
-              a.webkitVisibilityState ||
-              a.mozVisibilityState ||
-              ''
-            )
+            return a.visibilityState || a.webkitVisibilityState || a.mozVisibilityState || ''
           } catch (b) {
             return ''
           }
@@ -7369,15 +7060,9 @@
     a =
       void 0 === a.J
         ? new Pf(
-            null != (Yn = null == (Vn = E(b, mm, 5)) ? void 0 : jc(B(Vn, 2), 0))
-              ? Yn
-              : 0,
-            null != (Zn = null == (Wn = E(b, mm, 5)) ? void 0 : jc(B(Wn, 4), 0))
-              ? Zn
-              : 0,
-            null != ($n = null == (Xn = E(b, mm, 5)) ? void 0 : H(Xn, 3))
-              ? $n
-              : !1
+            null != (Yn = null == (Vn = E(b, mm, 5)) ? void 0 : jc(B(Vn, 2), 0)) ? Yn : 0,
+            null != (Zn = null == (Wn = E(b, mm, 5)) ? void 0 : jc(B(Wn, 4), 0)) ? Zn : 0,
+            null != ($n = null == (Xn = E(b, mm, 5)) ? void 0 : H(Xn, 3)) ? $n : !1
           )
         : a.J
     e.hasOwnProperty('init-done')
@@ -7500,8 +7185,7 @@
     return this.la
   }
   V.prototype.i = function (a, b, c) {
-    b.google_ad_resize ||
-      ((c.style.height = this.height() + 'px'), (b.rpe = !0))
+    b.google_ad_resize || ((c.style.height = this.height() + 'px'), (b.rpe = !0))
   }
   function io(a) {
     return function (b) {
@@ -7697,10 +7381,7 @@
           (c =
             Math.floor(c / 1.91 + 70) +
             Math.floor(
-              11 *
-                (c * ko.mobile_banner_image_sidebyside +
-                  mo.mobile_banner_image_sidebyside) +
-                96
+              11 * (c * ko.mobile_banner_image_sidebyside + mo.mobile_banner_image_sidebyside) + 96
             )),
           (a = {
             ga: a,
@@ -7717,8 +7398,7 @@
             U: 13,
             X: 'image_sidebyside',
           }))
-      : ((a = qo(a)),
-        (a = { ga: a.width, fa: a.height, T: 4, U: 2, X: 'image_stacked' }))
+      : ((a = qo(a)), (a = { ga: a.width, fa: a.height, T: 4, U: 2, X: 'image_stacked' }))
     yo(b, a)
     return new so(9, new vo(a.ga, a.fa))
   }
@@ -7783,8 +7463,7 @@
   }
   Ao.prototype.i = function (a, b, c) {
     Xi(a, c)
-    b.google_ad_resize ||
-      ((c.style.height = this.height() + 'px'), (b.rpe = !0))
+    b.google_ad_resize || ((c.style.height = this.height() + 'px'), (b.rpe = !0))
   }
   var Bo = {
     'image-top': function (a) {
@@ -7800,13 +7479,7 @@
       return 500 >= a ? 187 - 0.228 * (a - 250) : 130
     },
     'in-article': function (a) {
-      return 420 >= a
-        ? a / 1.2
-        : 460 >= a
-        ? a / 1.91 + 130
-        : 800 >= a
-        ? a / 4
-        : 200
+      return 420 >= a ? a / 1.2 : 460 >= a ? a / 1.91 + 130 : 800 >= a ? a / 4 : 200
     },
   }
   function Co(a, b) {
@@ -7827,11 +7500,7 @@
           b: {
             g = c
             for (var h = 0; 100 > h && g.parentElement; ++h) {
-              for (
-                var k = g.parentElement.childNodes, l = 0;
-                l < k.length;
-                ++l
-              ) {
+              for (var k = g.parentElement.childNodes, l = 0; l < k.length; ++l) {
                 var m = k[l]
                 if (m != g && Vi(b, m)) break b
               }
@@ -7845,16 +7514,11 @@
       else a = g
     }
     if (250 > a)
-      throw new T(
-        'Fluid responsive ads must be at least 250px wide: availableWidth=' + a
-      )
+      throw new T('Fluid responsive ads must be at least 250px wide: availableWidth=' + a)
     a = Math.min(1200, Math.floor(a))
     if (d && 'in-article' != f) {
       f = Math.ceil(d)
-      if (50 > f)
-        throw new T(
-          'Fluid responsive ads must be at least 50px tall: height=' + f
-        )
+      if (50 > f) throw new T('Fluid responsive ads must be at least 50px tall: height=' + f)
       return new so(11, new Yi(a, f))
     }
     if ('in-article' != f && (d = e.google_ad_layout_key)) {
@@ -7873,24 +7537,15 @@
       for (g = 0; g < e; g++) (c += b[g] * d), (d *= f)
       f = Math.ceil(1e3 * c - -725 + 10)
       if (isNaN(f)) throw new T('Invalid height: height=' + f)
-      if (50 > f)
-        throw new T(
-          'Fluid responsive ads must be at least 50px tall: height=' + f
-        )
-      if (1200 < f)
-        throw new T(
-          'Fluid responsive ads must be at most 1200px tall: height=' + f
-        )
+      if (50 > f) throw new T('Fluid responsive ads must be at least 50px tall: height=' + f)
+      if (1200 < f) throw new T('Fluid responsive ads must be at most 1200px tall: height=' + f)
       return new so(11, new Yi(a, f))
     }
     d = Bo[f]
     if (!d) throw new T('Invalid data-ad-layout value: ' + f)
     c = bj(c, b)
     b = hh(b)
-    b =
-      'in-article' !== f || c || a !== b
-        ? Math.ceil(d(a))
-        : Math.ceil(1.25 * d(a))
+    b = 'in-article' !== f || c || a !== b ? Math.ceil(d(a)) : Math.ceil(1.25 * d(a))
     return new so(11, 'in-article' == f ? new Co(a, b) : new Yi(a, b))
   }
   function Eo(a) {
@@ -7950,18 +7605,11 @@
   function Io(a, b, c, d, e) {
     'false' == e.google_full_width_responsive
       ? (c = { F: a, G: 1 })
-      : ('autorelaxed' == b && e.google_full_width_responsive) ||
-        Jo(b) ||
-        e.google_ad_resize
-      ? ((b = Ti(a, c, d, e)),
-        (c = !0 !== b ? { F: a, G: b } : { F: hh(c) || a, G: !0 }))
+      : ('autorelaxed' == b && e.google_full_width_responsive) || Jo(b) || e.google_ad_resize
+      ? ((b = Ti(a, c, d, e)), (c = !0 !== b ? { F: a, G: b } : { F: hh(c) || a, G: !0 }))
       : (c = { F: a, G: 2 })
     b = c.G
-    return !0 !== b
-      ? { F: a, G: b }
-      : d.parentElement
-      ? { F: c.F, G: b }
-      : { F: a, G: b }
+    return !0 !== b ? { F: a, G: b } : d.parentElement ? { F: c.F, G: b } : { F: a, G: b }
   }
   function Ko(a, b, c, d, e) {
     var f = wk(247, function () {
@@ -7985,9 +7633,7 @@
     return new so(t, g, p, null, m, f, h, D, z, l, k, y)
   }
   function Jo(a) {
-    return (
-      'auto' == a || /^((^|,) *(horizontal|vertical|rectangle) *)+$/.test(a)
-    )
+    return 'auto' == a || /^((^|,) *(horizontal|vertical|rectangle) *)+$/.test(a)
   }
   function Lo(a, b, c, d, e, f) {
     b = 'auto' == b ? (0.25 >= a / Math.min(1200, hh(c)) ? 4 : 3) : Ri(b)
@@ -8002,8 +7648,7 @@
     }
     m = [$i(a), io(b)]
     m.push(aj(k, c, d, h))
-    null != e.google_max_responsive_height &&
-      m.push(dj(e.google_max_responsive_height))
+    null != e.google_max_responsive_height && m.push(dj(e.google_max_responsive_height))
     k = [
       function (t) {
         return !t.vb
@@ -8022,11 +7667,7 @@
         t = a / 1.2
         var y = Math
         var D = y.min
-        if (
-          e.google_resizing_allowed ||
-          'true' == e.google_full_width_responsive
-        )
-          var z = Infinity
+        if (e.google_resizing_allowed || 'true' == e.google_full_width_responsive) var z = Infinity
         else {
           z = d
           var G = Infinity
@@ -8045,9 +7686,7 @@
     })
     g = m.da
     m = m.ba
-    return 'in-article' === e.google_ad_layout &&
-      c.location &&
-      '#hffwroe2etoq' == c.location.hash
+    return 'in-article' === e.google_ad_layout && c.location && '#hffwroe2etoq' == c.location.hash
       ? { da: No(a, c, d, g, e), ba: !1, va: b, Xa: l }
       : { da: g, ba: m, va: b, Xa: l }
   }
@@ -8081,17 +7720,14 @@
     ;(f = hh(b))
       ? 488 > hh(b)
         ? b.innerHeight >= b.innerWidth
-          ? ((e.google_full_width_responsive_allowed = !0),
-            Xi(b, c),
-            (f = { F: f, G: !0 }))
+          ? ((e.google_full_width_responsive_allowed = !0), Xi(b, c), (f = { F: f, G: !0 }))
           : (f = { F: a, G: 5 })
         : (f = { F: a, G: 4 })
       : (f = { F: a, G: 10 })
     var g = f
     f = g.F
     g = g.G
-    if (!0 !== g || a == f)
-      return new so(12, new Yi(a, d), null, null, !0, g, 100)
+    if (!0 !== g || a == f) return new so(12, new Yi(a, d), null, null, !0, g, 100)
     a = Lo(f, 'auto', b, c, e, !0)
     return new so(1, a.da, a.va, 2, !0, g, a.ba)
   }
@@ -8114,8 +7750,7 @@
     if ('fluid' == c)
       return 'in-article' !== b.google_ad_layout ||
         !a.location ||
-        ('#hffwroe2etop' != a.location.hash &&
-          '#hffwroe2etoq' != a.location.hash)
+        ('#hffwroe2etop' != a.location.hash && '#hffwroe2etoq' != a.location.hash)
         ? 8
         : (Qo(b), 1)
     if (27 === b.google_reactive_ad_format) return Qo(b), 1
@@ -8123,8 +7758,7 @@
   function Ro(a, b, c, d, e) {
     e =
       b.offsetWidth ||
-      ((c.google_ad_resize || (void 0 === e ? !1 : e)) &&
-        Zi(b, d, 'width', K)) ||
+      ((c.google_ad_resize || (void 0 === e ? !1 : e)) && Zi(b, d, 'width', K)) ||
       c.google_ad_width ||
       0
     4 === a && ((c.google_ad_format = 'auto'), (a = 1))
@@ -8168,19 +7802,11 @@
       var d = qd(a, b) || {},
         e = d.direction
       if ('0px' === d.width && 'none' !== d.cssFloat) return -1
-      if ('ltr' === e && c)
-        return Math.floor(Math.min(1200, c - a.getBoundingClientRect().left))
+      if ('ltr' === e && c) return Math.floor(Math.min(1200, c - a.getBoundingClientRect().left))
       if ('rtl' === e && c)
         return (
-          (a =
-            b.document.body.getBoundingClientRect().right -
-            a.getBoundingClientRect().right),
-          Math.floor(
-            Math.min(
-              1200,
-              c - a - Math.floor((c - b.document.body.clientWidth) / 2)
-            )
-          )
+          (a = b.document.body.getBoundingClientRect().right - a.getBoundingClientRect().right),
+          Math.floor(Math.min(1200, c - a - Math.floor((c - b.document.body.clientWidth) / 2)))
         )
     }
     return -1
@@ -8222,11 +7848,7 @@
       b = hk()
     try {
       if (!b) return a
-      for (
-        var c = b.pubads(), d = v(c.getSlots()), e = d.next();
-        !e.done;
-        e = d.next()
-      )
+      for (var c = b.pubads(), d = v(c.getSlots()), e = d.next(); !e.done; e = d.next())
         a.add(e.value.getSlotId().getDomId())
     } catch (f) {}
     return a
@@ -8283,28 +7905,14 @@
   function gp(a, b) {
     return a.sources.reduce(function (c, d) {
       d = b(d)
-      return c
-        ? d && 0 !== d.width * d.height
-          ? d.top < c.top
-            ? d
-            : c
-          : c
-        : d
+      return c ? (d && 0 !== d.width * d.height ? (d.top < c.top ? d : c) : c) : d
     }, null)
   }
   function hp() {
     M.call(this)
     this.l = this.i = this.M = this.I = this.B = 0
     this.La = this.Ia = Number.NEGATIVE_INFINITY
-    this.Ea =
-      this.Ga =
-      this.Ha =
-      this.Ja =
-      this.Oa =
-      this.m =
-      this.Na =
-      this.Z =
-        0
+    this.Ea = this.Ga = this.Ha = this.Ja = this.Oa = this.m = this.Na = this.Z = 0
     this.Fa = !1
     this.N = this.C = this.u = 0
     var a = document.querySelector('[data-google-query-id]')
@@ -8320,12 +7928,7 @@
       var b = window
       if (!b.google_plmetrics && window.PerformanceObserver) {
         b.google_plmetrics = !0
-        b = v([
-          'layout-shift',
-          'largest-contentful-paint',
-          'first-input',
-          'longtask',
-        ])
+        b = v(['layout-shift', 'largest-contentful-paint', 'first-input', 'longtask'])
         for (var c = b.next(); !c.done; c = b.next())
           (c = c.value), a.J().observe({ type: c, buffered: !0 })
         jp(a)
@@ -8354,10 +7957,7 @@
                   a.La = e.startTime
                   a.i += e.value
                   f && (a.l += e.value)
-                  a.i > a.Z &&
-                    ((a.Z = a.i),
-                    (a.Oa = a.l),
-                    (a.Na = e.startTime + e.duration))
+                  a.i > a.Z && ((a.Z = a.i), (a.Oa = a.l), (a.Na = e.startTime + e.duration))
                 }
                 break
               case 'largest-contentful-paint':
@@ -8385,10 +7985,7 @@
           (d.prerendering
             ? 3
             : { visible: 1, hidden: 2, prerender: 3, preview: 4, unloaded: 5 }[
-                d.visibilityState ||
-                  d.webkitVisibilityState ||
-                  d.mozVisibilityState ||
-                  ''
+                d.visibilityState || d.webkitVisibilityState || d.mozVisibilityState || ''
               ] || 0) && op(a)
       }),
       c = mj(641, function () {
@@ -8410,19 +8007,16 @@
     if (!a.Ka) {
       a.Ka = !0
       a.J().takeRecords()
-      var b =
-        'https://pagead2.googlesyndication.com/pagead/gen_204?id=plmetrics'
+      var b = 'https://pagead2.googlesyndication.com/pagead/gen_204?id=plmetrics'
       window.LayoutShift &&
         ((b += Zo('cls', a.B)),
         (b += Zo('mls', a.I)),
         (b += Yo('nls', a.M)),
-        window.LayoutShiftAttribution &&
-          ((b += Zo('cas', a.m)), (b += Yo('nas', a.Ja))),
+        window.LayoutShiftAttribution && ((b += Zo('cas', a.m)), (b += Yo('nas', a.Ja))),
         (b += Zo('wls', a.Z)),
         (b += Zo('tls', a.Na)),
         window.LayoutShiftAttribution && (b += Zo('was', a.Oa)))
-      window.LargestContentfulPaint &&
-        ((b += Yo('lcp', a.Ha)), (b += Yo('lcps', a.Ga)))
+      window.LargestContentfulPaint && ((b += Yo('lcp', a.Ha)), (b += Yo('lcps', a.Ga)))
       window.PerformanceEventTiming && a.Fa && (b += Yo('fid', a.Ea))
       window.PerformanceLongTaskTiming &&
         ((b += Yo('cbt', a.u)), (b += Yo('mbt', a.C)), (b += Yo('nlt', a.N)))
@@ -8452,9 +8046,7 @@
   function ep(a, b) {
     var c = Math.min(a.right, b.right) - Math.max(a.left, b.left)
     a = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top)
-    return 0 >= c || 0 >= a
-      ? !1
-      : 50 <= (100 * c * a) / ((b.right - b.left) * (b.bottom - b.top))
+    return 0 >= c || 0 >= a ? !1 : 50 <= (100 * c * a) / ((b.right - b.left) * (b.bottom - b.top))
   }
   function np() {
     var a = [].concat(ka(document.getElementsByTagName('iframe'))).filter(ap),
@@ -8506,8 +8098,7 @@
         window.goog_tt_state_map && window.goog_tt_state_map instanceof q.Map
           ? new q.Map([].concat(ka(e), ka(window.goog_tt_state_map)))
           : e
-      ;(window.goog_tt_promise_map &&
-        window.goog_tt_promise_map instanceof q.Map) ||
+      ;(window.goog_tt_promise_map && window.goog_tt_promise_map instanceof q.Map) ||
         (window.goog_tt_promise_map = new q.Map())
     }
   }
@@ -8565,8 +8156,7 @@
         return tp()
       })
       .catch(function (b) {
-        if (b && 'NoModificationAllowedError' === b.name)
-          return Z(W.issuerOrigin, 10), tp()
+        if (b && 'NoModificationAllowedError' === b.name) return Z(W.issuerOrigin, 10), tp()
         Z(W.issuerOrigin, 9)
       })
   }
@@ -8598,13 +8188,11 @@
           return window
             .fetch(b, c)
             .then(function (f) {
-              if (!f.ok)
-                throw Error(f.status + ': Network response was not ok!')
+              if (!f.ok) throw Error(f.status + ': Network response was not ok!')
               Z(X.issuerOrigin, 18, !0)
             })
             .catch(function (f) {
-              if (f && 'NoModificationAllowedError' === f.name)
-                Z(X.issuerOrigin, 18, !0)
+              if (f && 'NoModificationAllowedError' === f.name) Z(X.issuerOrigin, 18, !0)
               else {
                 if (e) return q.Promise.reject({ state: 17, error: f })
                 Z(X.issuerOrigin, 17)
@@ -8632,8 +8220,7 @@
               },
             })
             .then(function (g) {
-              if (!g.ok)
-                throw Error(g.status + ': Network response was not ok!')
+              if (!g.ok) throw Error(g.status + ': Network response was not ok!')
               Z(X.issuerOrigin, 22)
               return g.text().then(function (h) {
                 return JSON.parse(h)
@@ -8655,8 +8242,7 @@
                   trustToken: { type: 'token-request' },
                 })
                 .then(function (g) {
-                  if (!g.ok)
-                    throw Error(g.status + ': Network response was not ok!')
+                  if (!g.ok) throw Error(g.status + ': Network response was not ok!')
                   Z(X.issuerOrigin, 25)
                   return e
                 })
@@ -8678,8 +8264,7 @@
                   },
                 })
                 .then(function (f) {
-                  if (!f.ok)
-                    throw Error(f.status + ': Network response was not ok!')
+                  if (!f.ok) throw Error(f.status + ': Network response was not ok!')
                   Z(X.issuerOrigin, 28, !0)
                 })
                 .catch(function (f) {
@@ -8691,16 +8276,11 @@
           Z(X.issuerOrigin, 29)
         })
         .catch(function (e) {
-          if (
-            e instanceof Object &&
-            e.hasOwnProperty('state') &&
-            e.hasOwnProperty('error')
-          )
+          if (e instanceof Object && e.hasOwnProperty('state') && e.hasOwnProperty('error'))
             if ('number' === typeof e.state && e.error instanceof Error) {
               Z(X.issuerOrigin, e.state)
               var f = R(Bi)
-              Math.random() <= f &&
-                Ld({ state: e.state, err: e.error.toString() }, 'dtt_err')
+              Math.random() <= f && Ld({ state: e.state, err: e.error.toString() }, 'dtt_err')
             } else throw Error(e)
           else throw e
         })
@@ -8722,10 +8302,7 @@
         }
         a.i.some(function (e) {
           return e.issuerOrigin === X.issuerOrigin
-        }) &&
-          ((a = b.get(X.issuerOrigin)),
-          a || ((a = wp()), b.set(X.issuerOrigin, a)),
-          c.push(a))
+        }) && ((a = b.get(X.issuerOrigin)), a || ((a = wp()), b.set(X.issuerOrigin, a)), c.push(a))
         if (0 < c.length && q.Promise && q.Promise.all) return q.Promise.all(c)
       }
     }
@@ -8792,12 +8369,10 @@
     if (!Mp()) return null
     var a = Lp()
     if (a.uach_promise) return a.uach_promise
-    var b = L.navigator.userAgentData
-      .getHighEntropyValues(Kp)
-      .then(function (c) {
-        null != a.uach || (a.uach = c)
-        return c
-      })
+    var b = L.navigator.userAgentData.getHighEntropyValues(Kp).then(function (c) {
+      null != a.uach || (a.uach = c)
+      return c
+    })
     return (a.uach_promise = b)
   }
   function Op(a) {
@@ -8808,10 +8383,7 @@
           Ap(
             Hp(
               Cp(
-                Ip(
-                  Ep(Bp(new yp(), a.architecture || ''), a.bitness || ''),
-                  a.mobile || !1
-                ),
+                Ip(Ep(Bp(new yp(), a.architecture || ''), a.bitness || ''), a.mobile || !1),
                 a.model || ''
               ),
               a.platform || ''
@@ -8904,8 +8476,7 @@
         ;(b && !md(f)) || d.push(f)
         try {
           if (f.frames)
-            for (var g = 0; g < f.frames.length && 1024 > c.length; ++g)
-              c.push(f.frames[g])
+            for (var g = 0; g < f.frames.length && 1024 > c.length; ++g) c.push(f.frames[g])
         } catch (k) {}
       }
       for (b = 0; b < d.length; b++)
@@ -8929,8 +8500,7 @@
   function Xp(a, b, c, d) {
     Yp(a, b, c, d, function (e, f) {
       e = e.document
-      for (var g = void 0, h = 0; !g || e.getElementById(g + '_host'); )
-        g = 'aswift_' + h++
+      for (var g = void 0, h = 0; !g || e.getElementById(g + '_host'); ) g = 'aswift_' + h++
       e = g
       g = Number(f.google_ad_width || 0)
       f = Number(f.google_ad_height || 0)
@@ -8975,10 +8545,7 @@
         var h = f.Jb
         if (!h || !h.isConnected)
           if (
-            ((h = a.document.getElementById(
-              String(b.google_async_iframe_id) + '_host'
-            )),
-            null == h)
+            ((h = a.document.getElementById(String(b.google_async_iframe_id) + '_host')), null == h)
           )
             throw Error('no_div')
         h = Q(Sh)
@@ -8998,14 +8565,10 @@
     d =
       !c.google_ad_slot ||
       c.google_override_format ||
-      (!go[c.google_ad_width + 'x' + c.google_ad_height] &&
-        'aa' === c.google_loader_used)
+      (!go[c.google_ad_width + 'x' + c.google_ad_height] && 'aa' === c.google_loader_used)
     e && d ? (e = e.toLowerCase()) : (e = '')
     c.google_ad_format = e
-    if (
-      'number' !== typeof c.google_reactive_sra_index ||
-      !c.google_ad_unit_key
-    ) {
+    if ('number' !== typeof c.google_reactive_sra_index || !c.google_ad_unit_key) {
       e = [
         c.google_ad_slot,
         c.google_orig_ad_format || c.google_ad_format,
@@ -9015,24 +8578,18 @@
       ]
       d = []
       f = 0
-      for (g = b; g && 25 > f; g = g.parentNode, ++f)
-        9 === g.nodeType ? d.push('') : d.push(g.id)
+      for (g = b; g && 25 > f; g = g.parentNode, ++f) 9 === g.nodeType ? d.push('') : d.push(g.id)
       ;(d = d.join()) && e.push(d)
       c.google_ad_unit_key = wd(e.join(':')).toString()
       var h = void 0 === h ? !1 : h
       e = []
       for (d = 0; b && 25 > d; ++d) {
         f = ''
-        ;(void 0 !== h && h) ||
-          (f = (f = 9 !== b.nodeType && b.id) ? '/' + f : '')
+        ;(void 0 !== h && h) || (f = (f = 9 !== b.nodeType && b.id) ? '/' + f : '')
         a: {
           if (b && b.nodeName && b.parentElement) {
             g = b.nodeName.toString().toLowerCase()
-            for (
-              var k = b.parentElement.childNodes, l = 0, m = 0;
-              m < k.length;
-              ++m
-            ) {
+            for (var k = b.parentElement.childNodes, l = 0, m = 0; m < k.length; ++m) {
               var p = k[m]
               if (p.nodeName && p.nodeName.toString().toLowerCase() === g) {
                 if (b === p) {
@@ -9148,12 +8705,7 @@
   }
   function eq(a, b, c, d) {
     cq(a, b)
-    if (
-      c.document &&
-      c.document.body &&
-      !Po(c, b) &&
-      !b.google_reactive_ad_format
-    ) {
+    if (c.document && c.document.body && !Po(c, b) && !b.google_reactive_ad_format) {
       var e = parseInt(a.style.width, 10),
         f = To(a, c)
       if (0 < f && e > f) {
@@ -9176,28 +8728,15 @@
         to(g, h, b)
         g = g.size()
         b.google_responsive_formats = null
-        g.R > f &&
-          !e &&
-          ((b.google_ad_width = g.R), (a.style.width = g.R + 'px'))
+        g.R > f && !e && ((b.google_ad_width = g.R), (a.style.width = g.R + 'px'))
       }
     }
     e = a.offsetWidth || Zi(a, c, 'width', K) || b.google_ad_width || 0
     if (488 > hh(c)) {
       f = nd(c) || c
       g = b.google_ad_client
-      if (
-        (d =
-          fk(f.location, 'google_responsive_slot_preview') ||
-          Q(Rh) ||
-          tm(f, 1, g, d))
-      )
-        b: if (
-          b.google_reactive_ad_format ||
-          b.google_ad_resize ||
-          Po(c, b) ||
-          Oi(a, b)
-        )
-          d = !1
+      if ((d = fk(f.location, 'google_responsive_slot_preview') || Q(Rh) || tm(f, 1, g, d)))
+        b: if (b.google_reactive_ad_format || b.google_ad_resize || Po(c, b) || Oi(a, b)) d = !1
         else {
           for (d = a; d; d = d.parentElement) {
             f = qd(d, c)
@@ -9227,25 +8766,18 @@
     if ((e = Po(c, b))) Ro(e, a, b, c, d)
     else {
       if (Oi(a, b)) {
-        if ((d = qd(a, c)))
-          (a.style.width = d.width), (a.style.height = d.height), Ni(d, b)
+        if ((d = qd(a, c))) (a.style.width = d.width), (a.style.height = d.height), Ni(d, b)
         b.google_ad_width || (b.google_ad_width = a.offsetWidth)
         b.google_ad_height || (b.google_ad_height = a.offsetHeight)
         b.google_loader_features_used = 256
         b.google_responsive_auto_format = dq(c)
       } else Ni(a.style, b)
       ;(c.location && '#gfwmrp' == c.location.hash) ||
-      (12 == b.google_responsive_auto_format &&
-        'true' == b.google_full_width_responsive)
+      (12 == b.google_responsive_auto_format && 'true' == b.google_full_width_responsive)
         ? Ro(10, a, b, c, !1)
         : 0.01 > Math.random() &&
           12 === b.google_responsive_auto_format &&
-          ((a = Ti(
-            a.offsetWidth || parseInt(a.style.width, 10) || b.google_ad_width,
-            c,
-            a,
-            b
-          )),
+          ((a = Ti(a.offsetWidth || parseInt(a.style.width, 10) || b.google_ad_width, c, a, b)),
           !0 !== a ? ((b.efwr = !1), (b.gfwrnwer = a)) : (b.efwr = !0))
     }
   }
@@ -9254,11 +8786,7 @@
       '/slotcar_library',
       '.js',
     ]),
-    gq = ja([
-      'https://googleads.g.doubleclick.net/pagead/html/',
-      '/',
-      '/zrt_lookup.html',
-    ]),
+    gq = ja(['https://googleads.g.doubleclick.net/pagead/html/', '/', '/zrt_lookup.html']),
     hq = ja([
       'https://pagead2.googlesyndication.com/pagead/managed/js/adsense/',
       '/show_ads_impl',
@@ -9315,9 +8843,7 @@
     },
     xb: function (a, b) {
       a = {}
-      return (
-        (a.__uspapiCall = { callId: b, command: 'getUSPData', version: 1 }), a
-      )
+      return (a.__uspapiCall = { callId: b, command: 'getUSPData', version: 1 }), a
     },
     zb: function (a, b) {
       b = b.__uspapiReturn
@@ -9407,8 +8933,7 @@
     a = new Xc(a, Wc)
     try {
       b = window
-      var c =
-        a instanceof Xc && a.constructor === Xc ? a.h : 'type_error:SafeScript'
+      var c = a instanceof Xc && a.constructor === Xc ? a.h : 'type_error:SafeScript'
       b.eval(c) === c && b.eval(c.toString())
       return { supports: !0, error: '' }
     } catch (d) {
@@ -9442,8 +8967,7 @@
   yq.prototype.m = function () {
     var a, b
     ;(b = 'function' === typeof (null == (a = this.l) ? void 0 : a.__uspapi)) ||
-      ((a = this.i ? this.i : (this.i = Bd(this.l, '__uspapiLocator'))),
-      (b = null != a))
+      ((a = this.i ? this.i : (this.i = Bd(this.l, '__uspapiLocator'))), (b = null != a))
     return b
   }
   function zq(a) {
@@ -9484,10 +9008,7 @@
       e || (d.google_lpabyc = Pi(a, d) + Zi(a, d, 'height', K))
       if (e) {
         e = e.page_level_pubvars || {}
-        if (
-          U(L).page_contains_reactive_tag &&
-          !U(L).allow_second_reactive_tag
-        ) {
+        if (U(L).page_contains_reactive_tag && !U(L).allow_second_reactive_tag) {
           if (e.pltais) {
             Gm(!1)
             return
@@ -9527,8 +9048,7 @@
           a.setAttribute('google_element_uid', String(d)),
           'slot' === f.Hb &&
             (null !== Ad(a.getAttribute('width')) && a.setAttribute('width', 0),
-            null !== Ad(a.getAttribute('height')) &&
-              a.setAttribute('height', 0),
+            null !== Ad(a.getAttribute('height')) && a.setAttribute('height', 0),
             (a.style.width = '0px'),
             (a.style.height = '0px')),
           !0
@@ -9549,9 +9069,7 @@
         !0
       )
     a = null == b.google_pgb_reactive || 3 === b.google_pgb_reactive
-    return (1 !== b.google_reactive_ad_format &&
-      8 !== b.google_reactive_ad_format) ||
-      !a
+    return (1 !== b.google_reactive_ad_format && 8 !== b.google_reactive_ad_format) || !a
       ? !1
       : (x.console &&
           x.console.warn(
@@ -9565,12 +9083,7 @@
     var b = document.getElementsByTagName('INS')
     for (var c = 0, d = b[c]; c < b.length; d = b[++c]) {
       var e = d
-      if (
-        Eq(e) &&
-        'reserved' !== e.dataset.adsbygoogleStatus &&
-        (!a || d.id === a)
-      )
-        return d
+      if (Eq(e) && 'reserved' !== e.dataset.adsbygoogleStatus && (!a || d.id === a)) return d
     }
     return null
   }
@@ -9597,19 +9110,13 @@
   function Mq(a, b) {
     var c = {}
     vd(ch, function (f, g) {
-      !1 === a.enable_page_level_ads
-        ? (c[g] = !1)
-        : a.hasOwnProperty(g) && (c[g] = a[g])
+      !1 === a.enable_page_level_ads ? (c[g] = !1) : a.hasOwnProperty(g) && (c[g] = a[g])
     })
-    Ka(a.enable_page_level_ads) &&
-      (c.page_level_pubvars = a.enable_page_level_ads)
+    Ka(a.enable_page_level_ads) && (c.page_level_pubvars = a.enable_page_level_ads)
     var d = Lq()
     Jd.body.appendChild(d)
     var e = {}
-    e =
-      ((e.google_reactive_ads_config = c),
-      (e.google_ad_client = a.google_ad_client),
-      e)
+    e = ((e.google_reactive_ads_config = c), (e.google_ad_client = a.google_ad_client), e)
     e.google_pause_ad_requests = !!U(L).pause_ad_requests
     Fq(d, e, b)
   }
@@ -9619,8 +9126,7 @@
     }
     fh(x).wasPlaTagProcessed = !0
     var d = x.document
-    if (d.body || 'complete' === d.readyState || 'interactive' === d.readyState)
-      c()
+    if (d.body || 'complete' === d.readyState || 'interactive' === d.readyState) c()
     else {
       var e = Mc(xk(191, c))
       Nc(d, 'DOMContentLoaded', e)
@@ -9678,8 +9184,7 @@
         d = L.adsbygoogle
         d.loaded ? d.push(c) : d.splice && d.splice(0, 0, c)
         var g
-        e.google_adbreak_test ||
-        ((null == (g = mc(b, bm, 13, Ub)) ? 0 : H(g, 3)) && Q(Vh))
+        e.google_adbreak_test || ((null == (g = mc(b, bm, 13, Ub)) ? 0 : H(g, 3)) && Q(Vh))
           ? Sq(f, a)
           : xq(function () {
               Sq(f, a)
@@ -9690,10 +9195,7 @@
   function Rq(a) {
     var b = U(window).head_tag_slot_vars,
       c = a.getAttribute('src') || ''
-    if (
-      (a = ld(c, 'client') || a.getAttribute('data-ad-client') || '') &&
-      a !== b.google_ad_client
-    )
+    if ((a = ld(c, 'client') || a.getAttribute('data-ad-client') || '') && a !== b.google_ad_client)
       throw new T(
         'Warning: Do not add multiple property codes with AdSense tag to avoid seeing unexpected behavior. These codes were found on the page ' +
           a +
@@ -9704,8 +9206,7 @@
   function Tq(a) {
     if ('object' === typeof a && null != a) {
       if ('string' === typeof a.type) return 2
-      if ('string' === typeof a.sound || 'string' === typeof a.preloadAdBreaks)
-        return 3
+      if ('string' === typeof a.sound || 'string' === typeof a.preloadAdBreaks) return 3
     }
     return 0
   }
@@ -9761,8 +9262,7 @@
           throw new T(
             "AdSense head tag is missing. AdSense body tags don't work without the head tag. You can copy the head tag from your account on https://adsense.com."
           )
-        if (!b.google_ad_client)
-          throw new T('Ad client is missing from the slot.')
+        if (!b.google_ad_client) throw new T('Ad client is missing from the slot.')
         var f = (c = 0 === (U(L).first_tag_on_page || 0) && bn(b)) && cn(c)
         c && (f || (Yq(c, d), (U(L).skip_next_reactive_tag = !0)), f && $q(c))
         0 === (U(L).first_tag_on_page || 0) && (U(L).first_tag_on_page = 2)
@@ -9823,12 +9323,9 @@
     if (a) {
       if (!Eq(a) && (a.id ? (a = Iq(a.id)) : (a = null), !a))
         throw new T("'element' has already been filled.")
-      if (!('innerHTML' in a))
-        throw new T("'element' is not a good DOM element.")
+      if (!('innerHTML' in a)) throw new T("'element' is not a good DOM element.")
     } else if (((a = Iq()), !a))
-      throw new T(
-        'All ins elements in the DOM with class=adsbygoogle already have ads in them.'
-      )
+      throw new T('All ins elements in the DOM with class=adsbygoogle already have ads in them.')
     return a
   }
   function br() {
@@ -9858,10 +9355,7 @@
           if (!U(L).pause_ad_requests) {
             var b = void 0 === b ? {} : b
             if ('function' === typeof window.CustomEvent)
-              var c = new CustomEvent(
-                'adsbygoogle-pub-unpause-ad-requests-event',
-                b
-              )
+              var c = new CustomEvent('adsbygoogle-pub-unpause-ad-requests-event', b)
             else
               (c = document.createEvent('CustomEvent')),
                 c.initCustomEvent(
@@ -9981,11 +9475,7 @@
         f = window
         var h = f.adsbygoogle
         if (!h || !h.loaded) {
-          yk(
-            'new_abg_tag',
-            { value: '' + H(e, 16), host_v: '' + H(e, 22), frequency: 0.01 },
-            0.01
-          )
+          yk('new_abg_tag', { value: '' + H(e, 16), host_v: '' + H(e, 22), frequency: 0.01 }, 0.01)
           br()
           var k = {
             push: function (p) {
@@ -10001,11 +9491,7 @@
           } catch (p) {}
           if (h)
             for (
-              var l = v([
-                  'requestNonPersonalizedAds',
-                  'pauseAdRequests',
-                  'cookieOptions',
-                ]),
+              var l = v(['requestNonPersonalizedAds', 'pauseAdRequests', 'cookieOptions']),
                 m = l.next();
               !m.done;
               m = l.next()
@@ -10017,11 +9503,7 @@
           h && (k.onload = h.onload)
           ;(f = Wp(g)) && document.documentElement.appendChild(f)
           f = wq()
-          yk(
-            'modern_js',
-            { fy: hc(e, 1), supports: String(f.supports), c: 2012, e: f.error },
-            0.01
-          )
+          yk('modern_js', { fy: hc(e, 1), supports: String(f.supports), c: 2012, e: f.error }, 0.01)
         }
       }
     })
@@ -10040,7 +9522,7 @@
       Ib: /^(?:https?:)?\/\/(?:pagead2\.googlesyndication\.com|securepubads\.g\.doubleclick\.net)\/pagead\/(?:js\/)?(?:show_ads|adsbygoogle)\.js(?:[?#].*)?$/,
     }
   })
-}).call(
+}.call(
   this,
   '[2012,"r20230125","r20190131",null,null,null,null,".google.co.ke",null,null,null,[[[1082,null,null,[1]],[null,1130,null,[null,100]],[null,1126,null,[null,10000]],[null,1032,null,[null,200],[[[12,null,null,null,4,null,"Android",["navigator.userAgent"]],[null,500]]]],[null,1224,null,[null,0.01]],[null,1159,null,[null,500]],[1217,null,null,[1]],[1122,null,null,[1]],[1218,null,null,[1]],[1207,null,null,[1]],[null,66,null,[null,-1]],[null,65,null,[null,-1]],[1205,null,null,[1]],[1167,null,null,[1]],[1129,null,null,[1]],[null,1169,null,[null,61440]],[1171,null,null,[1]],[1201,null,null,[1]],[1199,null,null,[1]],[1161,null,null,[1]],[null,1072,null,[null,0.75]],[1101,null,null,[1]],[null,1168,null,[null,61440]],[1198,null,null,[1]],[1206,null,null,[1]],[1219,null,null,[1]],[1190,null,null,[1]],[null,1085,null,[null,5]],[null,63,null,[null,30]],[null,1080,null,[null,5]],[null,null,null,[null,null,null,["2"]],null,10003],[1086,null,null,[1]],[63682,null,null,[]],[null,1027,null,[null,10]],[null,57,null,[null,120]],[null,1079,null,[null,5]],[null,1050,null,[null,30]],[null,58,null,[null,120]],[1033,null,null,[1]],[10002,null,null,[1]],[null,null,null,[null,null,null,["Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==","A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==","A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="]],null,1934],[1957,null,null,[1]],[1971,null,null,[1]],[493422261,null,null,[1]],[null,1972,null,[]],[null,1142,null,[null,8]],[null,501545963,null,[null,1]],[null,1195,null,[null,1]],[null,1119,null,[null,300]],[null,1193,null,[null,100]],[505942137,null,null,[1]],[500657056,null,null,[1]],[null,501545962,null,[null,1]],[null,495583959,null,[null,-1]],[null,45388309,null,[null,-1]],[null,1114,null,[null,1]],[null,1116,null,[null,300]],[null,1117,null,[null,100]],[null,1110,null,[null,5]],[null,1111,null,[null,5]],[null,1112,null,[null,5]],[null,1113,null,[null,5]],[1203,null,null,[1]],[45388146,null,null,[1]],[null,1115,null,[null,-1]],[501545959,null,null,[1]],[null,1194,null,[null,1]],[469675169,null,null,[1]],[null,469675170,null,[null,30000]],[392736476,null,null,[]],[null,null,null,[],null,1932],[432938498,null,null,[]]],[[10,[[null,[[31071642],[31071643,[[1216,null,null,[1]]]]],null,72],[1,[[42531513],[42531514,[[316,null,null,[1]]]]]],[1,[[42531644],[42531645,[[368,null,null,[1]]]],[42531646,[[369,null,null,[1]],[368,null,null,[1]]]]]],[10,[[42531705],[42531706]]],[1,[[44719338],[44719339,[[334,null,null,[1]],[null,54,null,[null,100]],[null,66,null,[null,10]],[null,65,null,[null,1000]]]]]],[10,[[44767166],[44767167]]],[1,[[44782466],[44782467,[[1160,null,null,[1]]]],[44782468,[[1226,null,null,[1]],[1160,null,null,[1]]]]]],[null,[[44755592],[44755593,[[null,null,1166,[null,null,"h.3.0.0"]]]],[44755594,[[null,null,1166,[null,null,"h.3.0.0"]]]],[44755653,[[null,null,1166,[null,null,"h.3.0.0"]]]],[44777509,[[1200,null,null,[1]]]]],null,51],[null,[[31071869],[31071870,[[1215,null,null,[1]]]]],null,72],[10,[[31071258],[31071259]]],[1000,[[31071721,[[null,null,14,[null,null,"31071721"]]],[6,null,null,null,6,null,"31071721"]],[31071722,[[null,null,14,[null,null,"31071722"]]],[6,null,null,null,6,null,"31071722"]]],[4,null,55],63],[100,[[31071755],[31071756,[[1222,null,null,[1]]]]]],[1000,[[31071765,[[null,null,14,[null,null,"31071765"]]],[6,null,null,null,6,null,"31071765"]],[31071766,[[null,null,14,[null,null,"31071766"]]],[6,null,null,null,6,null,"31071766"]]],[4,null,55],63],[1000,[[31071811,[[null,null,14,[null,null,"31071811"]]],[6,null,null,null,6,null,"31071811"]],[31071812,[[null,null,14,[null,null,"31071812"]]],[6,null,null,null,6,null,"31071812"]]],[4,null,55],63],[1000,[[31071854,[[null,null,14,[null,null,"31071854"]]],[6,null,null,null,6,null,"31071854"]],[31071855,[[null,null,14,[null,null,"31071855"]]],[6,null,null,null,6,null,"31071855"]]],[4,null,55],63],[1000,[[31071886,[[null,null,14,[null,null,"31071886"]]],[6,null,null,null,6,null,"31071886"]],[31071887,[[null,null,14,[null,null,"31071887"]]],[6,null,null,null,6,null,"31071887"]]],[4,null,55],63],[1000,[[31071926,[[null,null,14,[null,null,"31071926"]]],[6,null,null,null,6,null,"31071926"]],[31071927,[[null,null,14,[null,null,"31071927"]]],[6,null,null,null,6,null,"31071927"]],[31071928,[[null,null,14,[null,null,"31071928"]]],[6,null,null,null,6,null,"31071928"]],[31071929,[[null,null,14,[null,null,"31071929"]]],[6,null,null,null,6,null,"31071929"]],[31071930,[[null,null,14,[null,null,"31071930"]]],[6,null,null,null,6,null,"31071930"]],[31071931,[[null,null,14,[null,null,"31071931"]]],[6,null,null,null,6,null,"31071931"]]],[4,null,55],63],[100,[[31071947],[31071948,[[1225,null,null,[1]]]]]],[10,[[44772268],[44772269,[[1185,null,null,[1]]]]]],[50,[[44774292],[44774606,[[1147,null,null,[1]]]]],null,54],[1,[[44774293,[[1147,null,null,[1]]]],[44774605,[[1147,null,null,[1]]]],[44776415]],null,54],[1,[[44779343],[44779344,[[1147,null,null,[1]]]]],null,54],[200,[[44779793],[44779794,[[63682,null,null,[1]]]]],null,51],[50,[[31067422],[31067423,[[null,1032,null,[]]]],[44776074],[44777421],[44779109],[44779906]],[3,[[4,null,8,null,null,null,null,["gmaSdk.getQueryInfo"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaQueryInfo.postMessage"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaSig.postMessage"]]]],69],[10,[[44776368],[44776369],[44779257]],[3,[[4,null,8,null,null,null,null,["gmaSdk.getQueryInfo"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaQueryInfo.postMessage"]],[4,null,8,null,null,null,null,["webkit.messageHandlers.getGmaSig.postMessage"]]]],69]]],[17,[[null,[[44773745],[44773746],[44773747]],null,null,null,null,31,null,null,113],[1,[[31071081,[[null,1103,null,[null,31071081]],[1121,null,null,[1]]]],[31071082,[[1120,null,null,[1]],[null,1103,null,[null,31071082]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[1121,null,null,[1]]]]],[4,null,55],null,null,null,null,80,null,115,1],[10,[[31071260]]],[10,[[31071261],[31071262],[31071263],[31071264]],null,null,null,44,22],[10,[[31071265],[31071266]],null,null,null,44,null,500],[10,[[31071267]],null,null,null,44,null,900],[10,[[31071268],[31071269]],null,null,null,null,null,null,null,101],[10,[[31072013,[[null,1103,null,[null,31072013]]]],[31072014,[[1120,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,31072014]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[491815314,null,null,[1]],[null,1194,null,[null,2]]]],[31072015,[[1162,null,null,[1]],[1120,null,null,[1]],[null,1158,null,[null,45]],[null,1157,null,[null,400]],[null,1103,null,[null,31072015]],[null,1114,null,[null,-1]],[null,1116,null,[null,50]],[null,1108,null,[null,1000]],[491815314,null,null,[1]],[480632076,null,null,[1]],[472491850,null,null,[1]]]],[31072016,[[1162,null,null,[1]],[1120,null,null,[1]],[null,1158,null,[null,45]],[null,1157,null,[null,400]],[494741144,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,31072016]],[null,1114,null,[null,0.4]],[null,1116,null,[null,300]],[null,1108,null,[null,1000]],[491815314,null,null,[1]],[480632076,null,null,[1]],[null,1194,null,[null,2]],[472491850,null,null,[1]]]]],[4,null,55],null,null,null,null,770,null,115,1],[1,[[31072068,[[1120,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,31072068]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[null,1194,null,[null,2]]]],[31072069,[[1120,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,31072069]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[null,1194,null,[null,2]],[471262996,null,null,[1]]]]],[4,null,55],null,null,null,null,810,null,115,1],[10,[[44778613,[[null,1103,null,[null,44778613]]]],[44778614,[[1162,null,null,[1]],[1120,null,null,[1]],[null,1158,null,[null,45]],[null,1157,null,[null,400]],[null,1103,null,[null,44778614]],[null,1114,null,[null,-1]],[null,1116,null,[null,50]],[null,1108,null,[null,1000]],[1203,null,null,[1]],[480632076,null,null,[1]],[469675169,null,null,[1]],[472491850,null,null,[1]]]]],[4,null,55],null,null,null,null,20,null,115,1],[40,[[44779076,[[null,1103,null,[null,44779076]]]],[44779077,[[1120,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,44779077]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[null,1194,null,[null,2]]]]],[4,null,55],null,null,null,null,430,null,115,1],[10,[[44781381,[[1162,null,null,[1]],[1120,null,null,[1]],[null,1158,null,[null,45]],[null,1157,null,[null,400]],[null,1103,null,[null,44781381]],[null,1114,null,[null,-1]],[null,1116,null,[null,50]],[null,1108,null,[null,1000]],[1203,null,null,[1]],[480632076,null,null,[1]],[469675169,null,null,[1]],[472491850,null,null,[1]]]],[44781382,[[1162,null,null,[1]],[1120,null,null,[1]],[null,1158,null,[null,45]],[null,1157,null,[null,400]],[null,1103,null,[null,44781382]],[45388034,null,null,[1]],[null,45388309,null,[null,400]],[null,1114,null,[null,-1]],[null,1116,null,[null,50]],[null,1108,null,[null,1000]],[1203,null,null,[1]],[480632076,null,null,[1]],[469675169,null,null,[1]],[472491850,null,null,[1]]]],[44781383,[[1162,null,null,[1]],[1120,null,null,[1]],[null,1158,null,[null,45]],[null,1157,null,[null,400]],[null,1103,null,[null,44781383]],[45388034,null,null,[1]],[null,45388309,null,[null,800]],[null,1114,null,[null,-1]],[null,1116,null,[null,50]],[null,1108,null,[null,1000]],[1203,null,null,[1]],[480632076,null,null,[1]],[469675169,null,null,[1]],[472491850,null,null,[1]]]]],[4,null,55],null,null,null,null,630,null,115,1],[10,[[44781930,[[1120,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,44781930]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[null,1194,null,[null,2]]]],[44781931,[[1120,null,null,[1]],[null,1195,null,[null,5]],[null,1103,null,[null,44781931]],[null,1114,null,[null,0.4]],[null,1108,null,[null,1000]],[null,1194,null,[null,2]],[500169372,null,null,[1]]]]],[4,null,55],null,null,null,null,750,null,115,1]]],[11,[[50,[[44781117],[44781118],[44781119,[[1957,null,null,[]]]]],null,48],[10,[[44782816],[44782817],[44782818]],null,48],[10,[[44783239],[44783240]],null,48],[1000,[[31071235,[[483374575,null,null,[1]]]]],[4,null,8,null,null,null,null,["sharedStorage"]]]]],[12,[[20,[[21065724],[21065725,[[203,null,null,[1]]]]],[4,null,9,null,null,null,null,["LayoutShift"]],71],[10,[[31061690],[31061691,[[83,null,null,[1]],[84,null,null,[1]]]]],null,61],[50,[[31071662],[31071663,[[1974,null,null,[1]]]]]],[10,[[44769661],[44769662,[[1973,null,null,[1]]]]]]]],[13,[[500,[[31061692],[31061693,[[77,null,null,[1]],[78,null,null,[1]],[85,null,null,[1]],[80,null,null,[1]],[76,null,null,[1]]]]],[4,null,6,null,null,null,null,["31061691"]]],[1000,[[31067146,null,[4,null,9,null,null,null,null,["document.browsingTopics"]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31067147,null,[2,[[4,null,9,null,null,null,null,["navigator.runAdAuction"]],[4,null,9,null,null,null,null,["navigator.joinAdInterestGroup"]]]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31067148,null,[4,null,69,null,null,null,null,["attribution-reporting"]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31067672,null,[2,[[4,null,69,null,null,null,null,["browsing-topics"]],[1,[[4,null,70,null,null,null,null,["browsing-topics"]]]]]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31067673,null,[2,[[4,null,69,null,null,null,null,["join-ad-interest-group"]],[1,[[4,null,70,null,null,null,null,["join-ad-interest-group"]]]]]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31067674,null,[2,[[4,null,69,null,null,null,null,["run-ad-auction"]],[1,[[4,null,70,null,null,null,null,["run-ad-auction"]]]]]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31067675,null,[2,[[4,null,69,null,null,null,null,["attribution-reporting"]],[1,[[4,null,70,null,null,null,null,["attribution-reporting"]]]]]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31068556,null,[4,null,8,null,null,null,null,["sharedStorage"]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[1000,[[31068557,null,[2,[[4,null,69,null,null,null,null,["shared-storage"]],[1,[[4,null,70,null,null,null,null,["shared-storage"]]]]]]]],[12,null,null,null,4,null,"Chrome/((?!100)\\\\d{3,})",["navigator.userAgent"]]],[10,[[31070380],[31070381,[[477209535,null,null,[1]],[487608180,null,null,[1]]]]],[4,null,9,null,null,null,null,["document.browsingTopics"]]],[null,[[31070383,null,[4,null,27,null,null,null,null,["crossOriginIsolated"]]],[31070384,[[null,null,null,[null,null,null,["A/6fvn8/Gtanoa1JImBxbvhuYBg6saTOvUwnxxrjfqYKVr6FhYuq735gNAS9yiA9eZCfxy6DNpj7b5RvVydt3AAAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQW5vbnltb3VzSWZyYW1lT3JpZ2luVHJpYWwiLCJleHBpcnkiOjE2NzU4MTQzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A+U9qN2zW5GTLxw8s2+dVNTkJno6E+N/ccDejxXyQWvhjPxM7ZW2kkup3QdRQA3PNcdJmf7fmSYjbhYI9IfoTwwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQW5vbnltb3VzSWZyYW1lT3JpZ2luVHJpYWwiLCJleHBpcnkiOjE2NzU4MTQzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A/nrjb/iPi/6otfK9jaRrKeitC60ZEvSBV2LdZ9fK9wYY6avQ4BArkhirmauwsEv8oXTREo3giK6JoHNOyETTwsAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQW5vbnltb3VzSWZyYW1lT3JpZ2luVHJpYWwiLCJleHBpcnkiOjE2NzU4MTQzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"]],null,472572701],[439828594,null,null,[1]]],[4,null,27,null,null,null,null,["crossOriginIsolated"]]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/((?!10[012345])\\\\d{3,})",["navigator.userAgent"]]]],70],[null,[[31070594],[31070595,[[null,null,null,[null,null,null,["A/6fvn8/Gtanoa1JImBxbvhuYBg6saTOvUwnxxrjfqYKVr6FhYuq735gNAS9yiA9eZCfxy6DNpj7b5RvVydt3AAAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQW5vbnltb3VzSWZyYW1lT3JpZ2luVHJpYWwiLCJleHBpcnkiOjE2NzU4MTQzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A+U9qN2zW5GTLxw8s2+dVNTkJno6E+N/ccDejxXyQWvhjPxM7ZW2kkup3QdRQA3PNcdJmf7fmSYjbhYI9IfoTwwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQW5vbnltb3VzSWZyYW1lT3JpZ2luVHJpYWwiLCJleHBpcnkiOjE2NzU4MTQzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9","A/nrjb/iPi/6otfK9jaRrKeitC60ZEvSBV2LdZ9fK9wYY6avQ4BArkhirmauwsEv8oXTREo3giK6JoHNOyETTwsAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQW5vbnltb3VzSWZyYW1lT3JpZ2luVHJpYWwiLCJleHBpcnkiOjE2NzU4MTQzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"]],null,472572701],[439828594,null,null,[1]],[483962503,null,null,[1]]]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/((?!10[012345])\\\\d{3,})",["navigator.userAgent"]]]],70],[null,[[44768158,null,[4,null,70,null,null,null,null,["attribution-reporting"]]],[44768159,null,[4,null,70,null,null,null,null,["attribution-reporting"]]]]],[50,[[44776500,null,[4,null,70,null,null,null,null,["attribution-reporting"]]],[44776501,null,[4,null,70,null,null,null,null,["attribution-reporting"]]]]],[50,[[44776502,null,[4,null,70,null,null,null,null,["attribution-reporting"]]],[44776503,null,[4,null,70,null,null,null,null,["attribution-reporting"]]]]]]],[20,[[1000,[[31070530,null,[4,null,27,null,null,null,null,["crossOriginIsolated"]]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/((?!10[012345])\\\\d{3,})",["navigator.userAgent"]]]]],[1000,[[31070531,null,[2,[[4,null,27,null,null,null,null,["crossOriginIsolated"]],[4,null,8,null,null,null,null,["credentialless"]]]]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/((?!10[012345])\\\\d{3,})",["navigator.userAgent"]]]]],[1000,[[31070532,null,[4,null,9,null,null,null,null,["SharedArrayBuffer"]]]],[2,[[6,null,null,3,null,0],[12,null,null,null,4,null,"Chrome/((?!10[012345])\\\\d{3,})",["navigator.userAgent"]]]]]]]],null,null,[null,"1000",1,"1000"]],[null,[]],null,"31071812",null,null,208810319,[44759876,44759927,44759837]]'
-)
+))
