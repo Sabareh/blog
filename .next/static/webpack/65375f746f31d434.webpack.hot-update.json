@@ -1,1 +1,13 @@
-{"c":["webpack"],"r":["pages/projects"],"m":["./components/Card.js","./components/icon/folder.svg","./components/icon/index.js","./components/social-icons/index.js","./data/projectsData.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=C%3A%5CUsers%5CUSER%5CDocuments%5CGitHub%5Cblog%5Cpages%5Cprojects.js&page=%2Fprojects!","./pages/projects.js"]}
+{
+  "c": ["webpack"],
+  "r": ["pages/projects"],
+  "m": [
+    "./components/Card.js",
+    "./components/icon/folder.svg",
+    "./components/icon/index.js",
+    "./components/social-icons/index.js",
+    "./data/projectsData.js",
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=C%3A%5CUsers%5CUSER%5CDocuments%5CGitHub%5Cblog%5Cpages%5Cprojects.js&page=%2Fprojects!",
+    "./pages/projects.js"
+  ]
+}
