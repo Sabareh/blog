@@ -62,7 +62,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             <script
               data-ad-client="ca-pub-4331473606799485"
               async
-              src="/scripts/google_script.js"
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
             ></script>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
