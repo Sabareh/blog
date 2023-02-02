@@ -1,5 +1,9 @@
 {
-  "ExpandedNodes": ["", "\\pages", "\\prisma"],
+  "ExpandedNodes": [
+    "",
+    "\\pages",
+    "\\prisma"
+  ],
   "SelectedNode": "\\package-lock.json",
   "PreviewInSolutionExplorer": false
 }
