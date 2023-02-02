@@ -53,6 +53,15 @@ const defaultTheme = {
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   return (
+  <>
+  <Script 
+    id="Adsense-id" 
+    data-ad-client="ca-pub-4331473606799485"
+    async strategy="afterInteractive"
+    onError={ (e) => { console.error('Script failed to load', e) }}
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    crossOrigin="anonymous"
+    />
     <SessionProvider session={session}>
       <Provider apiKey="pt_7c8b6840f5ba39cd3b2b471cd8efc2" theme={defaultTheme}>
         <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
