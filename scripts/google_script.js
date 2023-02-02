@@ -189,7 +189,9 @@
         ra.__proto__ = qa
         pa = ra.a
         break a
-      } catch (a) {}
+      } catch (a) {
+        console.log('Condition is true')
+      }
       pa = !1
     }
     oa = pa
