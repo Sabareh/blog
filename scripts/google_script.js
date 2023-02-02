@@ -8,7 +8,7 @@
   function ba(a) {
     var b = 0
     return function () {
-      return b < a.length ? {done: !1, value: a[b++]} : {done: !0}
+      return b < a.length ? { done: !1, value: a[b++] } : { done: !0 }
     }
   }
   var ca =
@@ -61,12 +61,12 @@
         b = b(c)
         null != b &&
           (a
-            ? ca(q, d, {configurable: !0, writable: !0, value: b})
+            ? ca(q, d, { configurable: !0, writable: !0, value: b })
             : b !== c &&
               (void 0 === ha[d] &&
                 ((a = (1e9 * Math.random()) >>> 0),
                 (ha[d] = fa ? ea.Symbol(d) : '$jscp$' + a + '$' + d)),
-              ca(f, ha[d], {configurable: !0, writable: !0, value: b})))
+              ca(f, ha[d], { configurable: !0, writable: !0, value: b })))
       }
   }
   u(
@@ -79,7 +79,7 @@
       }
       function c(f, g) {
         this.h = f
-        ca(this, 'description', {configurable: !0, writable: !0, value: g})
+        ca(this, 'description', { configurable: !0, writable: !0, value: g })
       }
       if (a) return a
       c.prototype.toString = function () {
@@ -121,7 +121,7 @@
     'es6'
   )
   function ia(a) {
-    a = {next: a}
+    a = { next: a }
     a[r(q.Symbol, 'iterator')] = function () {
       return this
     }
@@ -135,7 +135,7 @@
       'undefined' != typeof q.Symbol &&
       r(q.Symbol, 'iterator') &&
       a[r(q.Symbol, 'iterator')]
-    return b ? b.call(a) : {next: ba(a)}
+    return b ? b.call(a) : { next: ba(a) }
   }
   function ka(a) {
     if (!(a instanceof Array)) {
@@ -179,7 +179,7 @@
   else {
     var pa
     a: {
-      var qa = {a: !0},
+      var qa = { a: !0 },
         ra = {}
       try {
         ra.__proto__ = qa
@@ -226,16 +226,16 @@
     this.u = a
   }
   function va(a, b) {
-    a.j = {exception: b, ub: !0}
+    a.j = { exception: b, ub: !0 }
     a.h = a.A
   }
   ta.prototype.return = function (a) {
-    this.j = {return: a}
+    this.j = { return: a }
     this.h = this.A
   }
   function wa(a, b, c) {
     a.h = c
-    return {value: b}
+    return { value: b }
   }
   function xa(a) {
     this.h = new ta()
@@ -250,7 +250,7 @@
         'return' in c
           ? c['return']
           : function (d) {
-              return {value: d, done: !0}
+              return { value: d, done: !0 }
             },
         b,
         a.h.return
@@ -276,7 +276,7 @@
     for (; a.h.h; )
       try {
         var b = a.i(a.h)
-        if (b) return (a.h.l = !1), {value: b.value, done: !1}
+        if (b) return (a.h.l = !1), { value: b.value, done: !1 }
       } catch (c) {
         ;(a.h.u = void 0), va(a.h, c)
       }
@@ -285,9 +285,9 @@
       b = a.h.j
       a.h.j = null
       if (b.ub) throw b.exception
-      return {value: b.return, done: !0}
+      return { value: b.return, done: !0 }
     }
-    return {value: void 0, done: !0}
+    return { value: void 0, done: !0 }
   }
   function Ba(a) {
     this.next = function (b) {
@@ -398,7 +398,7 @@
         }
         var h = this,
           k = !1
-        return {resolve: g(this.N), reject: g(this.m)}
+        return { resolve: g(this.N), reject: g(this.m) }
       }
       b.prototype.N = function (g) {
         if (g === this)
@@ -465,9 +465,9 @@
           k = ea.dispatchEvent
         if ('undefined' === typeof k) return !0
         'function' === typeof g
-          ? (g = new g('unhandledrejection', {cancelable: !0}))
+          ? (g = new g('unhandledrejection', { cancelable: !0 }))
           : 'function' === typeof h
-          ? (g = new h('unhandledrejection', {cancelable: !0}))
+          ? (g = new h('unhandledrejection', { cancelable: !0 }))
           : ((g = ea.document.createEvent('CustomEvent')),
             g.initCustomEvent('unhandledrejection', !1, !0, g))
         g.promise = this
@@ -638,7 +638,7 @@
         if (!d(g)) throw Error('Invalid WeakMap key')
         if (!la(g, e)) {
           var k = new c()
-          ca(g, e, {value: k})
+          ca(g, e, { value: k })
         }
         if (!la(g, e)) throw Error('WeakMap key fail: ' + g)
         g[e][this.h] = h
@@ -670,10 +670,10 @@
           if (l) {
             for (; l.head != h.h; ) l = l.V
             for (; l.next != l.head; )
-              return (l = l.next), {done: !1, value: k(l)}
+              return (l = l.next), { done: !1, value: k(l) }
             l = null
           }
-          return {done: !0, value: void 0}
+          return { done: !0, value: void 0 }
         })
       }
       function d(h, k) {
@@ -688,9 +688,9 @@
           for (h = 0; h < m.length; h++) {
             var p = m[h]
             if ((k !== k && p.key !== p.key) || k === p.key)
-              return {id: l, list: m, index: h, D: p}
+              return { id: l, list: m, index: h, D: p }
           }
-        return {id: l, list: m, index: -1, D: void 0}
+        return { id: l, list: m, index: -1, D: void 0 }
       }
       function e(h) {
         this.i = {}
@@ -712,13 +712,13 @@
           )
             return !1
           try {
-            var h = Object.seal({x: 4}),
+            var h = Object.seal({ x: 4 }),
               k = new a(v([[h, 's']]))
             if (
               's' != k.get(h) ||
               1 != k.size ||
-              k.get({x: 4}) ||
-              k.set({x: 4}, 't') != k ||
+              k.get({ x: 4 }) ||
+              k.set({ x: 4 }, 't') != k ||
               2 != k.size
             )
               return !1
@@ -825,10 +825,10 @@
         next: function () {
           if (!d && c < a.length) {
             var f = c++
-            return {value: b(f, a[f]), done: !1}
+            return { value: b(f, a[f]), done: !1 }
           }
           d = !0
-          return {done: !0, value: void 0}
+          return { done: !0, value: void 0 }
         },
       }
     e[r(q.Symbol, 'iterator')] = function () {
@@ -912,14 +912,14 @@
           )
             return !1
           try {
-            var c = Object.seal({x: 4}),
+            var c = Object.seal({ x: 4 }),
               d = new a(v([c]))
             if (
               !d.has(c) ||
               1 != d.size ||
               d.add(c) != d ||
               1 != d.size ||
-              d.add({x: 4}) != d ||
+              d.add({ x: 4 }) != d ||
               2 != d.size
             )
               return !1
@@ -1492,7 +1492,7 @@
     if (xb) return (a[xb] |= b)
     if (void 0 !== a.P) return (a.P |= b)
     Object.defineProperties(a, {
-      P: {value: b, configurable: !0, writable: !0, enumerable: !1},
+      P: { value: b, configurable: !0, writable: !0, enumerable: !1 },
     })
     return b
   }
@@ -1516,7 +1516,7 @@
       : void 0 !== a.P
       ? (a.P = b)
       : Object.defineProperties(a, {
-          P: {value: b, configurable: !0, writable: !0, enumerable: !1},
+          P: { value: b, configurable: !0, writable: !0, enumerable: !1 },
         })
   }
   function Db(a) {
@@ -2465,7 +2465,7 @@
         }),
         d &&
           ((b.mode = 'cors'),
-          (b.headers = {'Attribution-Reporting-Eligible': 'event-source'})),
+          (b.headers = { 'Attribution-Reporting-Eligible': 'event-source' })),
         c.fetch(a, b))
       : Kd(c, a, void 0 === b ? !1 : b, void 0 === d ? !1 : d)
   }
@@ -2779,7 +2779,7 @@
     } catch (h) {
       b = !0
       try {
-        we(d), (b = this.l(a, new Xd(h, {message: ye(h)}), void 0, c))
+        we(d), (b = this.l(a, new Xd(h, { message: ye(h) }), void 0, c))
       } catch (k) {
         this.L(217, k)
       }
@@ -2805,7 +2805,7 @@
       var f = new be()
       f.h.push(1)
       f.i[1] = ce('context', a)
-      Yd(b) || (b = new Xd(b, {message: ye(b)}))
+      Yd(b) || (b = new Xd(b, { message: ye(b) }))
       if (b.msg) {
         var g = b.msg.substring(0, 512)
         f.h.push(2)
@@ -2872,7 +2872,7 @@
         f.h.push(4)
         f.i[4] = ce('top', Y)
       }
-      var le = {url: G.h.url || ''}
+      var le = { url: G.h.url || '' }
       if (G.h.url) {
         var me = G.h.url.match(jd),
           Tg = me[1],
@@ -2883,7 +2883,7 @@
         Ug && ((t += '//'), (t += Ug), Vg && (t += ':' + Vg))
         var Wg = t
       } else Wg = ''
-      le = [le, {url: Wg}]
+      le = [le, { url: Wg }]
       f.h.push(5)
       f.i[5] = le
       je(this.m, e, f, this.j, c)
@@ -2892,7 +2892,7 @@
         je(
           this.m,
           e,
-          {context: 'ecmserr', rctx: a, msg: ye(Vc), url: G && G.h.url},
+          { context: 'ecmserr', rctx: a, msg: ye(Vc), url: G && G.h.url },
           this.j,
           c
         )
@@ -3162,7 +3162,7 @@
       a,
       ka(
         Ea.apply(1, arguments).map(function (b) {
-          return {hb: 4, message: b}
+          return { hb: 4, message: b }
         })
       )
     )
@@ -3172,7 +3172,7 @@
       a,
       ka(
         Ea.apply(1, arguments).map(function (b) {
-          return {hb: 7, message: b}
+          return { hb: 7, message: b }
         })
       )
     )
@@ -3554,7 +3554,7 @@
     jb(N(Zf).l, a) || fg($f(4), a)
   }
   function kg(a, b, c) {
-    c.hasOwnProperty(a) || Object.defineProperty(c, String(a), {value: b})
+    c.hasOwnProperty(a) || Object.defineProperty(c, String(a), { value: b })
   }
   function lg(a, b, c) {
     return b[a] || c
@@ -3614,7 +3614,7 @@
   }
   function og(a) {
     a.hasOwnProperty('init-done') ||
-      Object.defineProperty(a, 'init-done', {value: !0})
+      Object.defineProperty(a, 'init-done', { value: !0 })
   }
   function pg() {}
   pg.prototype.j = function () {}
@@ -3671,7 +3671,7 @@
     Lb: 9,
     Ob: 10,
   }
-  var vg = {Xb: 0, Yb: 1, Wb: 2}
+  var vg = { Xb: 0, Yb: 1, Wb: 2 }
   function wg() {
     this.i = new xg(this)
     this.h = 0
@@ -3786,7 +3786,7 @@
     return a
   }
   function Hg(a) {
-    return new Eg({value: a}, null)
+    return new Eg({ value: a }, null)
   }
   function Jg(a) {
     return new Eg(null, a)
@@ -3836,14 +3836,14 @@
   function Pg(a) {
     var b = [],
       c = a.l
-    c && c.h.length && b.push({ca: 'a', ia: Qg(c)})
-    null != a.h && b.push({ca: 'as', ia: a.h})
-    null != a.i && b.push({ca: 'i', ia: String(a.i)})
-    null != a.j && b.push({ca: 'rp', ia: String(a.j)})
+    c && c.h.length && b.push({ ca: 'a', ia: Qg(c) })
+    null != a.h && b.push({ ca: 'as', ia: a.h })
+    null != a.i && b.push({ ca: 'i', ia: String(a.i) })
+    null != a.j && b.push({ ca: 'rp', ia: String(a.j) })
     b.sort(function (d, e) {
       return d.ca.localeCompare(e.ca)
     })
-    b.unshift({ca: 't', ia: 'aa'})
+    b.unshift({ ca: 't', ia: 'aa' })
     return b
   }
   function Qg(a) {
@@ -3887,13 +3887,13 @@
   function Zg(a) {
     switch (a) {
       case 1:
-        return new Xg(null, {google_ad_semantic_area: 'mc'})
+        return new Xg(null, { google_ad_semantic_area: 'mc' })
       case 2:
-        return new Xg(null, {google_ad_semantic_area: 'h'})
+        return new Xg(null, { google_ad_semantic_area: 'h' })
       case 3:
-        return new Xg(null, {google_ad_semantic_area: 'f'})
+        return new Xg(null, { google_ad_semantic_area: 'f' })
       case 4:
-        return new Xg(null, {google_ad_semantic_area: 's'})
+        return new Xg(null, { google_ad_semantic_area: 's' })
       default:
         return null
     }
@@ -3909,7 +3909,7 @@
         var d = String(c.ia)
         a.push(c.ca + '.' + (20 >= d.length ? d : d.slice(0, 19) + '_'))
       }
-      a = new Xg(null, {google_placement_id: a.join('~')})
+      a = new Xg(null, { google_placement_id: a.join('~') })
     }
     return a
   }
@@ -4295,7 +4295,7 @@
   function Ji(a, b) {
     return a && b(a) ? a : null
   }
-  var Ki = {rectangle: 1, horizontal: 2, vertical: 4}
+  var Ki = { rectangle: 1, horizontal: 2, vertical: 4 }
   function Li(a) {
     if (a == a.top) return 0
     for (; a && a != a.top && md(a); a = a.parent) {
@@ -4336,7 +4336,7 @@
     try {
       var c = b.document.documentElement.getBoundingClientRect(),
         d = a.getBoundingClientRect()
-      return {x: d.left - c.left, y: d.top - c.top}
+      return { x: d.left - c.left, y: d.top - c.top }
     } catch (e) {
       return null
     }
@@ -4554,7 +4554,7 @@
     c = void 0 === c ? this.m : c
     e = void 0 === e ? this.j : e
     if ((this.l ? this.A : Math.random()) > c) return !1
-    Yd(b) || (b = new Xd(b, {context: a, id: e}))
+    Yd(b) || (b = new Xd(b, { context: a, id: e }))
     if (d || this.h) (b.meta = {}), this.h && this.h(b.meta), d && d(b.meta)
     x.google_js_errors = x.google_js_errors || []
     x.google_js_errors.push(b)
@@ -4661,11 +4661,11 @@
     } else a = b ? new zh(b, B(a, 2), B(a, 5), pj(B(a, 6))) : null
     return a
   }
-  var qj = {1: 1, 2: 2, 3: 3, 0: 0}
+  var qj = { 1: 1, 2: 2, 3: 3, 0: 0 }
   function pj(a) {
     return null == a ? a : qj[a]
   }
-  var rj = {1: 0, 2: 1, 3: 2, 4: 3}
+  var rj = { 1: 0, 2: 1, 3: 2, 4: 3 }
   function sj(a) {
     return (a.google_ama_state = a.google_ama_state || {})
   }
@@ -4751,7 +4751,7 @@
             null == b
               ? (b = null)
               : ((a = B(a, 2)),
-                (b = null == a ? null : new Og({Qa: [b], bb: a})))
+                (b = null == a ? null : new Og({ Qa: [b], bb: a })))
         return null != b
           ? Hg(b)
           : Jg(Error('Missing dimension when creating placement id'))
@@ -4763,7 +4763,7 @@
   }
   function Pj(a, b) {
     function c() {
-      d.push({anchor: e.anchor, position: e.position})
+      d.push({ anchor: e.anchor, position: e.position })
       return e.anchor == b.anchor && e.position == b.position
     }
     for (var d = [], e = a; e; ) {
@@ -4774,7 +4774,7 @@
         case 2:
           if (c()) return d
           if (e.anchor.firstChild) {
-            e = {anchor: e.anchor.firstChild, position: 1}
+            e = { anchor: e.anchor.firstChild, position: 1 }
             continue
           } else e.position = 3
         case 3:
@@ -4790,13 +4790,13 @@
         e.anchor.parentNode != e.anchor.ownerDocument.body;
 
       ) {
-        e = {anchor: e.anchor.parentNode, position: 3}
+        e = { anchor: e.anchor.parentNode, position: 3 }
         if (c()) return d
         e.position = 4
         if (c()) return d
       }
       e && e.anchor.nextSibling
-        ? (e = {anchor: e.anchor.nextSibling, position: 1})
+        ? (e = { anchor: e.anchor.nextSibling, position: 1 })
         : (e = null)
     }
     return d
@@ -4823,8 +4823,8 @@
             for (
               f = v(
                 Pj(
-                  {anchor: f, position: B(E(e, vh, 1), 2)},
-                  {anchor: g, position: B(E(e, vh, 2), 2)}
+                  { anchor: f, position: B(E(e, vh, 1), 2) },
+                  { anchor: g, position: B(E(e, vh, 2), 2) }
                 )
               ),
                 g = f.next();
@@ -5044,7 +5044,7 @@
         if ((m = m[0] || null))
           (e = l.document.createElement('div')),
             (e.id = 'google-auto-placed-read-aloud-player-reserved'),
-            Dd(e, {width: '100%', height: '65px'}),
+            Dd(e, { width: '100%', height: '65px' }),
             m.insertBefore(e, m.firstChild),
             (sj(l).audioSenseSpaceReserved = !0)
       }
@@ -5062,7 +5062,7 @@
     t = sj(m)
     p && ((t.eatf = !0), Pd(7, [!0, 0, !1]))
     b: {
-      e = {qb: !1, rb: !1}
+      e = { qb: !1, rb: !1 }
       f = jk(m, '.google-auto-placed')
       g = jk(
         m,
@@ -5139,7 +5139,7 @@
                 : (g.numPostPlacementsPlaced = 1)),
             null == g.placed && (g.placed = []),
             g.numAutoAdsPlaced++,
-            g.placed.push({index: l, element: f.oa}),
+            g.placed.push({ index: l, element: f.oa }),
             Pd(7, [!1, m.j, !0])
         m = f
       } else m = null
@@ -5238,7 +5238,7 @@
     c = E(b, Sg, 4) && B(E(b, Sg, 4), 2) ? B(E(b, Sg, 4), 2) : null
     c = Zg(c)
     g = null != B(b, 12) ? B(b, 12) : null
-    g = null == g ? null : new Xg(null, {google_ml_rank: g})
+    g = null == g ? null : new Xg(null, { google_ml_rank: g })
     b = qk(a, b)
     b = Yg(a.m, c, g, b)
     c = a.h
@@ -5262,7 +5262,7 @@
     f.Ta && (k.marginBottom = f.Ta)
     f.ib && hj(k, f.ib)
     g.appendChild(h)
-    f = {xa: g, oa: h}
+    f = { xa: g, oa: h }
     f.oa.setAttribute('data-ad-format', 'auto')
     g = []
     if ((h = b && b.Ua)) f.xa.className = h.join(' ')
@@ -5280,8 +5280,8 @@
           if (t.init) {
             var y = t.init
             for (d = y; (d = t.qa(d)); ) y = d
-            var D = {anchor: y, position: t.ta}
-          } else D = {anchor: d, position: e}
+            var D = { anchor: y, position: t.ta }
+          } else D = { anchor: d, position: e }
           m['google-ama-order-assurance'] = p
           Gi(m, D.anchor, D.position)
         } else Gi(m, d, e)
@@ -5289,7 +5289,7 @@
           var z = f.oa
           z.dataset.adsbygoogleStatus = 'reserved'
           z.className += ' adsbygoogle-noablate'
-          m = {element: z}
+          m = { element: z }
           var G = b && b.ab
           if (z.hasAttribute('data-pub-vars')) {
             try {
@@ -5444,7 +5444,7 @@
       (Kk[9] = 'google_prev_ad_slotnames_by_region'),
       Kk)
   function Lk(a) {
-    this.h = a || {cookie: ''}
+    this.h = a || { cookie: '' }
   }
   Lk.prototype.set = function (a, b, c) {
     var d = !1
@@ -5501,7 +5501,7 @@
     for (a = b.length - 1; 0 <= a; a--)
       (c = b[a]),
         this.get(c),
-        this.set(c, '', {yb: 0, path: void 0, domain: void 0})
+        this.set(c, '', { yb: 0, path: void 0, domain: void 0 })
   }
   function Mk(a) {
     J.call(this, a)
@@ -5563,7 +5563,7 @@
       a(d)
     }
     var c = this,
-      d = {internalBlockOnErrors: this.B},
+      d = { internalBlockOnErrors: this.B },
       e = Mc(function () {
         return a(d)
       }),
@@ -5628,7 +5628,7 @@
     void 0 === a.internalErrorState && (a.internalErrorState = Ok(a))
     return 'error' === a.cmpStatus || 0 !== a.internalErrorState
       ? a.internalBlockOnErrors
-        ? (Ld({e: String(a.internalErrorState)}, 'tcfe'), !1)
+        ? (Ld({ e: String(a.internalErrorState) }, 'tcfe'), !1)
         : !0
       : 'loaded' !== a.cmpStatus ||
         ('tcloaded' !== a.eventStatus && 'useractioncomplete' !== a.eventStatus)
@@ -5690,7 +5690,7 @@
   function $k() {
     return new q.Promise(function (a) {
       var b = Dk()
-      a = {resolve: a}
+      a = { resolve: a }
       var c = Ik(b, 25, [])
       c.push(a)
       b.S[Fk(25)] = c
@@ -5875,7 +5875,7 @@
       c.purposeOneTreatment = !!nl(d, 1)
       c.publisherCC =
         String.fromCharCode(il + nl(d, 6)) + String.fromCharCode(il + nl(d, 6))
-      c.vendor = {consents: rl(ml(d), b), legitimateInterests: rl(ml(d), b)}
+      c.vendor = { consents: rl(ml(d), b), legitimateInterests: rl(ml(d), b) }
       return c
     } catch (e) {
       return null
@@ -6012,8 +6012,8 @@
             var h = {}
             h.__tcfapiReturn =
               'removeEventListener' === e.command
-                ? {success: f, callId: e.callId}
-                : {returnValue: f, success: g, callId: e.callId}
+                ? { success: f, callId: e.callId }
+                : { returnValue: f, success: g, callId: e.callId }
             f = c ? JSON.stringify(h) : h
             b.source &&
               'function' === typeof b.source.postMessage &&
@@ -6074,7 +6074,7 @@
   Ml.prototype.u = function (a, b, c) {
     'function' === typeof c &&
       'getUSPData' === a &&
-      c({version: 1, uspString: this.m}, !0)
+      c({ version: 1, uspString: this.m }, !0)
   }
   function Pl(a) {
     !a.j ||
@@ -6340,7 +6340,7 @@
   }
   function Am(a) {
     return Q(Hh)
-      ? ((a = Wk({s: a, ka: rm()})), null != a.h ? Bm(a.h.value) : {})
+      ? ((a = Wk({ s: a, ka: rm() })), null != a.h ? Bm(a.h.value) : {})
       : Bm(a.localStorage)
   }
   function Bm(a) {
@@ -6362,7 +6362,7 @@
     }
   }
   function Cm(a) {
-    Q(Qh) && yk('atf_ad_settings_from_ppabg', {p_s: a}, 0.01)
+    Q(Qh) && yk('atf_ad_settings_from_ppabg', { p_s: a }, 0.01)
   }
   function Dm(a) {
     return !!a && (0 < F(a, xh, 1).length || (Q(Mh) && 0 < F(a, uh, 3).length))
@@ -6375,7 +6375,7 @@
     a = U(a)
     var b = a.space_collapsing || 'none'
     return a.remove_ads_by_default
-      ? {Pa: !0, Hb: b, wa: a.ablation_viewport_offset}
+      ? { Pa: !0, Hb: b, wa: a.ablation_viewport_offset }
       : null
   }
   function Fm(a, b) {
@@ -6417,7 +6417,7 @@
   }
   function Km(a) {
     Ig(
-      Gg(Wk({s: a.s, ka: H(a.i, 6)}), function (b) {
+      Gg(Wk({ s: a.s, ka: H(a.i, 6) }), function (b) {
         Mm(a, b, !0)
       }),
       function () {
@@ -6429,14 +6429,14 @@
     Ig(
       Gg(Om(b), function (d) {
         Pm('ok')
-        a.h(d, {fromLocalStorage: !0})
+        a.h(d, { fromLocalStorage: !0 })
       }),
       function () {
         var d = a.s
         try {
           b.removeItem('google_ama_config')
         } catch (e) {
-          Yl(d, {lserr: 1})
+          Yl(d, { lserr: 1 })
         }
         c ? Nm(a) : a.h(null, null)
       }
@@ -6445,7 +6445,7 @@
   function Nm(a) {
     Ig(
       Gg(Qm(a), function (b) {
-        a.h(b, {fromPABGSettings: !0})
+        a.h(b, { fromPABGSettings: !0 })
       }),
       function () {
         Rm(a)
@@ -6552,7 +6552,7 @@
   function Pm(a) {
     yk(
       'abg::amalserr',
-      {status: a, guarding: 'true', timeout: 50, rate: 0.01},
+      { status: a, guarding: 'true', timeout: 50, rate: 0.01 },
       0.01
     )
   }
@@ -6577,15 +6577,15 @@
         ).then(Ra(Um, a), Ra(Vm, a))
       }
     } catch (k) {
-      Yl(a, {atf: -1})
+      Yl(a, { atf: -1 })
     }
   }
   function Um(a) {
-    Yl(a, {atf: 1})
+    Yl(a, { atf: 1 })
   }
   function Vm(a, b) {
     ;(a.google_ama_state = a.google_ama_state || {}).exception = b
-    Yl(a, {atf: 0})
+    Yl(a, { atf: 0 })
   }
   function Wm(a) {
     if (Q(ci)) {
@@ -6625,7 +6625,7 @@
   }
   function Ym() {
     var a = new Xm()
-    return {promise: a.promise, resolve: a.resolve}
+    return { promise: a.promise, resolve: a.resolve }
   }
   function Zm(a) {
     a = void 0 === a ? function () {} : a
@@ -6645,7 +6645,7 @@
   }
   function an(a) {
     var b = {}
-    return {enable_page_level_ads: ((b.pltais = !0), b), google_ad_client: a}
+    return { enable_page_level_ads: ((b.pltais = !0), b), google_ad_client: a }
   }
   function bn(a) {
     if (x.google_apltlad || x !== x.top || !a.google_ad_client) return null
@@ -6864,7 +6864,7 @@
     else {
       a = R(Jh)
       var b = Jk(0 < a && ud() < 1 / a)
-      this.state = {sd: a, ssp: b, pc: null, wpc: null, le: [], lgdp: []}
+      this.state = { sd: a, ssp: b, pc: null, wpc: null, le: [], lgdp: [] }
     }
   }
   function qn(a, b) {
@@ -7453,7 +7453,7 @@
       ao({
         ob: d,
         H: yn(c, b),
-        mb: {ja: e && !!a.google_disable_experiments, tb: e},
+        mb: { ja: e && !!a.google_disable_experiments, tb: e },
         Ra: zn(a),
         Sa: 1,
       })
@@ -7578,18 +7578,18 @@
         }
       e.push(g)
     }
-    return {U: d, T: e, Ya: b}
+    return { U: d, T: e, Ya: b }
   }
   function qo(a) {
     return 1200 <= a
-      ? {width: 1200, height: 600}
+      ? { width: 1200, height: 600 }
       : 850 <= a
-      ? {width: a, height: Math.floor(0.5 * a)}
+      ? { width: a, height: Math.floor(0.5 * a) }
       : 550 <= a
-      ? {width: a, height: Math.floor(0.6 * a)}
+      ? { width: a, height: Math.floor(0.6 * a) }
       : 468 <= a
-      ? {width: a, height: Math.floor(0.7 * a)}
-      : {width: a, height: Math.floor(3.44 * a)}
+      ? { width: a, height: Math.floor(0.7 * a) }
+      : { width: a, height: Math.floor(3.44 * a) }
   }
   var ro = lb('script')
   function so(a, b, c, d, e, f, g, h, k, l, m, p) {
@@ -7651,7 +7651,7 @@
       2 !== a.h &&
       ((a = JSON.stringify({
         googMsgType: 'adpnt',
-        key_value: [{key: 'qid', value: 'DUMMY_AD'}],
+        key_value: [{ key: 'qid', value: 'DUMMY_AD' }],
       })),
       (c.dash =
         '<' +
@@ -7718,7 +7718,7 @@
             X: 'image_sidebyside',
           }))
       : ((a = qo(a)),
-        (a = {ga: a.width, fa: a.height, T: 4, U: 2, X: 'image_stacked'}))
+        (a = { ga: a.width, fa: a.height, T: 4, U: 2, X: 'image_stacked' }))
     yo(b, a)
     return new so(9, new vo(a.ga, a.fa))
   }
@@ -7729,7 +7729,7 @@
       T: b.google_content_recommendation_columns_num,
       X: b.google_content_recommendation_ui_type,
     })
-    if (c.W) a = {ga: 0, fa: 0, T: 0, U: 0, X: 'image_stacked', W: c.W}
+    if (c.W) a = { ga: 0, fa: 0, T: 0, U: 0, X: 'image_stacked', W: c.W }
     else {
       var d = 2 === c.Ya.length && 468 <= a ? 1 : 0
       var e = c.Ya[d]
@@ -7752,8 +7752,8 @@
               height: 0,
               Fb: 'Calculated slot height is too large: ' + d,
             }
-          : {width: a, height: d}
-      a = {ga: a.width, fa: a.height, T: f, U: c, X: e}
+          : { width: a, height: d }
+      a = { ga: a.width, fa: a.height, T: f, U: c, X: e }
     }
     if (a.W) throw new T(a.W)
     yo(b, a)
@@ -7949,19 +7949,19 @@
     ]
   function Io(a, b, c, d, e) {
     'false' == e.google_full_width_responsive
-      ? (c = {F: a, G: 1})
+      ? (c = { F: a, G: 1 })
       : ('autorelaxed' == b && e.google_full_width_responsive) ||
         Jo(b) ||
         e.google_ad_resize
       ? ((b = Ti(a, c, d, e)),
-        (c = !0 !== b ? {F: a, G: b} : {F: hh(c) || a, G: !0}))
-      : (c = {F: a, G: 2})
+        (c = !0 !== b ? { F: a, G: b } : { F: hh(c) || a, G: !0 }))
+      : (c = { F: a, G: 2 })
     b = c.G
     return !0 !== b
-      ? {F: a, G: b}
+      ? { F: a, G: b }
       : d.parentElement
-      ? {F: c.F, G: b}
-      : {F: a, G: b}
+      ? { F: c.F, G: b }
+      : { F: a, G: b }
   }
   function Ko(a, b, c, d, e) {
     var f = wk(247, function () {
@@ -8016,7 +8016,7 @@
       var t
       a: if (f) {
         if (e.gfwrnh && (t = K(e.gfwrnh))) {
-          t = {da: new Ao(a, t), ba: !0}
+          t = { da: new Ao(a, t), ba: !0 }
           break a
         }
         t = a / 1.2
@@ -8039,8 +8039,8 @@
         }
         y = D.call(y, t, z)
         if (y < 0.5 * t || 100 > y) y = t
-        t = {da: new Ao(a, Math.floor(y)), ba: y < t ? 102 : !0}
-      } else t = {da: p, ba: 100}
+        t = { da: new Ao(a, Math.floor(y)), ba: y < t ? 102 : !0 }
+      } else t = { da: p, ba: 100 }
       return t
     })
     g = m.da
@@ -8048,8 +8048,8 @@
     return 'in-article' === e.google_ad_layout &&
       c.location &&
       '#hffwroe2etoq' == c.location.hash
-      ? {da: No(a, c, d, g, e), ba: !1, va: b, Xa: l}
-      : {da: g, ba: m, va: b, Xa: l}
+      ? { da: No(a, c, d, g, e), ba: !1, va: b, Xa: l }
+      : { da: g, ba: m, va: b, Xa: l }
   }
   function Mo(a, b) {
     if ('auto' == a) return 1
@@ -8083,10 +8083,10 @@
         ? b.innerHeight >= b.innerWidth
           ? ((e.google_full_width_responsive_allowed = !0),
             Xi(b, c),
-            (f = {F: f, G: !0}))
-          : (f = {F: a, G: 5})
-        : (f = {F: a, G: 4})
-      : (f = {F: a, G: 10})
+            (f = { F: f, G: !0 }))
+          : (f = { F: a, G: 5 })
+        : (f = { F: a, G: 4 })
+      : (f = { F: a, G: 10 })
     var g = f
     f = g.F
     g = g.G
@@ -8327,7 +8327,7 @@
           'longtask',
         ])
         for (var c = b.next(); !c.done; c = b.next())
-          (c = c.value), a.J().observe({type: c, buffered: !0})
+          (c = c.value), a.J().observe({ type: c, buffered: !0 })
         jp(a)
       }
     }
@@ -8384,7 +8384,7 @@
         2 ==
           (d.prerendering
             ? 3
-            : {visible: 1, hidden: 2, prerender: 3, preview: 4, unloaded: 5}[
+            : { visible: 1, hidden: 2, prerender: 3, preview: 4, unloaded: 5 }[
                 d.visibilityState ||
                   d.webkitVisibilityState ||
                   d.mozVisibilityState ||
@@ -8558,7 +8558,7 @@
     var a = W.issuerOrigin + W.issuancePath
     Z(W.issuerOrigin, 8)
     return window
-      .fetch(a, {keepalive: !0, trustToken: {type: 'token-request'}})
+      .fetch(a, { keepalive: !0, trustToken: { type: 'token-request' } })
       .then(function (b) {
         if (!b.ok) throw Error(b.status + ': Network response was not ok!')
         Z(W.issuerOrigin, 10)
@@ -8585,12 +8585,12 @@
             return e
           })
           .catch(function (e) {
-            return q.Promise.reject({state: 19, error: e})
+            return q.Promise.reject({ state: 19, error: e })
           }),
         b = X.issuerOrigin + X.redemptionPath,
         c = {
           keepalive: !0,
-          trustToken: {type: 'token-redemption', refreshPolicy: 'none'},
+          trustToken: { type: 'token-redemption', refreshPolicy: 'none' },
         }
       Z(X.issuerOrigin, 16)
       a = a
@@ -8606,7 +8606,7 @@
               if (f && 'NoModificationAllowedError' === f.name)
                 Z(X.issuerOrigin, 18, !0)
               else {
-                if (e) return q.Promise.reject({state: 17, error: f})
+                if (e) return q.Promise.reject({ state: 17, error: f })
                 Z(X.issuerOrigin, 17)
               }
             })
@@ -8618,7 +8618,7 @@
               return e
             })
             .catch(function (e) {
-              return q.Promise.reject({state: 19, error: e})
+              return q.Promise.reject({ state: 19, error: e })
             })
         })
         .then(function (e) {
@@ -8640,7 +8640,7 @@
               })
             })
             .catch(function (g) {
-              return q.Promise.reject({state: 21, error: g})
+              return q.Promise.reject({ state: 21, error: g })
             })
         })
       var d = Hd(window)
@@ -8652,7 +8652,7 @@
               window
                 .fetch(f + '?cs=' + e.cs + '&correlator=' + d, {
                   keepalive: !0,
-                  trustToken: {type: 'token-request'},
+                  trustToken: { type: 'token-request' },
                 })
                 .then(function (g) {
                   if (!g.ok)
@@ -8661,7 +8661,7 @@
                   return e
                 })
                 .catch(function (g) {
-                  return q.Promise.reject({state: 24, error: g})
+                  return q.Promise.reject({ state: 24, error: g })
                 }))
             : e
         })
@@ -8683,7 +8683,7 @@
                   Z(X.issuerOrigin, 28, !0)
                 })
                 .catch(function (f) {
-                  return q.Promise.reject({state: 27, error: f})
+                  return q.Promise.reject({ state: 27, error: f })
                 })
             )
         })
@@ -8700,7 +8700,7 @@
               Z(X.issuerOrigin, e.state)
               var f = R(Bi)
               Math.random() <= f &&
-                Ld({state: e.state, err: e.error.toString()}, 'dtt_err')
+                Ld({ state: e.state, err: e.error.toString() }, 'dtt_err')
             } else throw Error(e)
           else throw e
         })
@@ -8889,7 +8889,7 @@
       a = {}
     }
     Vp(a, d)
-    Vp(Fi() ? {bust: Fi()} : {}, d)
+    Vp(Fi() ? { bust: Fi() } : {}, d)
     return $c(b, d)
   }
   function Vp(a, b) {
@@ -8947,7 +8947,7 @@
       k.backgroundColor = 'transparent'
       h.style.display = 'inline-block'
       c.appendChild(h)
-      return {pb: e, Jb: h}
+      return { pb: e, Jb: h }
     })
   }
   function Yp(a, b, c, d, e) {
@@ -8982,8 +8982,8 @@
           )
             throw Error('no_div')
         h = Q(Sh)
-          ? {pubWin: a, vars: b, innerInsElement: h}
-          : {pubWin: a, vars: b, outerInsElement: h, innerInsElement: h}
+          ? { pubWin: a, vars: b, innerInsElement: h }
+          : { pubWin: a, vars: b, outerInsElement: h, innerInsElement: h }
         ;(h = a.google_sa_impl(h)) && zk(911, h)
       },
       d
@@ -9072,7 +9072,7 @@
     a &&
       ((a = fh(a)),
       a.tagSpecificState[1] ||
-        (a.tagSpecificState[1] = {debugCard: null, debugCardRequested: !1}))
+        (a.tagSpecificState[1] = { debugCard: null, debugCardRequested: !1 }))
   }
   function aq(a) {
     rp()
@@ -9306,7 +9306,7 @@
   }
   function mq(a, b) {
     ;(0, a.__uspapi)('getUSPData', 1, function (c, d) {
-      b.callback({consentData: null != c ? c : void 0, nb: d ? void 0 : 2})
+      b.callback({ consentData: null != c ? c : void 0, nb: d ? void 0 : 2 })
     })
   }
   var nq = {
@@ -9316,7 +9316,7 @@
     xb: function (a, b) {
       a = {}
       return (
-        (a.__uspapiCall = {callId: b, command: 'getUSPData', version: 1}), a
+        (a.__uspapiCall = { callId: b, command: 'getUSPData', version: 1 }), a
       )
     },
     zb: function (a, b) {
@@ -9331,7 +9331,7 @@
   function oq(a) {
     var b = {}
     'string' === typeof a.data ? (b = JSON.parse(a.data)) : (b = a.data)
-    return {payload: b, Bb: b.__uspapiReturn.callId}
+    return { payload: b, Bb: b.__uspapiReturn.callId }
   }
   function pq(a) {
     M.call(this)
@@ -9363,7 +9363,7 @@
     a.__fci = a.__fci || []
     a.__fci.push(b.command, function (c) {
       c = zc(qq, c)
-      b.callback({consentData: c})
+      b.callback({ consentData: c })
     })
   }
   var sq = {
@@ -9372,15 +9372,15 @@
     },
     xb: function (a, b) {
       var c = {}
-      return (c.__fciCall = {callId: b, command: a.command}), c
+      return (c.__fciCall = { callId: b, command: a.command }), c
     },
     zb: function (a, b) {
-      a({consentData: b})
+      a({ consentData: b })
     },
   }
   function tq(a) {
     a = zc(qq, a.data.__fciReturn)
-    return {payload: a, Bb: B(a, 1)}
+    return { payload: a, Bb: B(a, 1) }
   }
   function uq(a) {
     M.call(this)
@@ -9410,9 +9410,9 @@
       var c =
         a instanceof Xc && a.constructor === Xc ? a.h : 'type_error:SafeScript'
       b.eval(c) === c && b.eval(c.toString())
-      return {supports: !0, error: ''}
+      return { supports: !0, error: '' }
     } catch (d) {
-      return {supports: !1, error: String(d)}
+      return { supports: !1, error: String(d) }
     }
   }
   function xq(a) {
@@ -9591,7 +9591,7 @@
     var a = pd('INS')
     a.className = 'adsbygoogle'
     a.className += ' adsbygoogle-noablate'
-    Dd(a, {display: 'none'})
+    Dd(a, { display: 'none' })
     return a
   }
   function Mq(a, b) {
@@ -9626,7 +9626,7 @@
       Nc(d, 'DOMContentLoaded', e)
       new x.MutationObserver(function (f, g) {
         d.body && (e(), g.disconnect())
-      }).observe(d, {childList: !0, subtree: !0})
+      }).observe(d, { childList: !0, subtree: !0 })
     }
   }
   function Kq(a, b, c) {
@@ -9673,7 +9673,7 @@
         Pq(e)
         var f = Sc(e)
         d.head_tag_slot_vars = f
-        c = {google_ad_client: e.google_ad_client, enable_page_level_ads: e}
+        c = { google_ad_client: e.google_ad_client, enable_page_level_ads: e }
         L.adsbygoogle || (L.adsbygoogle = [])
         d = L.adsbygoogle
         d.loaded ? d.push(c) : d.splice && d.splice(0, 0, c)
@@ -9776,7 +9776,7 @@
     ar ||
       ((ar = !0),
       (a = Wq(a) || nn(L)),
-      yk('predictive_abg', {a_c: a, p_c: b.join(), b_v: c}, 0.01))
+      yk('predictive_abg', { a_c: a, p_c: b.join(), b_v: c }, 0.01))
   }
   function Wq(a) {
     return a.google_ad_client
@@ -9877,7 +9877,7 @@
         x.setTimeout(a, 1e3))
   }
   function er(a) {
-    yk('adsenseGfpKnob', {value: a, ptt: 9}, 0.1)
+    yk('adsenseGfpKnob', { value: a, ptt: 9 }, 0.1)
     switch (a) {
       case 0:
       case 2:
@@ -9895,7 +9895,7 @@
     a && a.call && 'function' === typeof a && window.setTimeout(a, 0)
   }
   function Sq(a, b) {
-    b = $m($c(b.Gb, Fi() ? {bust: Fi()} : {})).then(function (c) {
+    b = $m($c(b.Gb, Fi() ? { bust: Fi() } : {})).then(function (c) {
       null == Aq && (c.init(a), (Aq = c), gr())
     })
     zk(723, b)
@@ -9916,7 +9916,7 @@
       ;-1 !== c && (x.clearTimeout(c), Cq.delete(b))
     }
     a = {}
-    for (b = 0; b < Bq.length; a = {ma: a.ma, ha: a.ha}, b++)
+    for (b = 0; b < Bq.length; a = { ma: a.ma, ha: a.ha }, b++)
       Cq.has(b) ||
         ((a.ha = Bq[b]),
         (a.ma = Tq(a.ha)),
@@ -9944,7 +9944,7 @@
             breakStatus: 'timeout',
           }),
             Cq.set(b, -1),
-            yk('slotcar', {event: 'pr_to', source: 'adsbygoogle'})
+            yk('slotcar', { event: 'pr_to', source: 'adsbygoogle' })
         } catch (d) {
           console.error(
             '[Ad Placement API] adBreakDone callback threw an error:',
@@ -9965,7 +9965,7 @@
       d()
       Pd(16, [1, e.toJSON()])
       var f = Rd(Qd(L)) || L,
-        g = c(Vo({lb: a, Cb: kc(e, 2)}), e)
+        g = c(Vo({ lb: a, Cb: kc(e, 2) }), e)
       wm(f, e)
       fo(f, e, null === L.document.currentScript ? 1 : xn(g.Ib))
       zk(1086, un())
@@ -9983,7 +9983,7 @@
         if (!h || !h.loaded) {
           yk(
             'new_abg_tag',
-            {value: '' + H(e, 16), host_v: '' + H(e, 22), frequency: 0.01},
+            { value: '' + H(e, 16), host_v: '' + H(e, 22), frequency: 0.01 },
             0.01
           )
           br()
@@ -9994,10 +9994,10 @@
             loaded: !0,
           }
           try {
-            Object.defineProperty(k, 'requestNonPersonalizedAds', {set: cr}),
-              Object.defineProperty(k, 'pauseAdRequests', {set: dr}),
-              Object.defineProperty(k, 'cookieOptions', {set: er}),
-              Object.defineProperty(k, 'onload', {set: fr})
+            Object.defineProperty(k, 'requestNonPersonalizedAds', { set: cr }),
+              Object.defineProperty(k, 'pauseAdRequests', { set: dr }),
+              Object.defineProperty(k, 'cookieOptions', { set: er }),
+              Object.defineProperty(k, 'onload', { set: fr })
           } catch (p) {}
           if (h)
             for (
@@ -10019,7 +10019,7 @@
           f = wq()
           yk(
             'modern_js',
-            {fy: hc(e, 1), supports: String(f.supports), c: 2012, e: f.error},
+            { fy: hc(e, 1), supports: String(f.supports), c: 2012, e: f.error },
             0.01
           )
         }
