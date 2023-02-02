@@ -4,7 +4,14 @@
  Copyright The Closure Library Authors. 
  SPDX-License-Identifier: Apache-2.0 
 */
-let globalThis = typeof window !== 'undefined' ? window : typeof self !== 'undefined' ? self : typeof global !== 'undefined' ? global : {};
+  let globalThis =
+    typeof window !== 'undefined'
+      ? window
+      : typeof self !== 'undefined'
+      ? self
+      : typeof global !== 'undefined'
+      ? global
+      : {}
 
   var n, aa
   function ba(a) {
