@@ -21,11 +21,15 @@ export default function Home({ posts }) {
   return (
     <>
       <Script
-        data-ad-client="ca-pub-4331473606799485"
+        id="Adsense-id"
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        crossOrigin="anonymous"
-      ></Script>
+        onError={(e) => {
+          console.error('Script failed to load', e)
+        }}
+        strategy="afterInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
+        crossorigin="anonymous"
+      />
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
