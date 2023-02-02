@@ -39,6 +39,7 @@
     "github-slugger": "^1.3.0",
     "gray-matter": "^4.0.2",
     "image-size": "1.0.0",
+    "katex": "^0.16.4",
     "mdx-bundler": "^8.0.0",
     "motion": "^10.4.0",
     "next": "^12.3.4",
