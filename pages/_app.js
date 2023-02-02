@@ -1,3 +1,4 @@
+/* eslint-disable */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import '@/css/extra.css'
