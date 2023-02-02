@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import '@/css/extra.css'
@@ -53,28 +54,18 @@ const defaultTheme = {
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   return (
-  <>
-  <Script 
-    id="Adsense-id" 
-    data-ad-client="ca-pub-4331473606799485"
-    async strategy="afterInteractive"
-    onError={ (e) => { console.error('Script failed to load', e) }}
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    crossOrigin="anonymous"
-    >
-  </>
     <SessionProvider session={session}>
       <Provider apiKey="pt_7c8b6840f5ba39cd3b2b471cd8efc2" theme={defaultTheme}>
         <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
           <ProgressBar bgcolor="#DE1D8D" />
           <ScrollTop />
           <Head>
-            <script
+            <Script
               data-ad-client="ca-pub-4331473606799485"
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
               crossOrigin="anonymous"
-            ></script>
+            ></Script>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
           {isDevelopment && isSocket && <ClientReload />}
@@ -85,29 +76,5 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         </ThemeProvider>
       </Provider>
     </SessionProvider>
-  )
-}
-export function GoogleAdsenseContainer({ client, slot }) {
-  // eslint-disable-next-line no-undef
-  useEffect(() => {
-    ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-  }, [])
-
-  // eslint-disable-next-line no-undef
-  const AdLabel = styled.span`
-    font-size: 12px;
-  `
-  return (
-    <div style={{ textAlign: 'left', overflow: 'hidden' }}>
-      <AdLabel>Advertisment</AdLabel>
-      <ins
-        className="adsbygoogle"
-        style={{ display: 'block' }}
-        data-ad-client={client}
-        data-ad-slot={slot}
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-    </div>
   )
 }
