@@ -1,0 +1,32 @@
+{
+  "..\\components\\ClientReload.js -> socket.io-client": {
+    "id": "..\\components\\ClientReload.js -> socket.io-client",
+    "files": [
+      "static/chunks/node_modules_socket_io-client_build_esm_index_js.js"
+    ]
+  },
+  "..\\components\\comments\\index.js -> @/components/comments/Disqus": {
+    "id": "..\\components\\comments\\index.js -> @/components/comments/Disqus",
+    "files": [
+      "static/chunks/components_comments_Disqus_js.js"
+    ]
+  },
+  "..\\components\\comments\\index.js -> @/components/comments/Giscus": {
+    "id": "..\\components\\comments\\index.js -> @/components/comments/Giscus",
+    "files": [
+      "static/chunks/components_comments_Giscus_js.js"
+    ]
+  },
+  "..\\components\\comments\\index.js -> @/components/comments/Utterances": {
+    "id": "..\\components\\comments\\index.js -> @/components/comments/Utterances",
+    "files": [
+      "static/chunks/components_comments_Utterances_js.js"
+    ]
+  },
+  "..\\node_modules\\use-sound\\dist\\use-sound.esm.js -> howler": {
+    "id": "..\\node_modules\\use-sound\\dist\\use-sound.esm.js -> howler",
+    "files": [
+      "static/chunks/node_modules_howler_dist_howler_js.js"
+    ]
+  }
+}

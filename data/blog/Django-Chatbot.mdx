@@ -1,10 +1,10 @@
 ---
 title: Building a Chatbot for your E-commerce Business using Django
 date: '2023-01-14'
-tags: [Django, Python, Data Engineering, AI]
+tags: [Django, Python,Data Engineering, AI]
 draft: false
 summary: This article provides a comprehensive guide on how to build a chatbot for an e-commerce business using the Django framework, including the creation of models, views, templates and integration with the e-commerce platform.
----
+--- 
 
 <img className="inline rounded-lg" src="/static/images/Blog/django.jpeg" alt="Django" />
 
@@ -31,7 +31,6 @@ class UserMessage(models.Model):
     intent = models.ForeignKey(Intent, on_delete=models.SET_NULL, null=True)
     entities = models.ManyToManyField(Entities, blank=True)
 ```
-
 Next, we will create the views for the chatbot. The chatbot_view will handle the incoming messages, use the NLP function to extract the intent and entities, and create an instance of the UserMessage model. The views will also render the templates for the chatbot interface and the response page.
 
 ```Python
@@ -47,7 +46,6 @@ def chatbot_view(request):
         return render(request, 'chatbot/response.html', {'intent': intent, 'entities': entities})
     return render(request, 'chatbot/chatbot.html')
 ```
-
 We will create two templates for the chatbot, one for the chatbot interface, and another one for the response page. The chatbot interface template is a simple form that allows the user to send a message to the chatbot. The response page template will display the intent and entities that the chatbot has extracted from the user's message.
 
 ```HTML
@@ -58,7 +56,6 @@ We will create two templates for the chatbot, one for the chatbot interface, and
   <input type="submit" value="Send">
 </form>
 ```
-
 ```HTML
 <!-- response.html -->
 
@@ -70,7 +67,6 @@ We will create two templates for the chatbot, one for the chatbot interface, and
   {% endfor %}
 </ul>
 ```
-
 Finally, we will add the chatbot to the project's urls and test it to ensure it is working as expected.
 
 ```Python
