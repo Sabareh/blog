@@ -61,7 +61,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
     onError={ (e) => { console.error('Script failed to load', e) }}
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     crossOrigin="anonymous"
-    />
+    >
+  </>
     <SessionProvider session={session}>
       <Provider apiKey="pt_7c8b6840f5ba39cd3b2b471cd8efc2" theme={defaultTheme}>
         <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
