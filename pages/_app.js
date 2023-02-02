@@ -59,6 +59,11 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <ProgressBar bgcolor="#DE1D8D" />
           <ScrollTop />
           <Head>
+            <Script
+              data-ad-client="ca-pub-3940256099942544"
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            ><Script/>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
           {isDevelopment && isSocket && <ClientReload />}
