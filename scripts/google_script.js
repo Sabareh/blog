@@ -1216,11 +1216,11 @@
   function bb() {
     var a = Ya()
     if (Za()) {
-      var b = /rv: *([\d\.]*)/.exec(a)
+      var b = /rv: *([\d.]*)/.exec(a)
       if (b && b[1]) a = b[1]
       else {
         b = ''
-        var c = /MSIE +([\d\.]+)/.exec(a)
+        var c = /MSIE +([\d.]+)/.exec(a)
         if (c && c[1])
           if (((a = /Trident\/(\d.\d)/.exec(a)), '7.0' == c[1]))
             if (a && a[1])
