@@ -1,4 +1,3 @@
-/* eslint-disable */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import '@/css/extra.css'
@@ -60,12 +59,6 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <ProgressBar bgcolor="#DE1D8D" />
           <ScrollTop />
           <Head>
-            <Script
-              data-ad-client="ca-pub-4331473606799485"
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-              crossorigin="anonymous"
-            ></Script>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
           {isDevelopment && isSocket && <ClientReload />}
