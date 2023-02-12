@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/views/[slug]": "pages/api/views/[slug].js",
   "/": "pages/index.js",
-  "/api/now-playing": "pages/api/now-playing.js"
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/projects": "pages/projects.js"
 }
