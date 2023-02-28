@@ -1,29 +1,34 @@
-export default function MetricCard({ header, link, metric, isCurrency }) {
-  return (
-    <div className="metric-card max-w-72 w-full rounded-lg bg-gray-200 p-4 backdrop-filter transition duration-200 hover:bg-gray-600 hover:bg-opacity-40 dark:bg-gray-900 dark:hover:bg-gray-500 dark:hover:bg-opacity-40">
-      <a aria-label={header} target="_blank" rel="noopener noreferrer" href={link}>
-        <div className="flex items-center text-gray-900 dark:text-gray-100">
-          {header}
-          <svg
-            className="ml-1 h-4 w-4"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
+import SocialIcon from './social-icons'
+import FolderIcon from './icon'
+
+const Card = ({ title, description, imgSrc, href, github, tech1, tech2, tech3 }) => (
+  <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
+    <div className="h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 bg-transparent bg-opacity-20 transition duration-500 hover:scale-105 hover:rounded-md hover:border-primary-500 hover:bg-gray-300 dark:border-gray-700 dark:hover:border-primary-color-dark-500 dark:hover:bg-gray-800">
+      <div className="p-6">
+        <div className="flex flex-row items-center justify-between">
+          <div className="my-2">
+            <FolderIcon />
+          </div>
+          <div className="flex flex-row justify-between">
+            <div className="mx-1.5">
+              {href ? <SocialIcon kind="external" href={href} size="6" /> : null}
+            </div>
+            <div className="mx-1.5">
+              {github ? <SocialIcon kind="github" href={github} size="6" /> : null}
+            </div>
+          </div>
         </div>
-      </a>
-      <p className="spacing-sm mt-2 text-3xl font-bold text-black dark:text-white">
-        {metric > 0 && isCurrency && '$'}
-        {metric > 0 ? metric.toLocaleString() : '-'}
-      </p>
+        <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
+
+        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <div className="flex flex-row justify-between">
+          <div className="text-sm text-gray-400">
+            {tech1} &#8226; {tech2} &#8226; {tech3}
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  </div>
+)
+
+export default Card
