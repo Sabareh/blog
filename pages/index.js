@@ -210,19 +210,6 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        <Script
-        async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-        crossorigin="anonymous">
-        </Script>
-        <ins 
-        class="adsbygoogle"
-        style="display:inline-block;width:300px;height:250px"
-        data-ad-client="ca-pub-4331473606799485"
-        data-ad-slot="3075344579">
-        </ins>
-        <Script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </Script>
         <h2 className="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
           Recent Posts
         </h2>
@@ -249,6 +236,7 @@ export default function Home({ posts }) {
                           <ViewCounter className="mx-1" slug={slug} />
                           views
                         </dd>
+                      </dl>
                       <div className="space-y-5 xl:col-span-4">
                         <div className="space-y-1">
                           <div>
