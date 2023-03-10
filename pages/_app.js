@@ -16,7 +16,6 @@ import ProgressBar from 'react-scroll-progress-bar'
 import ScrollTop from '@/components/ScrollTop'
 import { SessionProvider } from 'next-auth/react'
 import { Provider } from '@lyket/react'
-import Script from 'next/script'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
@@ -60,12 +59,6 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <ProgressBar bgcolor="#DE1D8D" />
           <ScrollTop />
           <Head>
-            <Script
-              data-ad-client="ca-pub-4331473606799485"
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-              crossOrigin="anonymous"
-            ></Script>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
           {isDevelopment && isSocket && <ClientReload />}

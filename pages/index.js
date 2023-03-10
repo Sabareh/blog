@@ -8,7 +8,6 @@ import { RoughNotation } from 'react-rough-notation'
 import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
-import Script from 'next/script'
 import Ad from '@/components/ads'
 
 const MAX_DISPLAY = 3
@@ -21,13 +20,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-        crossorigin="anonymous"
-      ></Script>
       <div>
-        <h1>Advert</h1>
         <Ad />
       </div>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />

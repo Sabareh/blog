@@ -5,6 +5,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="scroll-smooth">
         <Head>
+          <script
+            data-ad-client="ca-pub-4331473606799485"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
           <link
             rel="apple-touch-icon"
             sizes="76x76"
