@@ -21,6 +21,11 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
+        crossorigin="anonymous"
+      ></Script>
       <div>
         <h1>Advert</h1>
         <Ad />
