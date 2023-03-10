@@ -9,8 +9,8 @@ const Ad = () => {
     <ins
       className="adsbygoogle"
       style={{ display: 'block' }}
-      data-ad-client="YOUR_AD_CLIENT_ID"
-      data-ad-slot="YOUR_AD_SLOT_ID"
+      data-ad-client="ca-pub-4331473606799485"
+      data-ad-slot="8120151682"
       data-ad-format="auto"
       data-full-width-responsive="true"
     ></ins>

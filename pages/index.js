@@ -9,6 +9,7 @@ import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
 import Script from 'next/script'
+import Ad from '@/components/ads'
 
 const MAX_DISPLAY = 3
 export async function getStaticProps() {
@@ -20,16 +21,10 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
-      <Script
-        id="Adsense-id"
-        async
-        onError={(e) => {
-          console.error('Script failed to load', e)
-        }}
-        strategy="afterInteractive"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331473606799485"
-        crossorigin="anonymous"
-      />
+      <div>
+        <h1>Advert</h1>
+        <Ad />
+      </div>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
