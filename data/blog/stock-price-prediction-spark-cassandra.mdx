@@ -23,7 +23,7 @@ There are different data sources for obtaining stock data, such as Yahoo Finance
 
 The following Python code shows how to obtain stock data from the Alpha Vantage API and store it in Apache Cassandra:
 
-'''python
+```python
 from alpha_vantage.timeseries import TimeSeries
 from cassandra.cluster import Cluster
 
@@ -42,7 +42,7 @@ for index, row in data.iterrows():
         """,
         (symbol, str(index), row['1. open'], row['2. high'], row['3. low'], row['4. close'], row['5. adjusted close'], row['6. volume'])
     )
-'''
+```
 
 ## Data Preprocessing
 
@@ -76,7 +76,7 @@ After preprocessing the data and engineering features, we can build a machine le
 
 The following Python code shows how to split the data into training and testing sets and train the model using linear regression:
 
-'''python
+```python
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
@@ -94,7 +94,7 @@ lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print("Mean squared error:", mse)
-'''
+```
 
 ## Integration with Apache Spark
 
