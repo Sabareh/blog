@@ -2,6 +2,9 @@
   "name": "victor-sabare-blog",
   "version": "1.1.1",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "author": {
     "name": "Victor Sabare",
     "email": "sabarevictor@gmail.com",
