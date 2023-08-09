@@ -36,7 +36,8 @@ const projectsData = [
     tech1: 'Scala',
     tech2: 'GitHub',
     tech3: 'Data Science',
-  },
-]
+  }
+];
 
-export default projectsData
+export default projectsData;
+
