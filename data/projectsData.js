@@ -36,6 +36,16 @@ const projectsData = [
     tech2: 'Machine Learning',
     tech3: 'Linear Regression',
   },
+  {
+    title: 'The Forex Data Pipeline with Apache Airflow',
+    description: `The Forex Data Pipeline is a comprehensive solution designed to collect, process, and prepare currency exchange rate data for downstream machine-learning pipelines. This repository showcases the creation of a data pipeline that fetches currency rates from an external API, performs data transformation using PySpark, and loads the processed data into a Hive table within the Hadoop Distributed File System (HDFS). The primary goal is to provide clean and structured currency rate data for seamless integration into subsequent machine-learning workflows.`,
+    href: 'https://github.com/Sabareh/The-Forex-Data-Pipeline/tree/main',
+    tech1: 'Apache Airflow',
+    tech2: 'PySpark',
+    tech3: 'Hadoop',
+    tech4: 'Hive',
+    tech5: 'Data Engineering',
+  },
 ] 
 
 export default projectsData
