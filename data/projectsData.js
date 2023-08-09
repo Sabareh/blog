@@ -30,13 +30,12 @@ const projectsData = [
   },
   {
     title: 'The GitHub History of the Scala language',
-    description: `Find out who has had the most influence on its development and who are the experts. Explore the evolution of the Scala language through its vibrant GitHub history. This is a comprehensive collection of historical data, commits, issues, and pull requests related to the development of Scala, a modern, multi-paradigm programming language.',
-    imgSrc: '/static/images/Blog/wwdc-2022-hero.jpeg', 
-    href: 'https://github.com/Sabareh/The-GitHub-History-of-the-Scala-language,
+    description: `Find out who has had the most influence on its development and who are the experts. Explore the evolution of the Scala language through its vibrant GitHub history. This is a comprehensive collection of historical data, commits, issues, and pull requests related to the development of Scala, a modern, multi-paradigm programming language.`,
+    href: 'https://github.com/Sabareh/The-GitHub-History-of-the-Scala-language',
     tech1: 'Scala',
     tech2: 'GitHub',
     tech3: 'Data Science',
-  }
-];
+  },
+] 
 
-export default projectsData;
+export default projectsData
