@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'Dr. Semmelweis and the Discovery of Handwashing',
+    description: `Reanalyzed the data behind one of the most important discoveries of modern medicine: handwashing. In 1847, the Hungarian physician Ignaz Semmelweis makes a breakthough discovery: He discovers handwashing. Contaminated hands was a major cause of childbed fever and by enforcing handwashing at his hospital he saved hundreds of lives. In this Python project, I reanalyzed the medical data Semmelweis collected. This project was done as part of the DataCamp Data Science with Python Career Track.`,
+    imgSrc: '/static/images/Blog/wwdc-2022-hero.jpeg',
+    href: 'https://github.com/Sabareh/Dr.-Semmelweis-and-the-Discovery-of-Handwashing',
+    tech1: 'Python',
+    tech2: 'matplotlib',
+    tech3: 'Seaborn',
+    tech4: 'Data Science',
+  },
+  {
     title: 'Data Engineering Project using Sales Data',
     description: `Data Engineering in Hadoop using Cloudera. Performed the principle tasks involved in managing, loading, extracting, and transforming data. This project respository holds the scripst that I wrote during the whole project. The project was done in Cloudera using Hadoop.`,
     imgSrc: '/static/images/Blog/wwdc-2022-hero.jpeg',
