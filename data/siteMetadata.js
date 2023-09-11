@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Blog | Victor Oketch Sabare ',
   author: 'Victor Oketch Sabare',
   headerTitle: 'Victor Sabare Oketch',
-  description: 'My personal blog where I share my thoughts and learnings.',
+  description: 'my personal blog where I share my thoughts and learnings',
   snippets: 'Reuseable code snippets collected by me.',
   language: 'en-us',
   theme: 'system', // system, dark or light
