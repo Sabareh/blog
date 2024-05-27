@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: {
+  env: { 
     browser: true,
     amd: true,
     node: true,
@@ -13,5 +13,7 @@ module.exports = {
     'react/prop-types': 0,
     'no-unused-vars': 0,
     'react/no-unescaped-entities': 0,
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   },
 }
