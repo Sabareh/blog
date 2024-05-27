@@ -13,33 +13,43 @@ summary: The article delves into the world of two-sample proportion tests, offer
 />
 
 ## Introduction
+
 Statistical analysis is a powerful tool for extracting insights from data, especially when dealing with categorical variables. One common scenario involves comparing proportions between two distinct populations. In this article, we'll dive into the world of two-sample proportion tests, exploring both the manual calculation approach and a more streamlined method using Python's statsmodels library. Along the way, we'll cover the theoretical background, the step-by-step process of performing the tests, and essential references for further exploration.
 
 ## Theoretical Background
+
 Two-sample proportion tests are a type of hypothesis test that compares the proportions of two distinct populations. They are used to determine whether the difference between the proportions is statistically significant. The null hypothesis states that the proportions are equal, while the alternative hypothesis states that they are not. The test statistic is the difference between the proportions, and the p-value is the probability of obtaining a test statistic at least as extreme as the observed value under the null hypothesis. If the p-value is less than the significance level, we reject the null hypothesis and conclude that the proportions are not equal. This test is particularly valuable when dealing with categorical data that can be divided into two distinct categories, such as "Yes" and "No" responses.
 
 In this article, we'll dive into the world of two-sample proportion tests, exploring both the manual calculation approach and a more streamlined method using Python's statsmodels library. Along the way, we'll cover the theoretical background, the step-by-step process of performing the tests, and essential references for further exploration.
 
 ## Prerequisites
+
 To follow along with the examples in this article, you'll need to have the following prerequisites installed on your machine:
 
 1. Python: Python is the programming language we'll use for data manipulation and analysis. If you don't have Python installed, you can download it from the official Python website.
 
 2. pandas: The pandas library is essential for data manipulation and analysis. Install it using the following command:
+
 ```bash
 pip install pandas
 ```
-3. statsmodels: This library provides advanced statistical functions, including the ***proportions_ztest()*** function. Install it using:
+
+3. statsmodels: This library provides advanced statistical functions, including the **_proportions_ztest()_** function. Install it using:
+
 ```bash
 pip install statsmodels
 ```
+
 ## The Scenario: Comparing Hobbyists by Age Group
+
 To better understand two-sample proportion tests, let's immerse ourselves in a practical scenario. Imagine we're working with data from the Stack Overflow survey, and we're curious about the proportion of hobbyists (individuals with hobbies) in two age groups: those under thirty years old and those aged thirty and above. Our objective is to determine whether there's a statistically significant difference in the proportions of hobbyists between these two age groups.
 
 ## Hypotheses and Significance Level
-Before we dive into the calculations, we need to set the stage by defining our hypotheses and selecting a significance level. The ***null hypothesis (H0)*** posits that there's no substantial difference in the proportions of hobbyists between the two age groups. The ***alternative hypothesis (H1)***, on the other hand, suggests that there is a significant difference. To assess our findings, we'll use a significance level (α) of 0.05, which is a commonly employed threshold in hypothesis testing.
+
+Before we dive into the calculations, we need to set the stage by defining our hypotheses and selecting a significance level. The **_null hypothesis (H0)_** posits that there's no substantial difference in the proportions of hobbyists between the two age groups. The **_alternative hypothesis (H1)_**, on the other hand, suggests that there is a significant difference. To assess our findings, we'll use a significance level (α) of 0.05, which is a commonly employed threshold in hypothesis testing.
 
 ## Manual Calculation of the Z-Score
+
 The z-score is a pivotal statistic in hypothesis testing. It quantifies how many standard deviations a sample statistic deviates from the hypothesized population parameter under the null hypothesis. For two-sample proportion tests, the formula for calculating the z-score is as follows:
 
 ```math
@@ -48,13 +58,13 @@ z = \frac{p_1 - p_2}{\sqrt{\frac{p(1-p)}{n_1} + \frac{p(1-p)}{n_2}}}`
 
 where:
 
-- ***p1*** and ***p2*** are the proportions of hobbyists in the two age groups.
-- ***p*** is the pooled proportion of hobbyists in both age groups.
-- ***n1*** and ***n2*** are the sample sizes of the two age groups.
+- **_p1_** and **_p2_** are the proportions of hobbyists in the two age groups.
+- **_p_** is the pooled proportion of hobbyists in both age groups.
+- **_n1_** and **_n2_** are the sample sizes of the two age groups.
 
 Let's calculate the z-score for our scenario. First, we need to calculate the proportions of hobbyists in each age group. We can do this by dividing the number of hobbyists in each age group by the total number of respondents in that age group. The following code snippet shows how to do this using pandas:
 
-```python  
+```python
 import pandas as pd
 
 # Load and preprocess the survey data
@@ -85,12 +95,13 @@ print("z-score:", z_score)
 The z-score is 2.67, which is greater than the critical value of 1.96. This means that the test statistic is in the rejection region, and we can reject the null hypothesis. We can conclude that there is a statistically significant difference in the proportions of hobbyists between the two age groups.
 
 ## Performing the Test Using proportions_ztest()
-While the manual calculation approach is useful for understanding the underlying concepts, it can be tedious and time-consuming. Fortunately, Python's statsmodels library provides a more streamlined approach using the ***proportions_ztest()*** function. This function takes the following parameters:
 
-- ***count***: The number of successes in each sample.
-- ***nobs***: The number of observations in each sample.
-- ***value***: The hypothesized value of the population proportion under the null hypothesis.
-- ***alternative***: The alternative hypothesis. This can be "two-sided", "smaller", or "larger".
+While the manual calculation approach is useful for understanding the underlying concepts, it can be tedious and time-consuming. Fortunately, Python's statsmodels library provides a more streamlined approach using the **_proportions_ztest()_** function. This function takes the following parameters:
+
+- **_count_**: The number of successes in each sample.
+- **_nobs_**: The number of observations in each sample.
+- **_value_**: The hypothesized value of the population proportion under the null hypothesis.
+- **_alternative_**: The alternative hypothesis. This can be "two-sided", "smaller", or "larger".
 
 This function calculates the z-score and associated p-value, simplifying the process:
 
@@ -117,7 +128,8 @@ print("p-value:", p_value)
 The results are the same as those obtained using the manual calculation approach. The z-score is 2.67, and the p-value is 0.008. Since the p-value is less than the significance level, we reject the null hypothesis and conclude that there is a statistically significant difference in the proportions of hobbyists between the two age groups.
 
 ## Conclusion
-Two-sample proportion tests provide valuable insights into differences between proportions in distinct populations. In this article, we explored the manual calculation of the z-score and p-value for a two-sample proportion test. Additionally, we introduced a more streamlined approach using Python's ***statsmodels*** library and its ***proportions_ztest()*** function. By grasping both methods, you'll be equipped to confidently assess the significance of proportion disparities and make informed decisions based on your data analysis.
+
+Two-sample proportion tests provide valuable insights into differences between proportions in distinct populations. In this article, we explored the manual calculation of the z-score and p-value for a two-sample proportion test. Additionally, we introduced a more streamlined approach using Python's **_statsmodels_** library and its **_proportions_ztest()_** function. By grasping both methods, you'll be equipped to confidently assess the significance of proportion disparities and make informed decisions based on your data analysis.
 
 ## References
 
@@ -134,7 +146,3 @@ To deepen your understanding of two-sample proportion tests and statistical hypo
 - Wes McKinney. (2017). Python for Data Analysis. O'Reilly Media.
 
 These resources provide in-depth insights into statistical concepts, Python programming, and data analysis, allowing you to explore and apply these techniques to a wide range of scenarios.
-
-
-
-

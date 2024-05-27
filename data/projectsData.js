@@ -73,6 +73,6 @@ const projectsData = [
     tech2: 'Data Science',
     tech3: 'Data Visualization',
   },
-] 
+]
 
 export default projectsData

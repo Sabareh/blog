@@ -46,7 +46,9 @@
     color: #de1d8d;
     margin: 0 -0.25rem;
     padding: 0 0.25rem;
-    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition:
+      color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
   }
   .company:hover {
     box-shadow: inset 200px 0 0 0 #de1d8d;
@@ -61,7 +63,9 @@ html {
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
 }
 
 ::-moz-selection {
