@@ -88,8 +88,9 @@ export const BlogSEO = ({
     images.length === 0
       ? [siteMetadata.socialBanner]
       : typeof images === 'string'
-        ? [images]
-        : images
+      ? [images]
+      : images
+
   const featuredImages = imagesArr.map((img) => {
     return {
       '@type': 'ImageObject',
