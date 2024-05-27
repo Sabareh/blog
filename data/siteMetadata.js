@@ -41,7 +41,7 @@ const siteMetadata = {
       theme: 'light',
       inputPosition: 'bottom',
       lang: 'en',
-      darkTheme: 'dark',
+      darkTheme: 'dark_dimmed',
       themeURL: '',
     },
   },
