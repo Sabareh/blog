@@ -1,4 +1,14 @@
 const projectsData = [
+   {
+    title: 'End-to-End ELT Pipeline Implementation Using dbt, Snowflake, and Airflow',
+    description: `The project focuses on the development and deployment of an ELT (Extract, Load, Transform) pipeline utilizing industry-standard tools such as dbt (data build tool), Snowflake, and Airflow. The pipeline is designed to handle the transformation and loading of data from source tables to final data marts, ensuring efficient data processing and robust data management.`,
+    imgSrc: '/static/images/Blog/wwdc-2022-hero.jpeg',
+    href: 'https://github.com/Sabareh/dag-pipeline-with-dbt',
+    tech1: 'dbt(Data Build Tool)',
+    tech2: 'Apache Airflow',
+    tech3: 'Snowflake',
+    tech4: 'Data Engineering',
+  },
   {
     title: 'Dr. Semmelweis and the Discovery of Handwashing',
     description: `Reanalyzed the data behind one of the most important discoveries of modern medicine: handwashing. In 1847, the Hungarian physician Ignaz Semmelweis makes a breakthough discovery: He discovers handwashing. Contaminated hands was a major cause of childbed fever and by enforcing handwashing at his hospital he saved hundreds of lives. In this Python project, I reanalyzed the medical data Semmelweis collected. This project was done as part of the DataCamp Data Science with Python Career Track.`,
