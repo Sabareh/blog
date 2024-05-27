@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-script-component-in-head */
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 import '@/css/extra.css'
