@@ -1,4 +1,10 @@
+import { author } from './siteMetadata'
+
 export const quotes = [
+  {
+    author: 'Leonardo Da Vinci',
+    quote: 'ostonato rigore.',
+  },
   {
     author: 'Steve Jobs',
     quote: `Your time is limited, so don't waste it living someone else's life.`,

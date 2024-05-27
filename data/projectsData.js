@@ -1,5 +1,5 @@
 const projectsData = [
-   {
+  {
     title: 'End-to-End ELT Pipeline Implementation Using dbt, Snowflake, and Airflow',
     description: `The project focuses on the development and deployment of an ELT (Extract, Load, Transform) pipeline utilizing industry-standard tools such as dbt (data build tool), Snowflake, and Airflow. The pipeline is designed to handle the transformation and loading of data from source tables to final data marts, ensuring efficient data processing and robust data management.`,
     imgSrc: '/static/images/Blog/wwdc-2022-hero.jpeg',
