@@ -9,6 +9,7 @@ import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
 import Ad from '@/components/ads'
+import myresume from '/public/static/resume.pdf'
 
 const MAX_DISPLAY = 3
 export async function getStaticProps() {
@@ -170,7 +171,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r  from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="/public/static/resume.pdf">
+                  <iframe src={myresume} />
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
