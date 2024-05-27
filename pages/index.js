@@ -9,7 +9,6 @@ import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
 import Image from '@/components/Image'
 import Ad from '@/components/ads'
-import myresume from '/public/static/resume.pdf'
 
 const MAX_DISPLAY = 3
 export async function getStaticProps() {
