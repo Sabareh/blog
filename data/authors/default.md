@@ -1,5 +1,5 @@
 ---
-name: Victor Sabare
+name: Victor Oketch Sabare
 avatar: /static/images/avatar.jpeg
 occupation: BIG DATA ENGINEER
 company: Jomo Kenyatta University of Agriculture and Technology
