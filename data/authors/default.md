@@ -1,7 +1,7 @@
 ---
 name: Victor Sabare
 avatar: /static/images/avatar.jpeg
-occupation: Data Geek
+occupation: BIG DATA ENGINEER
 company: Jomo Kenyatta University of Agriculture and Technology
 email: sabarevictor@gmail.com
 twitter: https://twitter.com/sabare12
