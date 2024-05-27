@@ -12,7 +12,6 @@ text1: I have a deep-seated passion for Data Engineering, Science and Analytics 
 text2: With a strong foundation in Data Science and Analytics from Jomo Kenyatta University of Agriculture and Technology and hands-on experience
 learning from DataCamp, my expertise lies in data processing, gathering insights and use of those insights to make informed decisions and
 predictions.
-
 text3: My skill set encompasses Hadoop, Python (Programming Language), SQL, R and Tableau enabling me to deliver data-driven strategies that
 resonate with my stakeholders.
 ---
