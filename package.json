@@ -5,7 +5,7 @@
   "author": {
     "name": "Victor Sabare",
     "email": "sabarevictor@gmail.com",
-    "url": "https://sabare.me/"
+    "url": "https://sabare.tech/"
   },
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pycoder2000/blog.git"
+    "url": "git+https://github.com/sabareh/blog.git"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
@@ -92,7 +92,6 @@
     "next-remote-watch": "^1.0.0",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.4",
-    "prisma": "^3.15.2",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.0"
   },
