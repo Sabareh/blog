@@ -5,24 +5,6 @@
       "static/chunks/node_modules_socket_io-client_build_esm_index_js.js"
     ]
   },
-  "../components/comments/index.js -> @/components/comments/Disqus": {
-    "id": "../components/comments/index.js -> @/components/comments/Disqus",
-    "files": [
-      "static/chunks/components_comments_Disqus_js.js"
-    ]
-  },
-  "../components/comments/index.js -> @/components/comments/Giscus": {
-    "id": "../components/comments/index.js -> @/components/comments/Giscus",
-    "files": [
-      "static/chunks/components_comments_Giscus_js.js"
-    ]
-  },
-  "../components/comments/index.js -> @/components/comments/Utterances": {
-    "id": "../components/comments/index.js -> @/components/comments/Utterances",
-    "files": [
-      "static/chunks/components_comments_Utterances_js.js"
-    ]
-  },
   "../node_modules/@supabase/auth-js/dist/module/lib/helpers.js -> @supabase/node-fetch": {
     "id": "../node_modules/@supabase/auth-js/dist/module/lib/helpers.js -> @supabase/node-fetch",
     "files": []
