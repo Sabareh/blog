@@ -1,9 +1,7 @@
 {
   "../components/ClientReload.js -> socket.io-client": {
     "id": "../components/ClientReload.js -> socket.io-client",
-    "files": [
-      "static/chunks/node_modules_socket_io-client_build_esm_index_js.js"
-    ]
+    "files": ["static/chunks/node_modules_socket_io-client_build_esm_index_js.js"]
   },
   "../node_modules/@supabase/auth-js/dist/module/lib/helpers.js -> @supabase/node-fetch": {
     "id": "../node_modules/@supabase/auth-js/dist/module/lib/helpers.js -> @supabase/node-fetch",
@@ -19,9 +17,7 @@
   },
   "../node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js -> ws": {
     "id": "../node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js -> ws",
-    "files": [
-      "static/chunks/node_modules_supabase_realtime-js_node_modules_ws_browser_js.js"
-    ]
+    "files": ["static/chunks/node_modules_supabase_realtime-js_node_modules_ws_browser_js.js"]
   },
   "../node_modules/@supabase/storage-js/dist/module/lib/helpers.js -> @supabase/node-fetch": {
     "id": "../node_modules/@supabase/storage-js/dist/module/lib/helpers.js -> @supabase/node-fetch",
@@ -29,8 +25,6 @@
   },
   "../node_modules/use-sound/dist/use-sound.esm.js -> howler": {
     "id": "../node_modules/use-sound/dist/use-sound.esm.js -> howler",
-    "files": [
-      "static/chunks/node_modules_howler_dist_howler_js.js"
-    ]
+    "files": ["static/chunks/node_modules_howler_dist_howler_js.js"]
   }
 }

@@ -41,7 +41,7 @@ If you want to push your local content to GitHub:
 git add .
 
 # Commit your changes
-git commit -m "Initial commit" 
+git commit -m "Initial commit"
 
 # Push to GitHub (set upstream tracking)
 git push -u origin main
@@ -70,10 +70,13 @@ git push
 ## Troubleshooting
 
 If you encounter an error about unrelated histories:
+
 - Use the `--allow-unrelated-histories` flag with git pull
 
 If you need to force push (use with caution):
+
 - Use `git push -f origin main`
 
 If the default branch is named differently (e.g., "master" instead of "main"):
+
 - Adjust commands accordingly: `git pull origin master` and `git push origin master`
