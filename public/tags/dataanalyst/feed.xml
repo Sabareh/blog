@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Thu, 08 Feb 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/dataanalyst/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/OLAP</guid>
+    <title>OLAP Cubes and Multidimensional Modeling with SQL Server Analysis Services.</title>
+    <link>https://sabare.me/blog/OLAP</link>
+    <description>In this article, you will learn about OLAP cubes and multidimensional modeling with SQL Server Analysis Services. This is a key concept for data analysts to understand, as it is a common way to store and analyze data in a data warehouse.</description>
+    <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>dataanalytics</category><category>SQL</category><category>OLAP</category><category>datawarehouse</category><category>dataanalysis</category><category>dataanalyst</category>
+  </item>
+
+    </channel>
+  </rss>

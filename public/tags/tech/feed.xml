@@ -1,0 +1,64 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Tue, 04 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/tech/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/Types-Of-Cloud-Computing-Services</guid>
+    <title>Types of Cloud Computing Services</title>
+    <link>https://sabare.me/blog/Types-Of-Cloud-Computing-Services</link>
+    <description>What do you know about the various types of cloud computing that exist?</description>
+    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>cloud</category><category>tech</category><category>azure</category><category>aws</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Welcome-to-my-Blog</guid>
+    <title>Welcome To my Blog</title>
+    <link>https://sabare.me/blog/Welcome-to-my-Blog</link>
+    <description>Why I decided to start a blog and the reason why its important to my data science journey.</description>
+    <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>blog</category><category>tech</category><category>website</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Apple-Privacy</guid>
+    <title>Apple doesn&#39;t care about privacy, and it&#39;s showing.</title>
+    <link>https://sabare.me/blog/Apple-Privacy</link>
+    <description>Apple announced that it would begin checking content uploaded to iCloud Photos, against a list of known CSAM material. This is fine on it&#39;s own, however the system could easily be abused.</description>
+    <pubDate>Wed, 06 Jul 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apple</category><category>tech</category><category>privacy</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/WWDC22</guid>
+    <title>WWDC 2022 Wishlist</title>
+    <link>https://sabare.me/blog/WWDC22</link>
+    <description>Even though I don&#39;t use any of their products myself, here&#39;s the features I hope Apple will announce.</description>
+    <pubDate>Sun, 05 Jun 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>tech</category><category>apple</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Apple-Competition</guid>
+    <title>Apple and the case for competition.</title>
+    <link>https://sabare.me/blog/Apple-Competition</link>
+    <description>The EU announced plans to force all devices – including iPhones – to use a common charging port.</description>
+    <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apple</category><category>tech</category>
+  </item>
+
+    </channel>
+  </rss>

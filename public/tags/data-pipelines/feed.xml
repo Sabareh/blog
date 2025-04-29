@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Sun, 11 Dec 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/data-pipelines/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</guid>
+    <title>Creating a Data Pipeline Using Apache Airflow.</title>
+    <link>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</link>
+    <description>Creating a data pipeline with Apache Airflow can improve the reliability and efficiency of your data flows</description>
+    <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apache</category><category>data engineering</category><category>airflow</category><category>data pipelines</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -4,7 +4,6 @@ const headerNavLinks = [
   { href: '/snippets', title: 'Snippets' },
   { href: '/projects', title: 'Projects' },
   { href: '/about', title: 'About' },
-  { href: '/guestbook', title: 'Guestbook' },
 ]
 
 export default headerNavLinks

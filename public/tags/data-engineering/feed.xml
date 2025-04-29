@@ -1,0 +1,54 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Sat, 14 Jan 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/data-engineering/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/Django-Chatbot</guid>
+    <title>Building a Chatbot for your E-commerce Business using Django</title>
+    <link>https://sabare.me/blog/Django-Chatbot</link>
+    <description>This article provides a comprehensive guide on how to build a chatbot for an e-commerce business using the Django framework, including the creation of models, views, templates and integration with the e-commerce platform.</description>
+    <pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>Django</category><category>Python</category><category>Data Engineering</category><category>AI</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/My-MLSA-Experience</guid>
+    <title>Unlock Your Potential and Make a Difference: My Experience as a Microsoft Learn Student Ambassador</title>
+    <link>https://sabare.me/blog/My-MLSA-Experience</link>
+    <description>This article is about my experience as a Microsoft Learn Student Ambassador, highlighting how the program has helped me to improve my technical abilities and share knowledge with others.</description>
+    <pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>MLSA</category><category>Microsoft</category><category>Data</category><category>Data Engineering</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</guid>
+    <title>Creating a Data Pipeline Using Apache Airflow.</title>
+    <link>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</link>
+    <description>Creating a data pipeline with Apache Airflow can improve the reliability and efficiency of your data flows</description>
+    <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apache</category><category>data engineering</category><category>airflow</category><category>data pipelines</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Data-Engineering-Technologies</guid>
+    <title>Data-Engineering-Technologies</title>
+    <link>https://sabare.me/blog/Data-Engineering-Technologies</link>
+    <description>Data engineering is a crucial field that enables organizations to derive value from their data. It involves the design, construction, and maintenance of systems for collecting, storing, and processing data, with the aim of making it available for use in business intelligence, analytics, and machine learning.</description>
+    <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>A.I.</category><category>ML</category><category>Data Science</category><category>Data Engineering</category>
+  </item>
+
+    </channel>
+  </rss>

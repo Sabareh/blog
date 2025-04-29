@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Sun, 20 Nov 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/statistics/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/calculating-measures-of-spread-using-python</guid>
+    <title>Calculating Measures of Spread Using Python</title>
+    <link>https://sabare.me/blog/calculating-measures-of-spread-using-python</link>
+    <description>In this article, I&#39;ll talk about a set of summary statistics; measures of spread.Spread is just what it sounds like - it describes how spread apart or close together the data points are. Just like measures of centre, there are a few different measures of spread.</description>
+    <pubDate>Sun, 20 Nov 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>datascience</category><category>statistics</category>
+  </item>
+
+    </channel>
+  </rss>

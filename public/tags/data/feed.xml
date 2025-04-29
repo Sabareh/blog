@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Sat, 14 Jan 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/data/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/My-MLSA-Experience</guid>
+    <title>Unlock Your Potential and Make a Difference: My Experience as a Microsoft Learn Student Ambassador</title>
+    <link>https://sabare.me/blog/My-MLSA-Experience</link>
+    <description>This article is about my experience as a Microsoft Learn Student Ambassador, highlighting how the program has helped me to improve my technical abilities and share knowledge with others.</description>
+    <pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>MLSA</category><category>Microsoft</category><category>Data</category><category>Data Engineering</category>
+  </item>
+
+    </channel>
+  </rss>
