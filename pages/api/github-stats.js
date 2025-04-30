@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server' // Import NextResponse
-
 export const runtime = 'edge' // Specify Edge runtime
 
 export default async function handler(req, res) {
