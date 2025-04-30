@@ -1,0 +1,9 @@
+# Ignore Next.js build output and cache
+.next/
+
+node_modules
+.vercel
+.env*.local
+.env.local
+.env.next
+.next

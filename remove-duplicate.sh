@@ -1,0 +1,1 @@
+rm pages/about.js

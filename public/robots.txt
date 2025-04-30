@@ -1,0 +1,5 @@
+Sitemap: https://sabare.me/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /api/*

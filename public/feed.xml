@@ -1,0 +1,184 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Mon, 15 Jul 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/machine-learning-explainability</guid>
+    <title>Demystifying Machine Learning Explainability: From Black Box to Glass Box</title>
+    <link>https://sabare.me/blog/machine-learning-explainability</link>
+    <description>This article explores the importance of machine learning explainability and interpretability in modern data science. Learn about SHAP values, LIME, feature importance techniques, and how to make your ML models more transparent and trustworthy for stakeholders and regulatory compliance.</description>
+    <pubDate>Mon, 15 Jul 2024 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>machinelearning</category><category>explainability</category><category>datascience</category><category>xai</category><category>ethics</category><category>shap</category><category>lime</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/stochastic_processes</guid>
+    <title>The Role of Stochastic Processes in Data Science Innovation</title>
+    <link>https://sabare.me/blog/stochastic_processes</link>
+    <description>This article delves into the sophisticated application of stochastic processes within data science. Readers will gain an advanced understanding of how randomness is modeled and utilized to enhance predictions and decision-making in complex, uncertain environments. From machine learning algorithms to financial market modeling, stochastic processes are pivotal in driving innovation and extracting meaningful insights from data.</description>
+    <pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>stochasticprocesses</category><category>machinelearning</category><category>financialmodeling</category><category>datascience</category><category>predictiveanalytics</category><category>uncertaintyquantification</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/OLAP</guid>
+    <title>OLAP Cubes and Multidimensional Modeling with SQL Server Analysis Services.</title>
+    <link>https://sabare.me/blog/OLAP</link>
+    <description>In this article, you will learn about OLAP cubes and multidimensional modeling with SQL Server Analysis Services. This is a key concept for data analysts to understand, as it is a common way to store and analyze data in a data warehouse.</description>
+    <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>dataanalytics</category><category>SQL</category><category>OLAP</category><category>datawarehouse</category><category>dataanalysis</category><category>dataanalyst</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/two-sample-proportion_tests</guid>
+    <title>Two Sample Proportion Tests | Comparing Population Proportions</title>
+    <link>https://sabare.me/blog/two-sample-proportion_tests</link>
+    <description>The article delves into the world of two-sample proportion tests, offering insights into comparing proportions between distinct populations. It explores both manual calculation and a more streamlined approach using Python&#39;s statsmodels library. From understanding the theoretical foundation of two-sample proportion tests to implementing them practically, readers gain a comprehensive understanding of how to assess significant differences in proportions within categorical data.</description>
+    <pubDate>Sun, 27 Aug 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>Stastics</category><category>Machine Learning</category><category>Data Science</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/stock-price-prediction-spark-cassandra</guid>
+    <title>Stock Price Prediction with Apache Spark and Apache Cassandra.</title>
+    <link>https://sabare.me/blog/stock-price-prediction-spark-cassandra</link>
+    <description>This blog aims to show you how to predict stock prices using machine learning techniques, Apache Spark, and Apache Cassandra. The goal is to build a data pipeline that collects stock data, preprocesses it, engineers features, and trains a machine learning model to predict future prices.</description>
+    <pubDate>Sun, 30 Apr 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>Spark</category><category>Cassandra</category><category>Machine Learning</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Django-Chatbot</guid>
+    <title>Building a Chatbot for your E-commerce Business using Django</title>
+    <link>https://sabare.me/blog/Django-Chatbot</link>
+    <description>This article provides a comprehensive guide on how to build a chatbot for an e-commerce business using the Django framework, including the creation of models, views, templates and integration with the e-commerce platform.</description>
+    <pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>Django</category><category>Python</category><category>Data Engineering</category><category>AI</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/My-MLSA-Experience</guid>
+    <title>Unlock Your Potential and Make a Difference: My Experience as a Microsoft Learn Student Ambassador</title>
+    <link>https://sabare.me/blog/My-MLSA-Experience</link>
+    <description>This article is about my experience as a Microsoft Learn Student Ambassador, highlighting how the program has helped me to improve my technical abilities and share knowledge with others.</description>
+    <pubDate>Sat, 14 Jan 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>MLSA</category><category>Microsoft</category><category>Data</category><category>Data Engineering</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</guid>
+    <title>Creating a Data Pipeline Using Apache Airflow.</title>
+    <link>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</link>
+    <description>Creating a data pipeline with Apache Airflow can improve the reliability and efficiency of your data flows</description>
+    <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apache</category><category>data engineering</category><category>airflow</category><category>data pipelines</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Data-Engineering-Technologies</guid>
+    <title>Data-Engineering-Technologies</title>
+    <link>https://sabare.me/blog/Data-Engineering-Technologies</link>
+    <description>Data engineering is a crucial field that enables organizations to derive value from their data. It involves the design, construction, and maintenance of systems for collecting, storing, and processing data, with the aim of making it available for use in business intelligence, analytics, and machine learning.</description>
+    <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>A.I.</category><category>ML</category><category>Data Science</category><category>Data Engineering</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/calculating-measures-of-spread-using-python</guid>
+    <title>Calculating Measures of Spread Using Python</title>
+    <link>https://sabare.me/blog/calculating-measures-of-spread-using-python</link>
+    <description>In this article, I&#39;ll talk about a set of summary statistics; measures of spread.Spread is just what it sounds like - it describes how spread apart or close together the data points are. Just like measures of centre, there are a few different measures of spread.</description>
+    <pubDate>Sun, 20 Nov 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>datascience</category><category>statistics</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Developing-a-Professional-Network</guid>
+    <title>Developing a Professional Network for Data Analysts.</title>
+    <link>https://sabare.me/blog/Developing-a-Professional-Network</link>
+    <description>In this article, you will be introduced to online and in-person opportunities to connect with other data analysts. This is part of how you develop professional relationships, which is very important when you are just starting out in your career.</description>
+    <pubDate>Tue, 08 Nov 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>dataanalytics</category><category>hacks</category><category>network</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Types-Of-Cloud-Computing-Services</guid>
+    <title>Types of Cloud Computing Services</title>
+    <link>https://sabare.me/blog/Types-Of-Cloud-Computing-Services</link>
+    <description>What do you know about the various types of cloud computing that exist?</description>
+    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>cloud</category><category>tech</category><category>azure</category><category>aws</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Welcome-to-my-Blog</guid>
+    <title>Welcome To my Blog</title>
+    <link>https://sabare.me/blog/Welcome-to-my-Blog</link>
+    <description>Why I decided to start a blog and the reason why its important to my data science journey.</description>
+    <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>blog</category><category>tech</category><category>website</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/spotify-refresh-token</guid>
+    <title>How to get the Spotify Refresh Token</title>
+    <link>https://sabare.me/blog/spotify-refresh-token</link>
+    <description>Getting the Spotify Refresh Token doesn&#39;t need to be a hassle any longer.</description>
+    <pubDate>Tue, 12 Jul 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>spotify</category><category>hacks</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Apple-Privacy</guid>
+    <title>Apple doesn&#39;t care about privacy, and it&#39;s showing.</title>
+    <link>https://sabare.me/blog/Apple-Privacy</link>
+    <description>Apple announced that it would begin checking content uploaded to iCloud Photos, against a list of known CSAM material. This is fine on it&#39;s own, however the system could easily be abused.</description>
+    <pubDate>Wed, 06 Jul 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apple</category><category>tech</category><category>privacy</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/WWDC22</guid>
+    <title>WWDC 2022 Wishlist</title>
+    <link>https://sabare.me/blog/WWDC22</link>
+    <description>Even though I don&#39;t use any of their products myself, here&#39;s the features I hope Apple will announce.</description>
+    <pubDate>Sun, 05 Jun 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>tech</category><category>apple</category>
+  </item>
+
+  <item>
+    <guid>https://sabare.me/blog/Apple-Competition</guid>
+    <title>Apple and the case for competition.</title>
+    <link>https://sabare.me/blog/Apple-Competition</link>
+    <description>The EU announced plans to force all devices – including iPhones – to use a common charging port.</description>
+    <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>apple</category><category>tech</category>
+  </item>
+
+    </channel>
+  </rss>

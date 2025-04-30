@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sabare.me/about</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/activity</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/journey</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/now</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/privacypolicy</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/quotes</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/recommends</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/snippets</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/stats</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/terms</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tweets</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/uses</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Apple-Competition</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Apple-Privacy</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Creating-a-data-pipeline-using-apache-airflow</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Data-Engineering-Technologies</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Developing-a-Professional-Network</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Django-Chatbot</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/My-MLSA-Experience</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/OLAP</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Types-Of-Cloud-Computing-Services</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/WWDC22</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/Welcome-to-my-Blog</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/calculating-measures-of-spread-using-python</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/machine-learning-explainability</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/spotify-refresh-token</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/stochastic_processes</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/stock-price-prediction-spark-cassandra</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/blog/two-sample-proportion_tests</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/snippets/Geolocation</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/snippets/Spotify-API-Setup</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/snippets/markdown-code-block</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/airflow</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/ai</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/apache</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/apple</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/aws</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/azure</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/blog</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/cassandra</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/cloud</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/data</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/data-engineering</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/data-pipelines</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/data-science</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/dataanalysis</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/dataanalyst</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/dataanalytics</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/datascience</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/django</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/datawarehouse</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/ethics</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/financialmodeling</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/hacks</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/explainability</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/lime</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/machine-learning</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/machinelearning</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/microsoft</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/ml</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/mlsa</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/network</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/olap</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/privacy</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/predictiveanalytics</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/python</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/shap</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/spark</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/spotify</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/sql</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/stastics</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/statistics</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/stochasticprocesses</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/tech</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/uncertaintyquantification</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/website</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/xai</loc>
+  </url>
+</urlset>

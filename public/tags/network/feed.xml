@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Tue, 08 Nov 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/network/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/Developing-a-Professional-Network</guid>
+    <title>Developing a Professional Network for Data Analysts.</title>
+    <link>https://sabare.me/blog/Developing-a-Professional-Network</link>
+    <description>In this article, you will be introduced to online and in-person opportunities to connect with other data analysts. This is part of how you develop professional relationships, which is very important when you are just starting out in your career.</description>
+    <pubDate>Tue, 08 Nov 2022 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>dataanalytics</category><category>hacks</category><category>network</category>
+  </item>
+
+    </channel>
+  </rss>

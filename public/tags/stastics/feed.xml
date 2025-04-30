@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Blog | Victor Oketch Sabare </title>
+      <link>https://sabare.me/blog</link>
+      <description>my personal blog where I share my thoughts and learnings</description>
+      <language>en-us</language>
+      <managingEditor>sabarevictor@gmail.com (Victor Oketch Sabare)</managingEditor>
+      <webMaster>sabarevictor@gmail.com (Victor Oketch Sabare)</webMaster>
+      <lastBuildDate>Sun, 27 Aug 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://sabare.me/tags/stastics/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://sabare.me/blog/two-sample-proportion_tests</guid>
+    <title>Two Sample Proportion Tests | Comparing Population Proportions</title>
+    <link>https://sabare.me/blog/two-sample-proportion_tests</link>
+    <description>The article delves into the world of two-sample proportion tests, offering insights into comparing proportions between distinct populations. It explores both manual calculation and a more streamlined approach using Python&#39;s statsmodels library. From understanding the theoretical foundation of two-sample proportion tests to implementing them practically, readers gain a comprehensive understanding of how to assess significant differences in proportions within categorical data.</description>
+    <pubDate>Sun, 27 Aug 2023 00:00:00 GMT</pubDate>
+    <author>sabarevictor@gmail.com (Victor Oketch Sabare)</author>
+    <category>Stastics</category><category>Machine Learning</category><category>Data Science</category>
+  </item>
+
+    </channel>
+  </rss>
