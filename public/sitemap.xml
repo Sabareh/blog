@@ -149,15 +149,15 @@
   </url>
 
   <url>
+    <loc>https://sabare.me/tags/apache</loc>
+  </url>
+
+  <url>
     <loc>https://sabare.me/tags/airflow</loc>
   </url>
 
   <url>
     <loc>https://sabare.me/tags/ai</loc>
-  </url>
-
-  <url>
-    <loc>https://sabare.me/tags/apache</loc>
   </url>
 
   <url>
@@ -217,15 +217,19 @@
   </url>
 
   <url>
-    <loc>https://sabare.me/tags/django</loc>
-  </url>
-
-  <url>
     <loc>https://sabare.me/tags/datawarehouse</loc>
   </url>
 
   <url>
+    <loc>https://sabare.me/tags/django</loc>
+  </url>
+
+  <url>
     <loc>https://sabare.me/tags/ethics</loc>
+  </url>
+
+  <url>
+    <loc>https://sabare.me/tags/explainability</loc>
   </url>
 
   <url>
@@ -234,10 +238,6 @@
 
   <url>
     <loc>https://sabare.me/tags/hacks</loc>
-  </url>
-
-  <url>
-    <loc>https://sabare.me/tags/explainability</loc>
   </url>
 
   <url>
@@ -273,11 +273,11 @@
   </url>
 
   <url>
-    <loc>https://sabare.me/tags/privacy</loc>
+    <loc>https://sabare.me/tags/predictiveanalytics</loc>
   </url>
 
   <url>
-    <loc>https://sabare.me/tags/predictiveanalytics</loc>
+    <loc>https://sabare.me/tags/privacy</loc>
   </url>
 
   <url>
