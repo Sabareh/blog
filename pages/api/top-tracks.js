@@ -26,7 +26,9 @@ export default async function handler(req, res) {
       let errorDetails = await response.text()
       try {
         errorDetails = JSON.parse(errorDetails)
-      } catch (e) {}
+      } catch (e) {
+        // ignore JSON parse errors
+      }
       console.error(
         `Failed to get top tracks from Spotify API. Status: ${statusCode} ${statusText}`,
         errorDetails
